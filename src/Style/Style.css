@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.kontener{
+    max-width: 1920px;
+    margin: 10px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+}
+.chapNav{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.chapNav a{
+    color: rgba(0, 0, 0, 0.493);
+    text-decoration: none;
+}
+.ongNav{
+    display: flex;
+    gap: 11px;
+    align-items: center;
+}
+.ongNav b{
+    color: rgba(0, 0, 0, 0.493);
+}
+.zakaz{
+    padding: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2A5E8D;
+    background-color: #F2F6FC;
+    border: none;
+    font-size: 11px;
+}
