@@ -1,10 +1,13 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import { BiRightArrowAlt } from "react-icons/bi"
-import { BsCreditCard2Front, BsBox2Fill,BsArrowRightCircleFill } from "react-icons/bs"
-import { FaRegAddressCard } from "react-icons/fa"
-import { TbDiscount } from "react-icons/tb"
+import { BiRightArrowAlt } from "react-icons/bi";
+import { BsCreditCard2Front, BsBox2Fill, BsArrowRightCircleFill } from "react-icons/bs";
+import { FaRegAddressCard } from "react-icons/fa";
+import { TbDiscount } from "react-icons/tb";
+import { PiShoppingCartSimple } from "react-icons/pi";
+import { AiOutlineHeart } from "react-icons/ai";
+import { FiBarChart2 } from "react-icons/fi"
 
 
 export default function Glavniy() {
@@ -38,35 +41,71 @@ export default function Glavniy() {
       nomi: "Все для сауныи бани"
     },
   ]
-  let skidka=[
+  let skidka = [
     {
-      skidka:15,
-      nomi:"Метизные изделия",
-      img:"./glavniy IMG/Rectangle 31.png"
+      skidka: 15,
+      nomi: "Метизные изделия",
+      img: "./glavniy IMG/Rectangle 31.png"
     },
     {
-      skidka:30,
-      nomi:"Лакокрасочные материалы",
-      img:"./glavniy IMG/Rectangle 31 (1).png"
+      skidka: 30,
+      nomi: "Лакокрасочные материалы",
+      img: "./glavniy IMG/Rectangle 31 (1).png"
     },
     {
-      skidka:25,
-      nomi:"Напольные покрытия",
-      img:"./glavniy IMG/Rectangle 31 (2).png"
+      skidka: 25,
+      nomi: "Напольные покрытия",
+      img: "./glavniy IMG/Rectangle 31 (2).png"
     },
     {
-      skidka:30,
-      nomi:"Все для отоплления",
-      img:"./glavniy IMG/Rectangle 31 (3).png"
+      skidka: 30,
+      nomi: "Все для отоплления",
+      img: "./glavniy IMG/Rectangle 31 (3).png"
     },
   ]
-
+  let CardData = [
+    {
+      img: "./glavniy IMG/Rectangle 22.png",
+      art: "Артикул: XJ89YHGO",
+      nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
+      narxi: 15999,
+      skidka: "15"
+    },
+    {
+      img: "./glavniy IMG/Rectangle 22 (8).png",
+      art: "Артикул: XJ89YHGO",
+      nomi: "Смеситель Faris G-120 для раковины",
+      narxi: 1789
+    },
+    {
+      img: "./glavniy IMG/Rectangle 22 (5).png",
+      art: "Артикул: XJ89YHGO",
+      nomi: "Триммерная леска «Спираль-100»",
+      narxi: 312,
+      skidka: 10
+    },
+    {
+      img: "./glavniy IMG/Rectangle 22 (1).png",
+      art: "Артикул: XJ89YHGO",
+      nomi: "Унитаз подвесной Aragio с двойным сливом",
+      narxi: 15999
+    },
+    {
+      img: "./glavniy IMG/Rectangle 22 (5).png",
+      art: "Артикул: XJ89YHGO",
+      nomi: "Клей для напольных покрытий Porret",
+      narxi: 15999,
+      skidka: 12
+    },
+  ]
   return (<div>
     <div className="swiper-slide-page">
       <Swiper
+        modules={[Autoplay, Pagination, Navigation]}
         slidesPerView={1}
         spaceBetween={0}
         centeredSlides={true}
+        navigation
         autoplay={{
           delay: 2000,
           disableOnInteraction: false,
@@ -74,8 +113,7 @@ export default function Glavniy() {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        loop={true}
       >
         <SwiperSlide><img src="./glavniy IMG/Rectangle 10.png" alt="img" /><div className="drel">
           <h1>Электроинструмент для любых нужд</h1>
@@ -135,6 +173,50 @@ export default function Glavniy() {
           </div>
         );
       })}
+    </div>
+    <div className="cardN">
+    <Swiper
+      // install Swiper modules
+      modules={[Navigation]}
+      spaceBetween={0}
+      slidesPerView={4}
+      navigation
+      loop={true}
+    >
+      {CardData.map((elem) => {
+        return (
+          <div>
+            <SwiperSlide>
+              <div className="cardBig">
+                <div className="card-Big">
+                  <button className='xit'>хит</button>
+                  <img src={elem.img} alt={elem.nomi} />
+                  <div className="cardMiddle">
+                    <p>{elem.art}</p>
+                    <h1>{elem.nomi}</h1>
+                    {elem.skidka ? (<b className='b1'>
+                      <del>{elem.narxi}₽</del>
+                      {(
+                        elem.narxi - (elem.narxi / 100) * elem.skidka
+                      ).toFixed(2)}₽<b>-{elem.skidka}%</b>
+                    </b>) : (<span>{elem.narxi}₽</span>)}
+                    <div className="btn-cards">
+                      <div className="btn-cardsx">
+                      <button className='kupit'><PiShoppingCartSimple /> Купить</button>
+                      </div>
+                      <div className="btn-card">
+                        <button><AiOutlineHeart /></button>
+                        <button><FiBarChart2 /></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          </div>
+        )
+      })}
+    </Swiper>
     </div>
   </div>
   );

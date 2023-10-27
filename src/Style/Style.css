@@ -1,410 +1,494 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .kontener {
-    max-width: 1920px;
-    margin: 10px auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1920px;
+  margin: 10px auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 150px;
-    align-items: center;
-    border-bottom: 0.3px solid rgba(0, 0, 0, 0.257);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 150px;
+  align-items: center;
+  border-bottom: 0.3px solid rgba(0, 0, 0, 0.257);
 }
 
 .chapNav {
-    display: flex;
-    gap: 30px;
-    align-items: center;
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
 
 .chapNav a {
-    color: rgba(0, 0, 0, 0.493);
-    text-decoration: none;
+  color: rgba(0, 0, 0, 0.493);
+  text-decoration: none;
 }
 
 .ongNav {
-    display: flex;
-    gap: 11px;
-    align-items: center;
+  display: flex;
+  gap: 11px;
+  align-items: center;
 }
 
 .ongNav b {
-    color: rgba(0, 0, 0, 0.493);
+  color: rgba(0, 0, 0, 0.493);
 }
 
 .zakaz {
-    padding: 12px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #2A5E8D;
-    background-color: #F2F6FC;
-    border: none;
-    font-size: 11px;
+  padding: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2a5e8d;
+  background-color: #f2f6fc;
+  border: none;
+  font-size: 11px;
 }
 
 .navbarBig {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 27px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 27px 150px;
 }
 
 .iconkas {
-    display: flex;
+  display: flex;
 }
 
 .search {
-    width: 37%;
-    display: flex;
-    background-color: #186FD4;
-    border-radius: 6px;
+  width: 37%;
+  display: flex;
+  background-color: #186fd4;
+  border-radius: 6px;
 }
 
 .search input {
-    width: 100%;
-    padding: 15px 16px;
-    border: none;
-    border-radius: 6px;
-    border: 3px solid #186FD4;
+  width: 100%;
+  padding: 15px 16px;
+  border: none;
+  border-radius: 6px;
+  border: 3px solid #186fd4;
 }
 
 .search button {
-    font-size: 20px;
-    padding: 11px 16px;
-    border: none;
-    background-color: #186FD4;
-    border-radius: 0px 6px 6px 0px;
-    color: white;
+  font-size: 20px;
+  padding: 11px 16px;
+  border: none;
+  background-color: #186fd4;
+  border-radius: 0px 6px 6px 0px;
+  color: white;
 }
 
 #katalog {
-    padding: 15px 29px;
-    border: none;
-    border-radius: 8px;
-    background-color: #186FD4;
-    color: white;
-    font-size: 15px;
+  padding: 15px 29px;
+  border: none;
+  border-radius: 8px;
+  background-color: #186fd4;
+  color: white;
+  font-size: 15px;
 }
 
 .iconkas {
-    display: flex;
-    align-items: center;
-    gap: 27px;
+  display: flex;
+  align-items: center;
+  gap: 27px;
 }
 
 .icons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
 }
 
 .footer {
-    background-color: #F3F4F5;
-    padding: 10px 150px;
-    margin-top: 50px;
+  background-color: #f3f4f5;
+  padding: 10px 150px;
+  margin-top: 50px;
 }
 
 .footBir {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 41px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 41px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
 }
 
 .ongFbir {
-    display: flex;
-    gap: 135px;
-    align-items: center;
+  display: flex;
+  gap: 135px;
+  align-items: center;
 }
 
 .chapFbir {
-    display: flex;
-    align-items: center;
-    gap: 51px;
+  display: flex;
+  align-items: center;
+  gap: 51px;
 }
 
 .Fikki {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .Fuch {
-    display: flex;
-    align-items: center;
-    gap: 34px;
+  display: flex;
+  align-items: center;
+  gap: 34px;
 }
 
 #zvanok {
-    padding: 18px 26px;
-    border-radius: 4px;
-    border: 1px solid #EE0906;
+  padding: 18px 26px;
+  border-radius: 4px;
+  border: 1px solid #ee0906;
 }
 
 .footIkki ul li {
-    list-style: none;
+  list-style: none;
 }
 
 .footIkki {
-    display: flex;
-    gap: 215px;
-    align-items: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
-    padding: 50px;
+  display: flex;
+  gap: 215px;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+  padding: 50px;
 }
 
 .footIkki ul {
-    width: 150px;
+  width: 150px;
 }
 
 .chapFoot2 {
-    display: flex;
-    gap: 100px;
+  display: flex;
+  gap: 100px;
 }
 
 .chapFoot2 ul {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .ongFoot2 {
-    display: flex;
-    gap: 100px;
-    align-items: center;
-    position: relative;
-    top: 22px;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  position: relative;
+  top: 22px;
 }
 
 .ongFoot2 ul {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 200px;
 }
 
 .uls {
-    position: relative;
-    top: 65px;
+  position: relative;
+  top: 65px;
 }
 
 .oplataB {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 37px;
-    border-bottom: 1px solid;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 37px;
+  border-bottom: 1px solid;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
 }
 
 .karta {
-    display: flex;
-    gap: 50px;
-    align-items: center;
+  display: flex;
+  gap: 50px;
+  align-items: center;
 }
 
 .karta p {
-    width: 120px;
+  width: 120px;
 }
 
 #emeil {
-    width: 320px;
-    padding: 15px 20px;
-    border: none;
-    background-color: white;
+  width: 320px;
+  padding: 15px 20px;
+  border: none;
+  background-color: white;
 }
 
 .emeils b {
-    width: 240px;
+  width: 240px;
 }
 
 .emeils {
-    display: flex;
-    gap: 36px;
+  display: flex;
+  gap: 36px;
 }
 
 .kaptar {
-    position: relative;
-    right: 70px;
-    top: 14px;
-    font-size: 23px;
+  position: relative;
+  right: 70px;
+  top: 14px;
+  font-size: 23px;
 }
 
 .internet {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 130px;
-    padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 130px;
+  padding: 20px;
 }
 
 .internet p {
-    width: 700px;
+  width: 700px;
 }
 
 .sliderr {
-    padding: 20px 150px;
+  padding: 20px 150px;
 }
 
 .swiper-slide-page {
-    padding: 50px 150px;
-    position: relative;
-    z-index: -1;
+  padding: 50px 150px;
+  position: relative;
+  z-index: -1;
 }
 
 .swiper-slide-page img {
-    opacity: 0px;
+  opacity: 0px;
 }
 
 .drel {
-    left: 60px;
-    position: absolute;
-    opacity: 100px;
-    z-index: 1;
-    bottom: 122px;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
+  left: 60px;
+  position: absolute;
+  opacity: 100px;
+  z-index: 1;
+  bottom: 122px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 .drel h1 {
-    width: 35%;
+  width: 35%;
 }
 
 .drel p {
-    width: 55%;
+  width: 55%;
 }
 
 .pereyte {
-    background-color: #011120;
-    color: white;
-    padding: 24px 27px;
-    border-radius: 8px;
-    border: none;
-    width: 260px;
-    font-size: 20px;
+  background-color: #011120;
+  color: white;
+  padding: 24px 27px;
+  border-radius: 8px;
+  border: none;
+  width: 260px;
+  font-size: 20px;
 }
 
 .tolov {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 160px 55px 160px;
-    font-size: 20px;
-    
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 160px 55px 160px;
+  font-size: 20px;
 }
-.t-usuli{
-    display: flex;
-    align-items: center;
-    gap:11px;
+.t-usuli {
+  display: flex;
+  align-items: center;
+  gap: 11px;
 }
-.kok-icons{
-    color: #186FD4;
-    font-size: 22px;
+.kok-icons {
+  color: #186fd4;
+  font-size: 22px;
 }
-.katalog1{
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 150px 55px 150px;
+.katalog1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 150px 55px 150px;
 }
-.katalog-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 10px 20px;
-    background-color: #F3F4F5;
-    border-radius: 15px;
-    text-align: center;
+.katalog-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  background-color: #f3f4f5;
+  border-radius: 15px;
+  text-align: center;
 }
-.katalog-cards{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding:35px 10px;
-    background-color: white;
-    box-shadow: 0.2px 0.5px 2px #737374;
-    border-radius: 15px;
-    text-align: center;
+.katalog-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 35px 10px;
+  background-color: white;
+  box-shadow: 0.2px 0.5px 2px #737374;
+  border-radius: 15px;
+  text-align: center;
 }
-.katalog-card img{
-    width: 120px;
-    height: 120px;
+.katalog-card img {
+  width: 120px;
+  height: 120px;
 }
-.katalog-card b{
-    width: 135px;
-    height: 20px;
-    padding-right: 20px;
-    padding-bottom: 50px;
+.katalog-card b {
+  width: 135px;
+  height: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
 }
-.strelka{
-    padding-top: 35px;
-    border: none;
-    font-size: 50px;
-    background-color: white;
+.strelka {
+  padding-top: 35px;
+  border: none;
+  font-size: 50px;
+  background-color: white;
 }
-.skidkas{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 150px 90px 150px;
+.skidkas {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 150px 90px 150px;
 }
-.skidka{
-    position: absolute;
-    top: 43px;
+.skidka {
+  position: absolute;
+  top: 43px;
 }
-.notfound{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    justify-content: center;
-    align-items: center;
-    margin: 110px auto;
-    text-align: center;
+.notfound {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  margin: 110px auto;
+  text-align: center;
 }
-.naydena{
-    padding-left: 150px;
+.naydena {
+  padding-left: 150px;
 }
-.btn-gr{
-    display: flex;
-    gap: 15px;
-    padding-top: 55px;
-    padding-bottom: 55px;
+.btn-gr {
+  display: flex;
+  gap: 15px;
+  padding-top: 55px;
+  padding-bottom: 55px;
 }
-.oq{
-    background-color: #F2F6FC;
-    color: #186FD4;
-    padding: 25px 32px;
-    border-radius: 8px;
-    border: none;
+.oq {
+  background-color: #f2f6fc;
+  color: #186fd4;
+  padding: 25px 32px;
+  border-radius: 8px;
+  border: none;
 }
-.koks{
-    background-color: #186FD4;
-    color: white;
-    padding: 25px 42px;
-    border-radius: 8px;
-    border: none;
+.koks {
+  background-color: #186fd4;
+  color: white;
+  padding: 25px 42px;
+  border-radius: 8px;
+  border: none;
 }
-.footIkki a{
-    color: black;
-    text-decoration: none;
+.footIkki a {
+  color: black;
+  text-decoration: none;
 }
-.skidka h2{
-    width: 45%;
-    padding-left: 10px;
+.skidka h2 {
+  width: 45%;
+  padding-left: 10px;
+  padding-bottom: 8px;
 }
-.skidka b{
-    background-color: #011120;
-    color: white;
-    padding: 5px;
-    margin-left: 10px;
-    border-radius: 5px;
-    margin-top: 5px;
+.skidka b {
+  background-color: #011120;
+  color: white;
+  padding: 5px 8px;
+  margin-left: 10px;
+  border-radius: 7px;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  width: 60px !important;
+  height: 60px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #2c333d;
+  background: #fff;
+  font-size: 20px !important;
+  box-shadow: 0 0 3px 0 #ccc;
+  position: absolute;
+}
+.cardBig {
+  display: flex;
+  gap: 20px;
+}
+.cardBig p {
+  color: #01112080;
+}
+.cardMiddle {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+.cardMiddle h1 {
+  width: 258px;
+  font-size: 18px;
+}
+.btn-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn-card {
+  display: flex;
+  gap: 9px;
+}
+.xit {
+  padding: 3px 8px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #f90;
+  border-radius: 5px;
+  color: #f90;
+  position: absolute;
+}
+.kupit {
+  background-color: #186fd4;
+  color: white;
+  padding: 7px 17px;
+  border: none;
+  border-radius: 6px;
+}
+.btn-card button {
+  padding: 0px 3px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 6px;
+  border: 1px solid #f3f4f5;
+}
+.card-Big {
+  padding: 10px;
+  width: 250px;
+}
+
+.cardN {
+  padding: 20px 150px;
+}
+.cardMiddle del {
+  color: rgba(0, 0, 0, 0.541);
+  font-size: 18px;
+}
+.cardMiddle .b1 {
+  font-size: 20px;
+  color: #003b73;
+}
+.cardMiddle .b1 b {
+  color: white;
+  border-radius: 4px;
+  background: #1b9665;
+  padding: 8px 5px;
+  margin-left: 10px;
 }
