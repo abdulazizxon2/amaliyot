@@ -1,7 +1,9 @@
-import React from "react";
+import React from 'react'
 
 export default function Vozvrat() {
-  return (<div>
-    Vozvrat
-  </div>);
+  return (
+    <div>
+      salom
+    </div>
+  )
 }

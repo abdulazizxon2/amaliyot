@@ -10,6 +10,7 @@ import Novosti from "./Novosti"
 import Kontakt from "./Kontakt"
 import Footer from "../components/Footer/Footer"
 import { Route, Routes } from "react-router-dom";
+import NotFound from "../components/NotFound/NotFound";
 
 
 
@@ -27,6 +28,7 @@ export default function PageIndex() {
             <Route path="/vapros" element={<Vapros />} />
             <Route path="/novosti" element={<Novosti />} />
             <Route path="/kontakt" element={<Kontakt />} />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Route>
       </Routes>
