@@ -6,7 +6,7 @@ function App() {
     <>
     <div className="kontener">
     <PageIndex />
-      </div>    </>
+      </div> </>
   );
 }
 export default App;

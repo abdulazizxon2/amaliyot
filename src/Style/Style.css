@@ -302,6 +302,7 @@
   display: flex;
   align-items: center;
   gap: 11px;
+  font-size: 15px;
 }
 .kok-icons {
   color: #186fd4;
@@ -492,40 +493,103 @@
   padding: 8px 5px;
   margin-left: 10px;
 }
-.btn-filters{
-  display: flex;  
+.btn-filters {
+  display: flex;
   gap: 20px;
 }
-.btn-filters .vse-btn{
+.btn-filters .vse-btn {
   padding: 17px 20px;
-  background-color: #F6F8FB;
+  background-color: #f6f8fb;
   color: #186fd4;
   border: none;
   border-radius: 6px;
   box-shadow: none;
 }
-.btn-filters button{
+.btn-filters button {
   padding: 17px 20px;
   color: black;
-  background-color: #FFF;
+  background-color: #fff;
   border: none;
   margin: 50px 0px;
   border-radius: 6px;
   box-shadow: 0.2px 0.2px 0.1px 1px rgba(0, 0, 0, 0.055);
 }
-.bosch{
+.bosch {
   display: flex;
 }
-.bosch img{
+.bosch img {
   padding: 10px;
   background-color: white;
   height: 45px;
   width: 145px;
 }
-.boschX{
+.boschX {
   display: flex;
   flex-direction: column;
   gap: 40px;
   padding: 50px 150px;
-  background-color: #F9FAFB;
+  background-color: #f9fafb;
+}
+.rasp {
+  padding: 1px 1px 3px 3px;
+  width: 88px;
+  height: 24px;
+  border: 1px solid #ee063e;
+  color: #ee063e;
+  border-radius: 4px;
+  position: absolute;
+}
+.news {
+  position: absolute;
+  padding: 2px 8px;
+  width: 78px;
+  height: 24px;
+  color: #ee063e;
+  border-radius: 5px;
+  border: 1px solid #1b9665;
+  color: #1b9665;
+}
+.cardBigs {
+  display: flex;
+  gap: 65px;
+}
+.card-Bigs {
+  padding: 10px;
+  width: 250px;
+}
+.card-Bigs img {
+  padding: 15px;
+}
+.deals {
+  padding: 90px 150px;
+}
+.kley {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.kley img {
+  width: 166px;
+  height: 166px;
+}
+.skidka-kupit {
+  display: flex;
+  gap: 51px;
+}
+.skidka-kupit b{
+  width: 120px;
+}
+.narx-skidka {
+  display: flex;
+}
+.korzina {
+  width: 308px;
+  height: 48px;
+  padding: 7px 17px;
+  border-radius: 0px 0px 8px 8px;
+  background: #117fe3;
+  border: none;
+}
+.slide-card {
+  display: flex;
 }
