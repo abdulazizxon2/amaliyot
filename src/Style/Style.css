@@ -492,3 +492,40 @@
   padding: 8px 5px;
   margin-left: 10px;
 }
+.btn-filters{
+  display: flex;  
+  gap: 20px;
+}
+.btn-filters .vse-btn{
+  padding: 17px 20px;
+  background-color: #F6F8FB;
+  color: #186fd4;
+  border: none;
+  border-radius: 6px;
+  box-shadow: none;
+}
+.btn-filters button{
+  padding: 17px 20px;
+  color: black;
+  background-color: #FFF;
+  border: none;
+  margin: 50px 0px;
+  border-radius: 6px;
+  box-shadow: 0.2px 0.2px 0.1px 1px rgba(0, 0, 0, 0.055);
+}
+.bosch{
+  display: flex;
+}
+.bosch img{
+  padding: 10px;
+  background-color: white;
+  height: 45px;
+  width: 145px;
+}
+.boschX{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 50px 150px;
+  background-color: #F9FAFB;
+}

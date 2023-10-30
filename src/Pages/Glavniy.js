@@ -91,9 +91,76 @@ export default function Glavniy() {
       narxi: 15999
     },
     {
+      img: "./glavniy IMG/Rectangle 22 (7).png",
+      art: "Артикул: XJ89YHGO",
+      nomi: "Водно-дисперсионный клей Cob",
+      narxi: 15999,
+      skidka: 12
+    },
+  ]
+  let bosch = [
+    {
+      img: "./glavniy IMG/image 22.png"
+    },
+    {
+      img: "./glavniy IMG/image 19.png"
+    },
+    {
+      img: "./glavniy IMG/image 18.png"
+    },
+    {
+      img: "./glavniy IMG/image 17.png"
+    },
+    {
+      img: "./glavniy IMG/image 20.png"
+    },
+    {
+      img: "./glavniy IMG/image 21.png"
+    },
+    {
+      img: "./glavniy IMG/image 19.png"
+    },
+    {
+      img: "./glavniy IMG/image 22.png"
+    },
+    {
+      img: "./glavniy IMG/image 23.png"
+    },
+    {
+      img: "./glavniy IMG/image 20.png"
+    },
+  ]
+  let CardData1 = [
+    {
+      img: "./glavniy IMG/Rectangle 22.png",
+      art: "Артикул: XJ89YHGO",
+      nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
+      narxi: 15999,
+      skidka: "15"
+    },
+    {
+      img: "./glavniy IMG/Rectangle 22 (8).png",
+      art: "Артикул: XJ89YHGO",
+      nomi: "Смеситель Faris G-120 для раковины",
+      narxi: 1789
+    },
+    {
       img: "./glavniy IMG/Rectangle 22 (5).png",
       art: "Артикул: XJ89YHGO",
-      nomi: "Клей для напольных покрытий Porret",
+      nomi: "Триммерная леска «Спираль-100»",
+      narxi: 312,
+      skidka: 10
+    },
+    {
+      img: "./glavniy IMG/Rectangle 22 (1).png",
+      art: "Артикул: XJ89YHGO",
+      nomi: "Унитаз подвесной Aragio с двойным сливом",
+      narxi: 15999
+    },
+    {
+      img: "./glavniy IMG/Rectangle 22 (7).png",
+      art: "Артикул: XJ89YHGO",
+      nomi: "Водно-дисперсионный клей Cob",
       narxi: 15999,
       skidka: 12
     },
@@ -175,48 +242,142 @@ export default function Glavniy() {
       })}
     </div>
     <div className="cardN">
-    <Swiper
-      // install Swiper modules
-      modules={[Navigation]}
-      spaceBetween={0}
-      slidesPerView={4}
-      navigation
-      loop={true}
-    >
-      {CardData.map((elem) => {
-        return (
-          <div>
-            <SwiperSlide>
-              <div className="cardBig">
-                <div className="card-Big">
-                  <button className='xit'>хит</button>
-                  <img src={elem.img} alt={elem.nomi} />
-                  <div className="cardMiddle">
-                    <p>{elem.art}</p>
-                    <h1>{elem.nomi}</h1>
-                    {elem.skidka ? (<b className='b1'>
-                      <del>{elem.narxi}₽</del>
-                      {(
-                        elem.narxi - (elem.narxi / 100) * elem.skidka
-                      ).toFixed(2)}₽<b>-{elem.skidka}%</b>
-                    </b>) : (<span>{elem.narxi}₽</span>)}
-                    <div className="btn-cards">
-                      <div className="btn-cardsx">
-                      <button className='kupit'><PiShoppingCartSimple /> Купить</button>
-                      </div>
-                      <div className="btn-card">
-                        <button><AiOutlineHeart /></button>
-                        <button><FiBarChart2 /></button>
+      <h1>Хиты продаж</h1>
+      <div className="btn-filters">
+        <button className='vse-btn'>Все товары</button>
+        <button>Инструменты</button>
+        <button>Сантехника</button>
+        <button>Для дома</button>
+        <button>Для сада</button>
+      </div>
+      <Swiper
+        // install Swiper modules
+        modules={[Navigation]}
+        spaceBetween={0}
+        slidesPerView={4}
+        navigation
+        loop={true}
+      >
+        {CardData.map((elem) => {
+          return (
+            <div>
+              <SwiperSlide>
+                <div className="cardBig">
+                  <div className="card-Big">
+                    <button className='xit'>хит</button>
+                    <img src={elem.img} alt={elem.nomi} />
+                    <div className="cardMiddle">
+                      <p>{elem.art}</p>
+                      <h1>{elem.nomi}</h1>
+                      {elem.skidka ? (<b className='b1'>
+                        <del>{elem.narxi}₽</del>
+                        {(
+                          elem.narxi - (elem.narxi / 100) * elem.skidka
+                        ).toFixed(2)}₽<b>-{elem.skidka}%</b>
+                      </b>) : (<span>{elem.narxi}₽</span>)}
+                      <div className="btn-cards">
+                        <div className="btn-cardsx">
+                          <button className='kupit'><PiShoppingCartSimple /> Купить</button>
+                        </div>
+                        <div className="btn-card">
+                          <button><AiOutlineHeart /></button>
+                          <button><FiBarChart2 /></button>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          </div>
-        )
-      })}
-    </Swiper>
+              </SwiperSlide>
+            </div>
+          )
+        })}
+      </Swiper>
+    </div>
+    <div className="boschX">
+      <div className="tepa-bosch">
+        <h1>Популярные бренды</h1>
+      </div>
+      <div className="bosch">
+        <Swiper
+          modules={[Autoplay, Pagination, Navigation]}
+          slidesPerView={6}
+          spaceBetween={0}
+          centeredSlides={true}
+          navigation
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          loop={true}
+        >
+          {bosch.map((e) => {
+            return (
+              <SwiperSlide>
+                <div className='bosch'>
+                  <img src={e.img} alt="img" />
+                </div>
+              </SwiperSlide>
+            )
+          })}
+        </Swiper>
+      </div>
+    </div>
+    <div className="deals">
+      <div className="tepa-deals">
+        <h1>Лучшие предложения</h1>
+        <div className="btn-filters">
+          <button className='vse-btn'>Все товары</button>
+          <button>Инструменты</button>
+          <button>Сантехника</button>
+          <button>Для дома</button>
+          <button>Для сада</button>
+        </div>
+        <Swiper
+        // install Swiper modules
+        modules={[Navigation]}
+        spaceBetween={0}
+        slidesPerView={4}
+        navigation
+        loop={true}
+      >
+        {CardData.map((elem) => {
+          return (
+            <div>
+              <SwiperSlide>
+                <div className="cardBig">
+                  <div className="card-Big">
+                    <button className='xit'>хит</button>
+                    <img src={elem.img} alt={elem.nomi} />
+                    <div className="cardMiddle">
+                      <p>{elem.art}</p>
+                      <h1>{elem.nomi}</h1>
+                      {elem.skidka ? (<b className='b1'>
+                        <del>{elem.narxi}₽</del>
+                        {(
+                          elem.narxi - (elem.narxi / 100) * elem.skidka
+                        ).toFixed(2)}₽<b>-{elem.skidka}%</b>
+                      </b>) : (<span>{elem.narxi}₽</span>)}
+                      <div className="btn-cards">
+                        <div className="btn-cardsx">
+                          <button className='kupit'><PiShoppingCartSimple /> Купить</button>
+                        </div>
+                        <div className="btn-card">
+                          <button><AiOutlineHeart /></button>
+                          <button><FiBarChart2 /></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </div>
+          )
+        })}
+      </Swiper>
+      </div>
     </div>
   </div>
   );
