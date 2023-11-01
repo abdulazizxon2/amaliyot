@@ -145,7 +145,7 @@ export default function Glavniy() {
   )
   let CardData1 = [
     {
-      img: "./glavniy IMG/Rectangle 22.png",
+      img: "./glavniy IMG/Rectangle 22 (2).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
       narxi: 15999,
@@ -154,7 +154,7 @@ export default function Glavniy() {
       rasp: false
     },
     {
-      img: "./glavniy IMG/Rectangle 22 (8).png",
+      img: "./glavniy IMG/Rectangle 22 (3).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Смеситель Faris G-120 для раковины",
       narxi: 1789,
@@ -162,14 +162,14 @@ export default function Glavniy() {
       rasp: false
     },
     {
-      img: "./glavniy IMG/Rectangle 22 (5).png",
+      img: "./glavniy IMG/Rectangle 22 (4).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 312,
       skidka: 10
     },
     {
-      img: "./glavniy IMG/Rectangle 22 (1).png",
+      img: "./glavniy IMG/Rectangle 22 (6).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
@@ -187,6 +187,56 @@ export default function Glavniy() {
     },
   ]
   CardData1 = CardData1.map(
+    (elem, index) => ({ ...elem, id: index + 1 })
+  )
+  let son = [
+    {
+      raqam: "17 805,3 м²",
+      tavsif: "торговых и складских помещений"
+    },
+    {
+      raqam: "50 000+",
+      tavsif: "наименований товара"
+    },
+    {
+      raqam: "2 500+",
+      tavsif: "постоянных клиентов"
+    },
+    {
+      raqam: "440",
+      tavsif: "опытных сотрудников"
+    }
+  ]
+  son = son.map(
+    (elem, index) => ({ ...elem, id: index + 1 })
+  )
+  let novosti=[
+    {
+      img:"./glavniy IMG/Rectangle 13 (4).png",
+      tavsif:"Масштабное обновление каталога инструментов",
+      instrument:"С радостью сообщаем вам о крупном пополнении нашего каталога инструментов.",
+      sana:"5 Августа 2023"
+    },
+    {
+      img:"./glavniy IMG/Rectangle 13.png",
+      tavsif:"Масштабное обновление каталога инструментов",
+      instrument:"С радостью сообщаем вам о крупном пополнении нашего каталога инструментов.",
+      sana:"5 Августа 2023"
+    },
+    {
+      img:"./glavniy IMG/Rectangle 13 (1).png",
+      tavsif:"Масштабное обновление каталога инструментов",
+      instrument:"С радостью сообщаем вам о крупном пополнении нашего каталога инструментов.",
+      sana:"5 Августа 2023"
+    },
+    {
+      img:"./glavniy IMG/Rectangle 13 (2).png",
+      tavsif:"Масштабное обновление каталога инструментов",
+      instrument:"С радостью сообщаем вам о крупном пополнении нашего каталога инструментов.",
+      sana:"5 Августа 2023"
+    }
+  ]
+  novosti = novosti.map(
     (elem, index) => ({ ...elem, id: index + 1 })
   )
   return (
@@ -412,6 +462,42 @@ export default function Glavniy() {
               </div>
             )
           })}
+        </div>
+      </div>
+      <div className="our-store">
+        <div className="chap-Our">
+          <h1>О нашем магазине</h1>
+          <p className='sel'>Цель и главная задача компании- создать сервис, который не ограничится продажей строительных и отделочных материалов, а будет решать задачи и трудности, с которыми сталкиваются люди во время ремонта.</p>
+          <div className="raqamlar" >
+            {son.map((elem) => {
+              return (
+                <div className="raqam" key={elem.id}>
+                  <h1>{elem.raqam}</h1>
+                  <p>{elem.tavsif}</p>
+                </div>
+              )
+            })}
+          </div>
+          <p className='mechta'>Уже второе десятилетие мы готовы воплотить в реальность Вашу мечту о красивом, комфортабельном доме, благоустроенном современном офисе, уютной теплой даче, помочь реализовать любые строительные и дизайнерские фантазии и с минимальными затратами времени и денежных средств.</p>
+          <button className='padrobne'>Подробнее о компании <BiRightArrowAlt /></button>
+        </div>
+        <div className="ong-Our">
+          <img src="./glavniy IMG/optorozi.png" alt="" />
+        </div>
+      </div>
+      <div className="last-news">
+        <h1>Последние новости</h1>
+        <div className="card-CC">
+        {novosti.map((elem)=>{
+          return(
+            <div className="card-C">
+              <img src={elem.img} alt="img" />
+              <b>{elem.tavsif}</b>
+              <p>{elem.instrument}</p>
+              <p>{elem.sana}</p>
+            </div>
+          )
+        })}
         </div>
       </div>
     </div>

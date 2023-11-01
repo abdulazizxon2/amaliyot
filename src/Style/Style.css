@@ -529,11 +529,11 @@
   gap: 40px;
   padding: 50px 150px;
   background-color: #f9fafb;
+  margin-top: 50px;
 }
 .rasp {
-  padding: 1px 1px 3px 3px;
-  width: 88px;
-  height: 24px;
+  padding: 2px 3px 4px 4px;
+ 
   border: 1px solid #ee063e;
   color: #ee063e;
   border-radius: 4px;
@@ -541,9 +541,7 @@
 }
 .news {
   position: absolute;
-  padding: 2px 8px;
-  width: 78px;
-  height: 24px;
+  padding: 3px 5px 4px 4px;
   color: #ee063e;
   border-radius: 5px;
   border: 1px solid #1b9665;
@@ -551,7 +549,7 @@
 }
 .cardBigs {
   display: flex;
-  gap: 65px;
+  gap: 75px;
 }
 .card-Bigs {
   padding: 10px;
@@ -572,15 +570,23 @@
   width: 166px;
   height: 166px;
 }
-.skidka-kupit {
+.kley .skidka-kupit {
   display: flex;
-  gap: 51px;
+  gap: 41px;
+  align-items: center;
 }
-.skidka-kupit b{
-  width: 120px;
+.kley .skidka-kupit b{
+  width: 180px;
+  text-align: left;
+  font-size: 20px;
+  padding-bottom: 28px;
 }
 .narx-skidka {
   display: flex;
+  align-items: center;
+}
+.narx-skidka b{
+  color: #1b9665;
 }
 .korzina {
   width: 308px;
@@ -589,7 +595,79 @@
   border-radius: 0px 0px 8px 8px;
   background: #117fe3;
   border: none;
+  color: white;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 .slide-card {
   display: flex;
+}
+.kley b{
+  padding: 11px;
+  font-size: 19px;
+  text-align: center;
+}
+.skidka-kupit p{
+  padding: 5px 8px;
+  background-color: #1b9665;
+  color: white;
+  border-radius: 4px;
+}
+.our-store{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 150px;
+  background-color: #F9FAFB;
+}
+.sel{
+  font-size: 17px;
+  color: #2C333D;
+  font-weight: 550;
+  width: 113%;
+  padding-top: 15px;
+  padding-bottom: 9px;
+}
+.raqamlar{
+  display: flex;
+}
+.raqam{
+  padding: 16px 0px;
+}
+.raqam h1{
+  color: #117FE3;
+}
+.mechta{
+  font-size: 15px;
+  color: #010d18c5;
+  width: 120%;
+  padding-top: 9px;
+  padding-bottom: 23px;
+}
+.padrobne{
+  padding: 24px 27px;
+  border-radius: 8px;
+background: #011120;
+color: white;
+font-size: 13px;
+}
+.card-CC{
+  display: flex;
+  gap: 20px;
+}
+.last-news{
+  padding: 97px 150px 110px 150px;
+}
+.last-news h1{
+  padding-bottom: 37px;
+}
+.card-C{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.card-C b{
+  width: 70%;
 }
