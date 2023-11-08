@@ -8,6 +8,7 @@ import Otvizv from "./Otvizv"
 import Vapros from "./Vapros"
 import Novosti from "./Novosti"
 import Kontakt from "./Kontakt"
+import Kampaniya from "./Kampaniya"
 import Footer from "../components/Footer/Footer"
 import { Route, Routes } from "react-router-dom";
 import NotFound from "../components/NotFound/NotFound";
@@ -19,7 +20,8 @@ export default function PageIndex() {
     <Routes>
       <Route element={<Navbar />}>
         <Route element={<Footer />}>
-          <Route path="/" element={<Glavniy />} />
+          <Route path="/" element={<Glavniy />}/>
+          <Route path="/kampaniya" element={<Kampaniya />} />
           <Route path="/oplata" element={<Oplata />} />
           <Route path="/dostavka" element={<Dostavka />} />
           <Route path="/vozvrat" element={<Vozvrat />} />

@@ -11,7 +11,7 @@ function Navbars() {
     <nav>
       <div className="navbar">
         <div className="chapNav">
-          <NavLink to="/"><b>О компании</b></NavLink>
+          <NavLink to="/kampaniya"><b>О компании</b></NavLink>
           <NavLink to="/oplata"><b>Оплата</b></NavLink>
           <NavLink to="/dostavka"><b>Доставка</b></NavLink>
           <NavLink to="/vozvrat"><b>Возврат</b></NavLink>
@@ -27,7 +27,9 @@ function Navbars() {
         </div>
       </div>
       <div className="navbarBig">
+        <NavLink to="/">
         <img src="./glavniy IMG/logo 1.png" alt="" />
+        </NavLink>
         <button id="katalog"><HiBars2 />  Каталог</button>
         <div className="search">
           <input type="text" name="" id="" placeholder="Найти среди 50000 товаров. Например: Дрель Bosch" />

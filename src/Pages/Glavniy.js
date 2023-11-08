@@ -70,7 +70,7 @@ export default function Glavniy() {
   skidka = skidka.map(
     (elem, index) => ({ ...elem, id: index + 1 })
   )
-  let CardData = [
+  let carddata = [
     {
       img: "./glavniy IMG/Rectangle 22.png",
       art: "Артикул: XJ89YHGO",
@@ -82,30 +82,33 @@ export default function Glavniy() {
       img: "./glavniy IMG/Rectangle 22 (8).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Смеситель Faris G-120 для раковины",
-      narxi: 1789
+      narxi: 1789,
+      skidka: null
     },
     {
       img: "./glavniy IMG/Rectangle 22 (5).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 312,
-      skidka: 10
+      skidka: 10,
     },
     {
       img: "./glavniy IMG/Rectangle 22 (1).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Унитаз подвесной Aragio с двойным сливом",
-      narxi: 15999
+      narxi: 15999,
+      skidka: null
     },
     {
       img: "./glavniy IMG/Rectangle 22 (7).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Водно-дисперсионный клей Cob",
       narxi: 15999,
-      skidka: 12
+      skidka: 12,
+
     },
   ]
-  CardData = CardData.map(
+  carddata = carddata.map(
     (elem, index) => ({ ...elem, id: index + 1 })
   )
   let bosch = [
@@ -210,30 +213,30 @@ export default function Glavniy() {
   son = son.map(
     (elem, index) => ({ ...elem, id: index + 1 })
   )
-  let novosti=[
+  let novosti = [
     {
-      img:"./glavniy IMG/Rectangle 13 (4).png",
-      tavsif:"Масштабное обновление каталога инструментов",
-      instrument:"С радостью сообщаем вам о крупном пополнении нашего каталога инструментов.",
-      sana:"5 Августа 2023"
+      img: "./glavniy IMG/Rectangle 13 (4).png",
+      tavsif: "Масштабное обновление каталога инструментов",
+      instrument: "С радостью сообщаем вам о крупном пополнении нашего каталога инструментов.",
+      sana: "5 Августа 2023"
     },
     {
-      img:"./glavniy IMG/Rectangle 13.png",
-      tavsif:"Масштабное обновление каталога инструментов",
-      instrument:"С радостью сообщаем вам о крупном пополнении нашего каталога инструментов.",
-      sana:"5 Августа 2023"
+      img: "./glavniy IMG/Rectangle 13.png",
+      tavsif: "Масштабное обновление каталога инструментов",
+      instrument: "С радостью сообщаем вам о крупном пополнении нашего каталога инструментов.",
+      sana: "5 Августа 2023"
     },
     {
-      img:"./glavniy IMG/Rectangle 13 (1).png",
-      tavsif:"Масштабное обновление каталога инструментов",
-      instrument:"С радостью сообщаем вам о крупном пополнении нашего каталога инструментов.",
-      sana:"5 Августа 2023"
+      img: "./glavniy IMG/Rectangle 13 (1).png",
+      tavsif: "Масштабное обновление каталога инструментов",
+      instrument: "С радостью сообщаем вам о крупном пополнении нашего каталога инструментов.",
+      sana: "5 Августа 2023"
     },
     {
-      img:"./glavniy IMG/Rectangle 13 (2).png",
-      tavsif:"Масштабное обновление каталога инструментов",
-      instrument:"С радостью сообщаем вам о крупном пополнении нашего каталога инструментов.",
-      sana:"5 Августа 2023"
+      img: "./glavniy IMG/Rectangle 13 (2).png",
+      tavsif: "Масштабное обновление каталога инструментов",
+      instrument: "С радостью сообщаем вам о крупном пополнении нашего каталога инструментов.",
+      sana: "5 Августа 2023"
     }
   ]
   novosti = novosti.map(
@@ -305,6 +308,7 @@ export default function Glavniy() {
       </div>
       <div className="skidkas">
         {skidka.map((elem) => {
+          // console.log(elem.id);
           return (
             <div key={elem.id}>
               <img src={elem.img} alt={elem.nomi} />
@@ -334,10 +338,10 @@ export default function Glavniy() {
             navigation
             loop={true}
           >
-            {CardData.map((elem) => {
+            {carddata.map((elem) => {
+              // console.log(elem.id);
               return (
-                <div key={elem.id}>
-                  <SwiperSlide>
+                  <SwiperSlide key={elem.id}>
                     <div className="cardBig" >
                       <div className="card-Big">
                         <button className='xit'>хит</button>
@@ -347,9 +351,9 @@ export default function Glavniy() {
                           <h1>{elem.nomi}</h1>
                           {elem.skidka ? (<b className='b1'>
                             <del>{elem.narxi}₽</del>
-                            {(
+                            {elem.skidka ? (
                               elem.narxi - (elem.narxi / 100) * elem.skidka
-                            ).toFixed(2)}₽<b>-{elem.skidka}%</b>
+                            ).toFixed(2) : ""}₽<b>-{elem.skidka}%</b>
                           </b>) : (<span>{elem.narxi}₽</span>)}
                           <div className="btn-cards">
                             <div className="btn-cardsx">
@@ -364,7 +368,6 @@ export default function Glavniy() {
                       </div>
                     </div>
                   </SwiperSlide>
-                </div>
               )
             })}
           </Swiper>
@@ -403,6 +406,7 @@ export default function Glavniy() {
             loop={true}
           >
             {bosch.map((elem) => {
+              // console.log(elem.id);
               return (
                 <SwiperSlide key={elem.id}>
                   <div className='bosch'>
@@ -488,16 +492,16 @@ export default function Glavniy() {
       <div className="last-news">
         <h1>Последние новости</h1>
         <div className="card-CC">
-        {novosti.map((elem)=>{
-          return(
-            <div className="card-C">
-              <img src={elem.img} alt="img" />
-              <b>{elem.tavsif}</b>
-              <p>{elem.instrument}</p>
-              <p>{elem.sana}</p>
-            </div>
-          )
-        })}
+          {novosti.map((elem) => {
+            return (
+              <div className="card-C" key={elem.id}>
+                <img src={elem.img} alt="img" />
+                <b>{elem.tavsif}</b>
+                <p>{elem.instrument}</p>
+                <p>{elem.sana}</p>
+              </div>
+            )
+          })}
         </div>
       </div>
     </div>
