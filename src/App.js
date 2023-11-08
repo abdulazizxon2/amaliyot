@@ -4,9 +4,10 @@ import PageIndex from "./Pages/PageIndex";
 function App() {
   return (
     <>
-    <div className="kontener">
-    <PageIndex />
-      </div> </>
+      <div className="kontener">
+        <PageIndex />
+      </div>
+    </>
   );
 }
 export default App;

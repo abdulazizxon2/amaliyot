@@ -5,8 +5,14 @@ import { AiOutlineSearch, AiOutlineGift, AiOutlineHeart } from "react-icons/ai"
 import { BsPersonSquare } from "react-icons/bs"
 import { FiBarChart2 } from "react-icons/fi"
 import { RiShoppingCart2Line } from "react-icons/ri"
+import { useSelector, useDispatch } from "react-redux";
+import { Open } from '../../Redux/Action/NavbarAction'
+import { Katalog } from "./Katalog"
 
 function Navbars() {
+  let state = useSelector((state) => state.NavbarRedux)
+  let { katalogOpen } = state;
+  let dispatch = useDispatch()
   return (<div>
     <nav>
       <div className="navbar">
@@ -28,9 +34,9 @@ function Navbars() {
       </div>
       <div className="navbarBig">
         <NavLink to="/">
-        <img src="./glavniy IMG/logo 1.png" alt="" />
+          <img src="./glavniy IMG/logo 1.png" alt="" />
         </NavLink>
-        <button id="katalog"><HiBars2 />  Каталог</button>
+        <button id="katalog" onClick={() => dispatch(Open())}><HiBars2 />  Каталог</button>
         <div className="search">
           <input type="text" name="" id="" placeholder="Найти среди 50000 товаров. Например: Дрель Bosch" />
           <button><AiOutlineSearch /></button>
@@ -59,6 +65,7 @@ function Navbars() {
         </div>
       </div>
     </nav>
+    <Katalog />
     <Outlet />
   </div>);
 }

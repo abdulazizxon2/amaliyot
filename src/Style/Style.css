@@ -922,66 +922,92 @@ form {
   line-height: 26px;
   padding-bottom: 20px;
 }
-.rejim{
+
+.rejim {
   color: black;
   padding: 20px;
   padding-left: 0px;
 }
-.dostavka-chap ul{
+
+.dostavka-chap ul {
   padding-left: 27px;
   display: flex;
   flex-direction: column;
   gap: 9px;
 }
-.dostavka-chap ul li{
+
+.dostavka-chap ul li {
   color: #EE0906;
 }
-.dostavka-chap ul li p{
+
+.dostavka-chap ul li p {
   color: #2C333D;
 }
-.ikki-p{
+
+.ikki-p {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.uch-p{
+.uch-p {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.dostavka-chap .h3-kok{
+.dostavka-chap .h3-kok {
   color: #063969;
   font-size: 18px;
   font-style: normal;
   font-weight: 550;
   line-height: 27p;
-  padding: 15px 20px ;
+  padding: 15px 20px;
 }
 
-.esli-p{
+.esli-p {
   padding: 15px;
   padding-left: 0px;
 }
-.dlya-p{
+
+.dlya-p {
   padding: 20px;
   padding-left: 0px;
 }
-.cposb-b{
+
+.cposb-b {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.vozvrat{
+
+.vozvrat {
   display: flex;
   padding: 20px 150px;
   gap: 20px;
 }
-.vozvrat-ong{
+
+.vozvrat-ong {
   display: flex;
   flex-direction: column;
   gap: 30px;
   align-items: center;
   width: 320px;
+}
+
+.openKatalog h1 {
+  width: 100%;
+}
+
+.openKatalog {
+  position: absolute;
+  padding: 0px 150px;
+  height: auto;
+  display: block;
+}
+
+.closeKatalog {
+  height: 0;
+  width: 100%;
+  display: none;
 }

@@ -68,21 +68,6 @@ export default function Dostavka() {
           <p>После оформления интернет заказа и отправки товаров, Вы получите трек-номер, для мониторинга этапов доставки на сайте или в мобильном приложении Почты России.</p>
           <p>Наша компания понимает и ценит Ваше время, поэтому оперативная доставка приобретенных товаров, дает возможность как можно быстрее завершить ремонт и, наконец, взглянуть с восхищением на получившийся результат.</p>
         </div>
-        <Swiper
-          modules={[Navigation]}
-          slidesPerView={3}
-          spaceBetween={0}
-          centeredSlides={true}
-          navigation
-          loop={true}
-        >
-          {slideImg.map((elem) => {
-            return (<div>
-              <SwiperSlide key={elem.id}><img src={elem.img} alt="img" /></SwiperSlide>
-            </div>
-            )
-          })}
-        </Swiper>
 
       </div>
       <div className="dostavka-ong">
@@ -114,5 +99,20 @@ export default function Dostavka() {
         </div>
       </div>
     </div>
+        <Swiper
+          modules={[Navigation]}
+          slidesPerView={3}
+          spaceBetween={0}
+          centeredSlides={true}
+          navigation
+          loop={true}
+        >
+          {slideImg.map((elem) => {
+            return (<div>
+              <SwiperSlide key={elem.id}><img src={elem.img} alt="img" /></SwiperSlide>
+            </div>
+            )
+          })}
+        </Swiper>
   </div>);
 }
