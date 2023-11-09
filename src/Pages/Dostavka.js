@@ -3,21 +3,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css/navigation';
+import { useSelector } from 'react-redux';
+
 export default function Dostavka() {
-  let slideImg = [
-    {
-      img: "./glavniy IMG/kamas 1.png"
-    },
-    {
-      img: "./glavniy IMG/kamaz 2.png"
-    },
-    {
-      img: "./glavniy IMG/kamaz 3.png"
-    },
-    {
-      img: "./glavniy IMG/kamaz 4.png"
-    },
-  ]
+  let state = useSelector(state => state.DostavkaRed);
+  let {slideImg}=state;
   slideImg = slideImg.map(
     (elem, index) => ({ ...elem, id: index + 1 })
   )
@@ -99,10 +89,11 @@ export default function Dostavka() {
         </div>
       </div>
     </div>
+    <div className="img-sliders">
         <Swiper
           modules={[Navigation]}
-          slidesPerView={3}
-          spaceBetween={0}
+          slidesPerView={4}
+          spaceBetween={20}
           centeredSlides={true}
           navigation
           loop={true}
@@ -114,5 +105,6 @@ export default function Dostavka() {
             )
           })}
         </Swiper>
+    </div>
   </div>);
 }

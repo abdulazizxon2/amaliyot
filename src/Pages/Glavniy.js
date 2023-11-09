@@ -13,7 +13,7 @@ import 'swiper/css/pagination';
 import { useSelector } from 'react-redux';
 
 export default function Glavniy() {
-  let state = useSelector(state => state.GlavniyRed)
+  let state = useSelector((state) => state.GlavniyRed)
   let { carddata,cardBir,skidka,bosch,CardData1,son,novosti } = state
 
    

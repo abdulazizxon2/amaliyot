@@ -1,4 +1,6 @@
-let NavbarTypes={
-  katalog:"katalog",
+let NavbarTypes = {
+  katalog: "katalog",
+  zakaz:"zakaz",
+  opensdoor:"opensdoor"
 }
-export  {NavbarTypes};
+export { NavbarTypes };

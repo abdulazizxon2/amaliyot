@@ -1,18 +1,19 @@
 import React, { memo } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import { HiBars2 } from "react-icons/hi2"
-import { AiOutlineSearch, AiOutlineGift, AiOutlineHeart } from "react-icons/ai"
+import { AiOutlineSearch, AiOutlineGift, AiOutlineHeart, AiOutlineClose } from "react-icons/ai"
 import { BsPersonSquare } from "react-icons/bs"
 import { FiBarChart2 } from "react-icons/fi"
 import { RiShoppingCart2Line } from "react-icons/ri"
 import { useSelector, useDispatch } from "react-redux";
-import { Open } from '../../Redux/Action/NavbarAction'
-import { Katalog } from "./Katalog"
+import { Open, Zakazat } from '../../Redux/Action/NavbarAction'
+import { Katalog } from "./Katalog";
+import ModalOyna from "./ModalOyna";
 
 function Navbars() {
   let state = useSelector((state) => state.NavbarRedux)
   let { katalogOpen } = state;
-  let dispatch = useDispatch()
+  let dispatch = useDispatch();
   return (<div>
     <nav>
       <div className="navbar">
@@ -29,14 +30,14 @@ function Navbars() {
         <div className="ongNav">
           <b>Ежедневно, с 8:00 до 18:00</b>
           <h4>8 800 444 00 65</h4>
-          <button className="zakaz">Заказать звонок</button>
+          <button className="zakaz" onClick={() => dispatch(Zakazat())}>Заказать звонок</button>
         </div>
       </div>
       <div className="navbarBig">
         <NavLink to="/">
           <img src="./glavniy IMG/logo 1.png" alt="" />
         </NavLink>
-        <button id="katalog" onClick={() => dispatch(Open())}><HiBars2 />  Каталог</button>
+        <button id={katalogOpen ? "openkatalog" : "katalog"} onClick={() => dispatch(Open())}>{katalogOpen ? <AiOutlineClose /> : <HiBars2 />}  Каталог</button>
         <div className="search">
           <input type="text" name="" id="" placeholder="Найти среди 50000 товаров. Например: Дрель Bosch" />
           <button><AiOutlineSearch /></button>
@@ -64,6 +65,7 @@ function Navbars() {
           </div>
         </div>
       </div>
+    <ModalOyna />
     </nav>
     <Katalog />
     <Outlet />

@@ -8,7 +8,9 @@
   max-width: 1920px;
   margin: 10px auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
+  opacity: 1000;
+  z-index: 1000;
+  }
 
 .navbar {
   display: flex;
@@ -84,10 +86,25 @@
 }
 
 #katalog {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   padding: 15px 29px;
   border: none;
   border-radius: 8px;
   background-color: #186fd4;
+  color: white;
+  font-size: 15px;
+}
+
+#openkatalog {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 29px;
+  border: none;
+  border-radius: 8px;
+  background-color: #011120;
   color: white;
   font-size: 15px;
 }
@@ -362,6 +379,7 @@
 .skidkas {
   position: relative;
   display: flex;
+  gap: 20px;
   justify-content: space-between;
   padding: 0px 150px 90px 150px;
 }
@@ -552,13 +570,13 @@
 
 .bosch {
   display: flex;
+  height: 60px;
 }
 
 .bosch img {
   padding: 10px;
   background-color: white;
-  height: 45px;
-  width: 145px;
+  width: 150px;
 }
 
 .boschX {
@@ -1010,4 +1028,249 @@ form {
   height: 0;
   width: 100%;
   display: none;
+}
+
+.img-sliders {
+  padding: 0px 150px;
+}
+
+.katalog-bolim {
+  display: flex;
+  padding: 15px 25px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  z-index: 1000;
+  position: relative;
+  align-items: center;
+  border-bottom: 1px solid #EBF2F6;
+  gap: 10px;
+  font-size: 16px;
+}
+.katalog-boliming {
+  display: flex;
+  padding: 15px 25px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  z-index: 1000;
+  position: relative;
+  align-items: center;
+  border-bottom: 1px solid #EBF2F6;
+  background-color: #fff;
+}
+.katalog-bolimim {
+  display: flex;
+  padding: 15px 25px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  z-index: 1000;
+  position: relative;
+  align-items: center;
+  border-bottom: 1px solid #EBF2F6;
+  border-radius: 8px 8px 0px 0px;
+  background-color: #fff;
+}
+
+.katalog-bolimlar {
+  display: flex;
+  padding: 15px 25px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  z-index: 1000;
+  position: relative;
+  align-items: center;
+  border-radius: 0px 0px 8px 8px;
+  background-color: #fff;
+}
+.katalog-bolimi {
+  display: flex;
+  padding: 15px 25px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  z-index: 1000;
+  position: relative;
+  align-items: center;
+}
+
+.close-katalog {
+  display: flex;
+  padding: 15px 25px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  z-index: 1000;
+  position: relative;
+  align-items: center;
+  border-bottom: 1px solid #EBF2F6
+}
+
+.katalogs-bolims {
+  display: flex;
+  padding: 15px 25px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  z-index: 1000;
+  position: relative;
+  align-items: center;
+  background: #186FD4;
+  color: white;
+  border-bottom: 1px solid #EBF2F6
+}
+
+.zakazOpen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #011120;
+  opacity: 0.9;
+  z-index: 20;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  backdrop-filter: blur(3px);
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.zakazClose {
+  display: none;
+}
+
+.check-modal {
+  display: flex;
+  gap: 10px;
+}
+
+.check-modal p {
+  text-align: left;
+}
+
+.modal-oyna {
+  display: flex;
+  gap: 25;
+  flex-direction: column;
+  width: 30%;
+  background-color: white;
+  opacity: 10000;
+  z-index: 10000;
+  position:fixed;
+  padding: 40px;
+  max-width: 620px;
+}
+
+.close-modals {
+  position:absolute;
+  right: 7px;
+  top: 7px;
+  z-index: 10000;
+  opacity: 10000;
+  color: white;
+  font-size: 25px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+.labels {
+  position: relative;
+  left: -200px;
+}
+
+.labelss {
+  position: relative;
+  left: -175px;
+}
+
+#ism {
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  padding: 20px 25px;
+  border-radius: 7px;
+}
+
+#tel {
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  padding: 20px 25px;
+  border-radius: 7px;
+}
+
+.telqil {
+  display: flex;
+  padding: 25px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  border-radius: 8px;
+  background: #186FD4;
+  color: white;
+  border: none;
+}
+
+.opensKatalog {
+  padding: 25px 150px;
+  position: absolute;
+  background-color: white;
+  opacity: 1;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  background: #F9FAFB;
+}
+
+.katalog-olim {
+  display: none;
+}
+
+.close-complekt {
+  display: none;
+}
+
+.katalog-title {
+  border-radius: 8px;
+  background: #FFF;
+}
+.komplekte-close{
+  display: none;
+}
+.komplekte-bir{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 15px 10px;
+  font-size: 15px;
+}
+.komplekte-ikki{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 15px 10px;
+  font-size: 15px;
+}
+.kompaniya{
+  padding: 20px 150px;
+}
+.kompaniya-bir{
+  display: flex;
+}
+.chap-kompaniya {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.chap-kompaniya p{
+  font-size: 15px;
+  width: 770px;
+}
+.ong-kompaniya{
+  position: relative;
+  right: 60px;
+}
+.titles{
+  display: flex;
+  gap: 10px;
 }
