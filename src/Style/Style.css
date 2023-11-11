@@ -10,7 +10,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   opacity: 1000;
   z-index: 1000;
-  }
+}
 
 .navbar {
   display: flex;
@@ -1047,6 +1047,7 @@ form {
   gap: 10px;
   font-size: 16px;
 }
+
 .katalog-boliming {
   display: flex;
   padding: 15px 25px;
@@ -1059,6 +1060,7 @@ form {
   border-bottom: 1px solid #EBF2F6;
   background-color: #fff;
 }
+
 .katalog-bolimim {
   display: flex;
   padding: 15px 25px;
@@ -1085,6 +1087,7 @@ form {
   border-radius: 0px 0px 8px 8px;
   background-color: #fff;
 }
+
 .katalog-bolimi {
   display: flex;
   padding: 15px 25px;
@@ -1159,13 +1162,13 @@ form {
   background-color: white;
   opacity: 10000;
   z-index: 10000;
-  position:fixed;
+  position: fixed;
   padding: 40px;
   max-width: 620px;
 }
 
 .close-modals {
-  position:absolute;
+  position: absolute;
   right: 7px;
   top: 7px;
   z-index: 10000;
@@ -1234,43 +1237,79 @@ form {
   border-radius: 8px;
   background: #FFF;
 }
-.komplekte-close{
+
+.komplekte-close {
   display: none;
 }
-.komplekte-bir{
+
+.komplekte-bir {
   display: flex;
   flex-direction: column;
   gap: 18px;
   padding: 15px 10px;
   font-size: 15px;
 }
-.komplekte-ikki{
+
+.komplekte-ikki {
   display: flex;
   flex-direction: column;
   gap: 18px;
   padding: 15px 10px;
   font-size: 15px;
 }
-.kompaniya{
+
+.kompaniya {
   padding: 20px 150px;
 }
-.kompaniya-bir{
+
+.kompaniya-bir {
   display: flex;
 }
+
 .chap-kompaniya {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.chap-kompaniya p{
+
+.chap-kompaniya p {
   font-size: 15px;
   width: 770px;
 }
-.ong-kompaniya{
+
+.ong-kompaniya {
   position: relative;
   right: 60px;
 }
-.titles{
+
+.titles {
   display: flex;
   gap: 10px;
+}
+
+.kopmaniya-ikki {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.udobniy-card {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 80px;
+}
+.udob-card{
+  display: flex;
+  gap: 15px;
+}
+.udob-card p{
+  width: 260px;
+}
+.udob-card h3{
+  width: 180px;
+}
+.chap-udob{
+  font-size: 30px;
+  color: #117FE3;
 }
