@@ -3,4 +3,7 @@ let NavbarTypes = {
   zakaz:"zakaz",
   opensdoor:"opensdoor"
 }
-export { NavbarTypes };
+let GlavniyTypes={
+  like:"like"
+}
+export { NavbarTypes,GlavniyTypes };

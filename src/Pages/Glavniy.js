@@ -6,17 +6,16 @@ import { BsCreditCard2Front, BsBox2Fill, BsArrowRightCircleFill } from "react-ic
 import { FaRegAddressCard } from "react-icons/fa";
 import { TbDiscount } from "react-icons/tb";
 import { PiShoppingCartSimple } from "react-icons/pi";
-import { AiOutlineHeart } from "react-icons/ai";
+import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import { FiBarChart2 } from "react-icons/fi"
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 export default function Glavniy() {
   let state = useSelector((state) => state.GlavniyRed)
-  let { carddata,cardBir,skidka,bosch,CardData1,son,novosti } = state
-
-   
+  let { carddata, cardBir, skidka, bosch, CardData1, son, novosti, like } = state;
+  let dispatch = useDispatch();
   cardBir = cardBir.map(
     (elem, index) => ({ ...elem, id: index + 1 })
   )
@@ -155,7 +154,7 @@ export default function Glavniy() {
                             <button className='kupit'><PiShoppingCartSimple /> Купить</button>
                           </div>
                           <div className="btn-card">
-                            <button><AiOutlineHeart /></button>
+                            <button onClick={() => dispatch(like())}>{like ? <AiFillHeart /> : <AiOutlineHeart />}</button>
                             <button><FiBarChart2 /></button>
                           </div>
                         </div>

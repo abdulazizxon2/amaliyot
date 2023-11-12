@@ -5,14 +5,14 @@ function Open() {
     type: NavbarTypes.katalog
   }
 }
-function Zakazat(){
-  return{
-    type:NavbarTypes.zakaz
+function Zakazat() {
+  return {
+    type: NavbarTypes.zakaz
   }
 }
-function OpensDoor(){
-  return{
-    type:NavbarTypes.opensdoor
+function OpensDoor() {
+  return {
+    type: NavbarTypes.opensdoor
   }
 }
-export { Open,Zakazat,OpensDoor }
+export { Open, Zakazat, OpensDoor }

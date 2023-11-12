@@ -1,3 +1,4 @@
+import { GlavniyTypes } from "../Action/ActionTypes"
 let GlavniyData = {
   carddata: [
     {
@@ -212,6 +213,9 @@ let GlavniyData = {
 
 export default function GlavniyRed(state = GlavniyData, { type, payload }) {
   switch (type) {
+    case GlavniyTypes.like:
+      state = { ...state, massiv: state?.massiv?.map(elem => elem.id === payload ? { ...elem, like: !elem.like } : elem) }
+      return state
     default: return state
   }
 }
