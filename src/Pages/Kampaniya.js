@@ -1,10 +1,17 @@
 import React from "react";
 import { CiCreditCard1 } from "react-icons/ci";
-import {BsPersonLinesFill,BsBoxSeam} from "react-icons/bs";
-import {TbDiscount} from "react-icons/tb";
+import { BsPersonLinesFill, BsBoxSeam } from "react-icons/bs";
+import { TbDiscount } from "react-icons/tb";
+import { useSelector } from "react-redux";
 
 export default function Kompaniya() {
-
+  let state = useSelector((state) => state.KampaniyaRed);
+  let states = useSelector((state) => state.GlavniyRed);
+  let { cardKomp } = state
+  let {novosti}=states
+  cardKomp = cardKomp.map(
+    (elem, index) => ({ ...elem, id: index + 1 })
+  )
   return (
     <div className="kompaniya">
       <div className="kompaniya-bir">
@@ -67,6 +74,62 @@ export default function Kompaniya() {
       </div>
       <div className="kampanita-uch">
         <h2>История ООО “Стройоптторг”</h2>
+        <div className="cards-kampaniya">
+          {cardKomp.map((elem) => {
+            return (<div className="card-kampaniya" id={elem.id}>
+              <b>{elem.raqam}</b>
+              <h3>{elem.nom}</h3>
+              <ul>
+                <li><p>{elem.ul1}</p></li>
+                <li><p>{elem.ul2}</p></li>
+                <li><p>{elem.ul3}</p></li>
+              </ul>
+            </div>
+            )
+          })}
+          <div className="card-kampaniya3">
+            <h3>Сегодня</h3>
+          <div className="card-kamp4">
+          <div className="card-kampaniya2">
+              <div className="h-lar">
+                <h3>17 805,3 м²</h3>
+                <p>- торговых и складских помещений</p>
+              </div>
+              <div className="h-lar">
+                <h3>2 500+</h3>
+                <p>- постоянных клиентов</p>
+              </div>
+            </div>
+            <div className="card-kampaniya2">
+              <div className="h-lar">
+                <h3>50 000+</h3>
+                <p>- наименований товаров</p>
+              </div>
+              <div className="h-lar">
+                <h3>440</h3>
+                <p>- опытных сотрудников</p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
       </div>
-    </div>);
+      <div className="last-news2">
+        <h1>Последние новости</h1>
+        <div className="card-CC">
+          {novosti.map((elem) => {
+            return (
+              <div className="card-C" key={elem.id}>
+                <img src={elem.img} alt="img" />
+                <b>{elem.tavsif}</b>
+                <p>{elem.instrument}</p>
+                <p>{elem.sana}</p>
+              </div>
+            )
+          })}
+        </div>
+      </div>
+    </div>
+    
+    );
 }

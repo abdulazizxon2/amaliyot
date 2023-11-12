@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { OpensDoor } from "../../Redux/Action/NavbarAction";
+import { NavLink } from "react-router-dom";
 function Katalog() {
   let state = useSelector((state) => state.NavbarRedux);
   let { katalogOpen, oppenDoor } = state;
@@ -77,8 +78,10 @@ function Katalog() {
             <RiArrowRightSLine />
           </div>
           <div className="katalog-bolimlar">
+            <NavLink to="/katalog">
             <b>Электроинструмент</b>
             <RiArrowRightSLine />
+            </NavLink>
           </div>
         </div>
         <div className={oppenDoor?"komplekte-bir":"komplekte-close"}>
