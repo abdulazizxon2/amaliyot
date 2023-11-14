@@ -741,6 +741,7 @@
 .last-news {
   padding: 97px 150px 110px 150px;
 }
+
 .last-news2 {
   padding: 97px 0px 110px 0px;
 }
@@ -853,8 +854,14 @@ li {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding-top: 100px;
 }
-
+.dostavka-ong {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 100px;
+}
 .oplata-CX {
   display: flex;
   flex-direction: column;
@@ -1014,6 +1021,7 @@ form {
   gap: 30px;
   align-items: center;
   width: 320px;
+  padding-top: 100px;
 }
 
 .openKatalog h1 {
@@ -1035,6 +1043,8 @@ form {
 
 .img-sliders {
   padding: 0px 150px;
+  display: flex;
+  gap: 20px;
 }
 
 .katalog-bolim {
@@ -1326,36 +1336,44 @@ form {
   grid-template-columns: repeat(2, calc(100% / 2 - 100px));
   gap: 40px;
 }
-.card-kampaniya2{
+
+.card-kampaniya2 {
   display: flex;
   flex-direction: column;
 }
-.card-kamp4{
+
+.card-kamp4 {
   display: flex;
   justify-content: space-around;
 }
-.h-lar{
+
+.h-lar {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
-.card-kampaniya li{
+
+.card-kampaniya li {
   color: #ee0906;
 }
-.card-kampaniya p{
+
+.card-kampaniya p {
   color: #2C333D;
 }
-.card-kampaniya ul{
+
+.card-kampaniya ul {
   padding-left: 30px;
 }
-.card-kampaniya b{
+
+.card-kampaniya b {
   color: #186FD4;
   font-size: 22px;
- position: relative;
- top: -16px;
+  position: relative;
+  top: -16px;
 }
-.card-kampaniya{
+
+.card-kampaniya {
   padding: 35px 25px;
   padding-top: 0;
   border-radius: 8px;
@@ -1365,7 +1383,8 @@ form {
   flex-direction: column;
   gap: 15px;
 }
-.card-kampaniya3{
+
+.card-kampaniya3 {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -1374,10 +1393,85 @@ form {
   border-radius: 8px;
   border: 3px solid #186FD4;
 }
-.card-kampaniya3 h3{
+
+.card-kampaniya3 h3 {
   color: #186FD4;
   font-size: 25px;
 }
-.kampanita-uch h2{
+
+.kampanita-uch h2 {
   padding-bottom: 66px;
+}
+
+.srok-plus {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.srok-plus button {
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: none;
+  background-color: #EBF7FF;
+  color: #186FD4;
+}
+
+.srok-minus {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.srok-minus button {
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: none;
+  background-color: #EBF7FF;
+  color: #186FD4;
+}
+
+.srok-plus-minus p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  color: #64676A;
+  padding: 10px;
+}
+.garantya-minus{
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.garantya-minus button{
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: none;
+  background-color: #EBF7FF;
+  color: #186FD4;
+}
+.vozvrat-chap h1{
+  padding-bottom: 20px;
+}
+.vozvrat-chap p{
+  padding-bottom: 10px;
+}
+.vozvrat-chap ul{
+  padding-left: 23px;
+}
+.vozvrat-chap li{
+  color: #EE0906;
+}
+.vozvrat-chap li p{
+  color: #2C333D;
 }

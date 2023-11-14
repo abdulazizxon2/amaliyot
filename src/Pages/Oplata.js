@@ -4,6 +4,9 @@ export default function Oplata() {
   return (<div>
     <div className="oplata">
       <div className="oplata-chap">
+      <div className="titles">
+        <b>Стройоптторг</b>/ <p>Oплаты</p>
+      </div>
         <h1>Способы оплаты</h1>
         <h2>При заказе доставки</h2>
         <div className="bir-ul">

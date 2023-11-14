@@ -4,8 +4,8 @@ export default function Katalog() {
   return (
     <div>
       <div className="titles">
-            <b>Стройоптторг</b>/ <p>О компании</p>
-          </div>
+        <b>Стройоптторг</b>/ <p>О компании</p>
+      </div>
     </div>
   )
 }

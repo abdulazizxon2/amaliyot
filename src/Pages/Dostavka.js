@@ -14,6 +14,9 @@ export default function Dostavka() {
   return (<div>
     <div className="dostavka">
       <div className="dostavka-chap">
+      <div className="titles">
+        <b>Стройоптторг</b>/ <p>Доставка</p>
+      </div>
         <h1>Доставка</h1>
         <div className="bir-p">
           <p>Мы всегда готовы доставить приобретенный Вами товар в удобное для Вас время.</p>
