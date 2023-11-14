@@ -1475,3 +1475,20 @@ form {
 .vozvrat-chap li p{
   color: #2C333D;
 }
+.katalogs{
+  padding: 0px 150px;
+}
+.elektr{
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.elektr P{
+  padding-top: 15px;
+}
+.elektr h1{
+  font-size: 48px;
+}
+.narx-btn{
+  display: flex;
+}

@@ -11,6 +11,7 @@ import { FiBarChart2 } from "react-icons/fi"
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { useDispatch, useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 
 export default function Glavniy() {
   let state = useSelector((state) => state.GlavniyRed)
@@ -277,7 +278,7 @@ export default function Glavniy() {
             })}
           </div>
           <p className='mechta'>Уже второе десятилетие мы готовы воплотить в реальность Вашу мечту о красивом, комфортабельном доме, благоустроенном современном офисе, уютной теплой даче, помочь реализовать любые строительные и дизайнерские фантазии и с минимальными затратами времени и денежных средств.</p>
-          <button className='padrobne'>Подробнее о компании <BiRightArrowAlt /></button>
+          <NavLink to="/kampaniya"><button className='padrobne'>Подробнее о компании <BiRightArrowAlt /></button></NavLink>
         </div>
         <div className="ong-Our">
           <img src="./glavniy IMG/optorozi.png" alt="" />

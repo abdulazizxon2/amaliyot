@@ -12,7 +12,7 @@ import Kampaniya from "./Kampaniya"
 import Footer from "../components/Footer/Footer"
 import { Route, Routes } from "react-router-dom";
 import NotFound from "../components/NotFound/NotFound";
-import Katalog from "./Katalog";
+import Katalog from "./KatalogPage";
 
 
 
