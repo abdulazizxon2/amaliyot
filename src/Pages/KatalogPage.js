@@ -1,11 +1,19 @@
 import React from 'react';
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
+import { FiBarChart2 } from "react-icons/fi";
+import { AiOutlineHeart } from "react-icons/ai";
+import { PiShoppingCartSimple } from "react-icons/pi";
+import { useSelector } from 'react-redux';
 
 export default function KatalogPage() {
+  let state = useSelector((state) => state.KatalogRed);
+  let { katalogdata } = state;
+  katalogdata = katalogdata.map(
+    (elem, index) => ({ ...elem, id: index + 1 })
+  )
   return (
     <div>
-      <div className="katalogs">
-        <div className="chap-katalogs">
+      <div className="elektr-instrument">
           <div className="titles">
             <b>Стройоптторг</b>/ <p>О компании</p>
           </div>
@@ -13,6 +21,9 @@ export default function KatalogPage() {
             <h1>Электроинструмент</h1>
             <p>3 457 товаров</p>
           </div>
+      </div>
+      <div className="katalogs">
+        <div className="chap-katalogs">
           <div className="narx">
             <div className="sena-arrow">
               <b>Цена, ₽</b><IoIosArrowDown /><IoIosArrowForward />
@@ -24,6 +35,38 @@ export default function KatalogPage() {
           </div>
         </div>
         <div className="ong-katalogs">
+          <div className="cards-katalog">
+            {katalogdata.map((elem) => {
+              return (
+                <div className="cardBig" key={elem.id} >
+                  <div className="card-Big">
+                    <button className='xit'>хит</button>
+                    <img src={elem.img} alt={elem.nomi} />
+                    <div className="cardMiddle">
+                      <p>{elem.art}</p>
+                      <h1>{elem.nomi}</h1>
+                      {elem.skidka ? (<b className='b1'>
+                        <del>{elem.narxi}₽</del>
+                        {elem.skidka ? (
+                          elem.narxi - (elem.narxi / 100) * elem.skidka
+                        ).toFixed(2) : ""}₽<b>-{elem.skidka}%</b>
+                      </b>) : (<span>{elem.narxi}₽</span>)}
+                      <div className="btn-cards">
+                        <div className="btn-cardsx">
+                          <button className='kupit'><PiShoppingCartSimple /> Купить</button>
+                        </div>
+                        <div className="btn-card">
+                          <button><AiOutlineHeart /></button>
+                          <button><FiBarChart2 /></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              )
+            })}
+          </div>
           <div className="kupit-instrument">
             <h1>Купить электроинструмент</h1>
             <p>Здесь вы найдете самый широкий выбор высококачественных электроинструментов для любых задач. Независимо от того, являетесь ли вы профессиональным мастером или занимаетесь ремонтами и строительством в домашних условиях, у нас есть все необходимое, чтобы сделать вашу работу эффективной и комфортной.</p>
@@ -52,5 +95,5 @@ export default function KatalogPage() {
         </div>
       </div>
     </div>
-  )  
+  )
 }  

@@ -1088,7 +1088,7 @@ form {
   background-color: #fff;
 }
 
-.katalog-bolimlar {
+.katalog-bolimlar a{
   display: flex;
   padding: 15px 25px;
   justify-content: space-between;
@@ -1099,7 +1099,10 @@ form {
   align-items: center;
   border-radius: 0px 0px 8px 8px;
   background-color: #fff;
+  text-decoration: none;
+  color: ;
 }
+
 
 .katalog-bolimi {
   display: flex;
@@ -1232,7 +1235,7 @@ form {
   background-color: white;
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: 1920px;
   display: flex;
   gap: 30px;
   background: #F9FAFB;
@@ -1491,4 +1494,14 @@ form {
 }
 .narx-btn{
   display: flex;
+}
+.cards-katalog{
+  display: grid;
+  grid-template-columns: repeat(4, calc(100% / 4 - 20px));
+}
+.katalogs{
+  display: flex;
+}
+.elektr-instrument{
+  padding-left:150px;
 }

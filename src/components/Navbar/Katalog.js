@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { OpensDoor } from "../../Redux/Action/NavbarAction";
-import { NavLink } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 function Katalog() {
   let state = useSelector((state) => state.NavbarRedux);
   let { katalogOpen, oppenDoor } = state;
@@ -23,7 +23,7 @@ function Katalog() {
             <b>Всё для сауны и бани</b>
             <RiArrowRightSLine />
           </div>
-          <div className={oppenDoor?"katalogs-bolims":"close-katalog"} onClick={() => dispatch(OpensDoor())}>
+          <div className={oppenDoor ? "katalogs-bolims" : "close-katalog"} onClick={() => dispatch(OpensDoor())}>
             <b>Инструмент</b>
             <RiArrowRightSLine />
           </div>
@@ -79,12 +79,12 @@ function Katalog() {
           </div>
           <div className="katalog-bolimlar">
             <NavLink to="/katalog">
-            <b>Электроинструмент</b>
-            <RiArrowRightSLine />
+              <b>Электроинструмент</b>
+              <RiArrowRightSLine />
             </NavLink>
           </div>
         </div>
-        <div className={oppenDoor?"komplekte-bir":"komplekte-close"}>
+        <div className={oppenDoor ? "komplekte-bir" : "komplekte-close"}>
           <b>Вибротехника и комплектующие</b>
           <b>Генераторы и комплектующие</b>
           <b>Дрели, шуруповерты и гайковерты</b>
@@ -99,7 +99,7 @@ function Katalog() {
           <b>Электролобзики</b>
           <b>Мотопомпы и комплектующие</b>
         </div>
-        <div className={oppenDoor?"komplekte-ikki":"komplekte-close"}>
+        <div className={oppenDoor ? "komplekte-ikki" : "komplekte-close"}>
           <b>Мультиметры</b>
           <b>Пилы</b>
           <b>Плиткорез</b>
