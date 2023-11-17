@@ -59,7 +59,9 @@ export default function Footer() {
                             <h2>Каталог</h2>
                             <li>Общестроительные материалы</li>
                             <li>Все для сауны и бани</li>
+                            <NavLink to="/katalog">
                             <li>Инструмент</li>
+                            </NavLink>
                             <li>Отделочные материалы</li>
                             <li>Товары для дома, сада и огорода</li>
                         </ul>
