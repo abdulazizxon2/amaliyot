@@ -1,9 +1,11 @@
+
 let NavbarTypes = {
   katalog: "katalog",
-  zakaz:"zakaz",
-  opensdoor:"opensdoor"
+  zakaz: "zakaz",
+  opensdoor: "opensdoor"
 }
-let GlavniyTypes={
-  like:"like"
+let GlavniyTypes = {
+  like: "like",
+  // payload:useParams
 }
-export { NavbarTypes,GlavniyTypes };
+export { NavbarTypes, GlavniyTypes };

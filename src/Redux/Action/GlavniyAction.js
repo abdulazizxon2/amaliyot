@@ -1,7 +1,8 @@
-import { glavniyTypes } from "./ActionTypes"
-function like() {
+import { GlavniyTypes } from "./ActionTypes"
+function like(param) {
     return {
-        type: glavniyTypes.like
-    }
+        type: GlavniyTypes.like,
+        payload: param,
+    };
 }
 export { like }

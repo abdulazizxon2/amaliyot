@@ -2,11 +2,11 @@ import React from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import { BiLogoTelegram } from "react-icons/bi";
 import { Zakazat } from '../../Redux/Action/NavbarAction';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch} from 'react-redux';
 
 export default function Footer() {
-    let state = useSelector((state) => state.NavbarRedux)
-    let dispatch=useDispatch();
+    // let state = useSelector((state) => state.NavbarRedux)
+    let dispatch = useDispatch();
     return (
         <div>
             <Outlet />
@@ -31,7 +31,7 @@ export default function Footer() {
                                 <p>Ежедневно, с 8:00 до 18:00</p>
                             </div>
                             <div className="Fuchs">
-                                <input type="submit" name="" id="zvanok" value="Заказать звонок" onClick={() => dispatch(Zakazat())}/>
+                                <input type="submit" name="" id="zvanok" value="Заказать звонок" onClick={() => dispatch(Zakazat())} />
                             </div>
                         </div>
                     </div>
@@ -60,7 +60,7 @@ export default function Footer() {
                             <li>Общестроительные материалы</li>
                             <li>Все для сауны и бани</li>
                             <NavLink to="/katalog">
-                            <li>Инструмент</li>
+                                <li>Инструмент</li>
                             </NavLink>
                             <li>Отделочные материалы</li>
                             <li>Товары для дома, сада и огорода</li>
