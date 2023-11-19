@@ -10,15 +10,15 @@ import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import { FiBarChart2 } from "react-icons/fi"
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { like } from '../Redux/Action/GlavniyAction';
 
 export default function Glavniy() {
-  let state = useSelector((state) => state.GlavniyRed)
+  let state = useSelector((state) => state.GlavniyRed);
+  let dispatch=useDispatch;
   let { carddata, cardBir, skidka, bosch, CardData1, son, novosti } = state;
-  // let param = useParams;
-  // console.log(param);
+  console.log(state);
   cardBir = cardBir.map(
     (elem, index) => ({ ...elem, id: index + 1 })
   )
@@ -157,7 +157,7 @@ export default function Glavniy() {
                             <button className='kupit'><PiShoppingCartSimple /> Купить</button>
                           </div>
                           <div className="btn-card">
-                            <button onClick={() => like(elem.id)}>{like ? <AiOutlineHeart /> : <AiFillHeart />}</button>
+                            <button onClick={() => dispatch(like(elem.id))}>{like ? <AiOutlineHeart /> : <AiFillHeart />}</button>
                             <button><FiBarChart2 /></button>
                           </div>
                         </div>

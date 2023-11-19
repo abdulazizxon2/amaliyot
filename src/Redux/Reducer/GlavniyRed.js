@@ -130,7 +130,8 @@ let GlavniyData = {
       narxi: 15999,
       skidka: "15",
       getting: false,
-      rasp: false
+      rasp: false,
+      like:false
     },
     {
       img: "./glavniy IMG/Rectangle 22 (3).png",
@@ -138,14 +139,16 @@ let GlavniyData = {
       nomi: "Смеситель Faris G-120 для раковины",
       narxi: 1789,
       getting: true,
-      rasp: false
+      rasp: false,
+      like:false
     },
     {
       img: "./glavniy IMG/Rectangle 22 (4).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 312,
-      skidka: 10
+      skidka: 10,
+      like:false
     },
     {
       img: "./glavniy IMG/Rectangle 22 (6).png",
@@ -153,7 +156,8 @@ let GlavniyData = {
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
       getting: false,
-      rasp: true
+      rasp: true,
+      like:false
     },
     {
       img: "./glavniy IMG/Rectangle 22 (7).png",
@@ -162,7 +166,8 @@ let GlavniyData = {
       narxi: 15999,
       skidka: 12,
       getting: false,
-      rasp: false
+      rasp: false,
+      like:false
     },
   ],
   son: [
@@ -214,7 +219,10 @@ let GlavniyData = {
 export default function GlavniyRed(state = GlavniyData, { type, payload }) {
   switch (type) {
     case GlavniyTypes.like:
-      state = { ...state, massiv: state?.massiv?.map(elem => elem.id === payload ? { ...elem, like: !elem.like } : elem) }
+      let likes = state.CardData1.map((elem) => {
+        return elem.id === payload.id ? payload : elem
+      });
+      state = { ...state, CardData1: likes };
       return state
     default: return state
   }
