@@ -5,4 +5,11 @@ function setLike(param) {
         payload: param,
     };
 }
-export { setLike }
+function korzinkaFunc(param) {
+    return {
+        type: "card",
+        payload: param,
+    };
+}
+
+export { setLike, korzinkaFunc }

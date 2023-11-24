@@ -12,25 +12,14 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { setLike } from "../Redux/Action/GlavniyAction";
+import { korzinkaFunc, setLike } from "../Redux/Action/GlavniyAction";
 import { TbShoppingCartFilled } from "react-icons/tb";
-// import { useState } from 'react';
 
 export default function Glavniy() {
   let state = useSelector((state) => state.GlavniyRed);
   let dispatch = useDispatch();
   let { carddata, cardBir, skidka, bosch, CardData1, son, novosti } = state;
-  console.log(state);
 
-  // const [cart, setCart] = useState([]);
-  // const handleCart = (item) => {
-  //   console.log(item);
-  //   if (cart.filter((o) => o.id === item.id).length === 0) {
-  //     setCart([...cart, item]);
-  //   } else {
-  //     alert("bu mahsulot mavjud");
-  //   }
-  // };
 
   cardBir = cardBir.map(
     (elem, index) => ({ ...elem, id: index + 1 })
@@ -38,15 +27,11 @@ export default function Glavniy() {
   skidka = skidka.map(
     (elem, index) => ({ ...elem, id: index + 1 })
   )
-  // carddata = carddata.map(
-  //   (elem, index) => ({ ...elem, id: index + 1 })
-  // )
+
   bosch = bosch.map(
     (elem, index) => ({ ...elem, id: index + 1 })
   )
-  // CardData1 = CardData1.map(
-  //   (elem, index) => ({ ...elem, id: index + 1 })
-  // )
+
   son = son.map(
     (elem, index) => ({ ...elem, id: index + 1 })
   )
@@ -167,13 +152,13 @@ export default function Glavniy() {
                         </b>) : (<span>{elem.narxi}₽</span>)}
                         <div className="btn-cards">
                           <div className="btn-cardsx">
-                            <button className='kupit'><PiShoppingCartSimple /><TbShoppingCartFilled /> Купить</button>
+                            <button className='kupit' onClick={() => dispatch(korzinkaFunc(elem))}>{korzinkaFunc ? <PiShoppingCartSimple /> : <TbShoppingCartFilled />} Купить</button>
                           </div>
                           <div className="btn-card">
                             <button onClick={() => dispatch(setLike(elem))}>
                               {elem.like ? <AiFillHeart /> : <AiOutlineHeart />}
                             </button>
-                            <button><FiBarChart2 /></button>
+                            <button onClick={() => dispatch(korzinkaFunc(elem))}><FiBarChart2 /></button>
                           </div>
                         </div>
                       </div>

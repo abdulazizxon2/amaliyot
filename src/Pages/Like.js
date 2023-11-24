@@ -4,8 +4,16 @@ import { useSelector } from 'react-redux';
 
 export default function Like() {
     let state = useSelector((state) => state.GlavniyRed);
-    let { carddata } = state
-    console.log(state);
+    let { carddata, CardData1 } = state;
+
+    let { katalogdata } = useSelector((state) => state.KatalogRed);
+    function filterMassiv(param) {
+        return (
+            param.filter((p) => p.like)
+            )
+        }
+// console.log(katalogdata);
+    // console.log(state);
     return (
         <>
             <table border={1}>
@@ -20,18 +28,18 @@ export default function Like() {
                     </tr>
                 </thead>
                 <tbody>
-                    {carddata.filter((p) => p.like).length > 0 ? (carddata.filter((p) => p.like).map((elem, index) => {
-                            return (
-                                <tr key={elem.id}>
-                                    <th> {index + 1} </th>
-                                    <td> {elem?.nomi} </td>
-                                    <td> {elem?.narxi} </td>
-                                    <td> {elem?.skidka} </td>
-                                    <td> {elem?.like ? "yoqdi" : "yoqmadi"} </td>
-                                    <td> {elem?.art} </td>
-                                </tr>
-                            );
-                        })
+                    {[...filterMassiv(carddata), ...filterMassiv(CardData1), ...filterMassiv(katalogdata)].length > 0 ? ([...filterMassiv(carddata), ...filterMassiv(CardData1), ...filterMassiv(katalogdata)].map((elem, index) => {
+                        return (
+                            <tr key={elem.id}>
+                                <th> {index + 1} </th>
+                                <td> {elem?.nomi} </td>
+                                <td> {elem?.narxi} </td>
+                                <td> {elem?.skidka} </td>
+                                <td> {elem?.like ? "yoqdi" : "yoqmadi"} </td>
+                                <td> {elem?.art} </td>
+                            </tr>
+                        );
+                    })
                     ) : (
                         <tr>
                             <td

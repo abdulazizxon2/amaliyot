@@ -11,4 +11,5 @@ let GlavniyTypes = {
 let KatalogTypes = {
   likes: "likes"
 }
+
 export { NavbarTypes, GlavniyTypes, KatalogTypes };

@@ -8,7 +8,7 @@ let KatalogData = {
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
       narxi: 15999,
       skidka: "15",
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -18,7 +18,7 @@ let KatalogData = {
       nomi: "Смеситель Faris G-120 для раковины",
       narxi: 1789,
       skidka: null,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -28,7 +28,7 @@ let KatalogData = {
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 312,
       skidka: 10,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -38,7 +38,7 @@ let KatalogData = {
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
       skidka: 12,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -48,7 +48,7 @@ let KatalogData = {
       nomi: "Набор гравировальных насадок Nozzle-Tok",
       narxi: 15999,
       skidka: 15,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -58,7 +58,7 @@ let KatalogData = {
       nomi: "Набор гравировальных насадок Nozzle-Tok",
       narxi: 15999,
       skidka: 15,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -68,7 +68,7 @@ let KatalogData = {
       nomi: "Смеситель Faris G-120 для раковины",
       narxi: 1789,
       skidka: null,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -78,7 +78,7 @@ let KatalogData = {
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 312,
       skidka: 10,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -88,7 +88,7 @@ let KatalogData = {
       nomi: "Набор гравировальных насадок Nozzle-Tok",
       narxi: 15999,
       skidka: 15,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -98,7 +98,7 @@ let KatalogData = {
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
       skidka: 12,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -108,7 +108,7 @@ let KatalogData = {
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
       narxi: 15999,
       skidka: 15,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -118,7 +118,7 @@ let KatalogData = {
       nomi: "Набор гравировальных насадок Nozzle-Tok",
       narxi: 15999,
       skidka: 15,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -128,7 +128,7 @@ let KatalogData = {
       nomi: "Смеситель Faris G-120 для раковины",
       narxi: 1789,
       skidka: null,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -137,7 +137,7 @@ let KatalogData = {
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 312,
       skidka: 10,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -147,7 +147,7 @@ let KatalogData = {
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
       skidka: 12,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -157,7 +157,7 @@ let KatalogData = {
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
       narxi: 15999,
       skidka: 15,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -167,7 +167,7 @@ let KatalogData = {
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 312,
       skidka: 10,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -177,7 +177,7 @@ let KatalogData = {
       nomi: "Набор гравировальных насадок Nozzle-Tok",
       narxi: 15999,
       skidka: 15,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -187,7 +187,7 @@ let KatalogData = {
       nomi: " Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
       skidka: 15,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -197,7 +197,7 @@ let KatalogData = {
       nomi: "Смеситель Faris G-120 для раковины",
       narxi: 1789,
       skidka: null,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -207,7 +207,7 @@ let KatalogData = {
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
       narxi: 15999,
       skidka: 15,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -217,7 +217,7 @@ let KatalogData = {
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
       skidka: 12,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -227,7 +227,7 @@ let KatalogData = {
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
       narxi: 15999,
       skidka: 12,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -237,7 +237,7 @@ let KatalogData = {
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
       narxi: 15999,
       skidka: 12,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -247,7 +247,7 @@ let KatalogData = {
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 312,
       skidka: 10,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -257,7 +257,7 @@ let KatalogData = {
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 15999,
       skidka: 15,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -267,7 +267,7 @@ let KatalogData = {
       nomi: "Набор гравировальных насадок Nozzle-Tok",
       narxi: 15999,
       skidka: 15,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -277,7 +277,7 @@ let KatalogData = {
       nomi: "Смеситель Faris G-120 для раковины",
       narxi: 1789,
       skidka: null,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
     {
@@ -287,7 +287,7 @@ let KatalogData = {
       nomi: "Смеситель Faris G-120 для раковины",
       narxi: 1789,
       skidka: null,
-      likes:false
+      like:false
     },
     {
       id: 28,
@@ -296,7 +296,7 @@ let KatalogData = {
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
       skidka: 12,
-      likes:false
+      like:false
     },
     {
       id: 29,
@@ -305,7 +305,7 @@ let KatalogData = {
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
       skidka: 12,
-      likes:false
+      like:false
     },
     {
       id: 30,
@@ -314,7 +314,7 @@ let KatalogData = {
       nomi: "Набор гравировальных насадок Nozzle-Tok",
       narxi: 15999,
       skidka: 15,
-      likes:false,
+      like:false,
       catalogs:"katalogdata"
     },
   ]

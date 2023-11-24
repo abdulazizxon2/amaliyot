@@ -59,7 +59,7 @@ export default function KatalogPage() {
                         </div>
                         <div className="btn-card">
                         <button onClick={() => dispatch(setingLike(elem))}>
-                              {elem.likes ? <AiFillHeart /> : <AiOutlineHeart />}
+                              {elem.like ? <AiFillHeart /> : <AiOutlineHeart />}
                             </button>
                           <button><FiBarChart2 /></button>
                         </div>

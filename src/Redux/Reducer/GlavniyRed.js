@@ -1,20 +1,21 @@
+// import { Katalog } from "../../components/Navbar/Katalog";
 import { GlavniyTypes } from "../Action/ActionTypes"
 let GlavniyData = {
   carddata: [
     {
       id: 1,
       catalog: "carddata",
-      like:false,
+      like: false,
       img: "./glavniy IMG/Rectangle 22.png",
       art: "Артикул: XJ89YHGO",
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
       narxi: 15999,
-      skidka: "15"
+      skidka: "15",
     },
     {
       id: 2,
       catalog: "carddata",
-      like:false,
+      like: false,
       img: "./glavniy IMG/Rectangle 22 (8).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Смеситель Faris G-120 для раковины",
@@ -24,7 +25,7 @@ let GlavniyData = {
     {
       id: 3,
       catalog: "carddata",
-      like:false,
+      like: false,
       img: "./glavniy IMG/Rectangle 22 (5).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Триммерная леска «Спираль-100»",
@@ -34,7 +35,7 @@ let GlavniyData = {
     {
       id: 4,
       catalog: "carddata",
-      like:false,
+      like: false,
       img: "./glavniy IMG/Rectangle 22 (1).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Унитаз подвесной Aragio с двойным сливом",
@@ -44,7 +45,7 @@ let GlavniyData = {
     {
       id: 5,
       catalog: "carddata",
-      like:false,
+      like: false,
       img: "./glavniy IMG/Rectangle 22 (7).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Водно-дисперсионный клей Cob",
@@ -138,7 +139,7 @@ let GlavniyData = {
     },
   ],
   CardData1: [
-    
+
     {
       id: 6,
       catalog: "CardData1",
@@ -161,7 +162,6 @@ let GlavniyData = {
       narxi: 1789,
       getting: true,
       rasp: false,
-      like:false
     },
     {
       id: 8,
@@ -172,7 +172,6 @@ let GlavniyData = {
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 312,
       skidka: 10,
-      like:false
     },
     {
       id: 9,
@@ -184,7 +183,6 @@ let GlavniyData = {
       narxi: 15999,
       getting: false,
       rasp: true,
-      like:false
     },
     {
       id: 10,
@@ -197,7 +195,6 @@ let GlavniyData = {
       skidka: 12,
       getting: false,
       rasp: false,
-      like:false
     },
   ],
   son: [
@@ -243,7 +240,8 @@ let GlavniyData = {
       instrument: "С радостью сообщаем вам о крупном пополнении нашего каталога инструментов.",
       sana: "5 Августа 2023"
     }
-  ]
+  ],
+  korzinka: []
 }
 
 export default function GlavniyRed(state = GlavniyData, { type, payload }) {
@@ -255,6 +253,16 @@ export default function GlavniyRed(state = GlavniyData, { type, payload }) {
           elem.id === payload.id ? { ...elem, like: !elem.like } : elem
         ),
       };
+      return state;
+    case "card":
+      if (state.korzinka.filter(param => +param.id === +payload.id).length === 0) {
+        state = {
+          ...state,
+          korzinka: [...state.korzinka, payload]
+        };
+      } else {
+
+      }
       return state;
     default:
       return state;
