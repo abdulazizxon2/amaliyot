@@ -8,4 +8,7 @@ let GlavniyTypes = {
   like: "like",
   // payload:useParams
 }
-export { NavbarTypes, GlavniyTypes };
+let KatalogTypes = {
+  likes: "likes"
+}
+export { NavbarTypes, GlavniyTypes, KatalogTypes };

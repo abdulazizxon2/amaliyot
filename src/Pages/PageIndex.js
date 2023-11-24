@@ -13,6 +13,7 @@ import Footer from "../components/Footer/Footer"
 import { Route, Routes } from "react-router-dom";
 import NotFound from "../components/NotFound/NotFound";
 import Katalog from "./KatalogPage";
+import Like from "./Like";
 
 
 
@@ -31,6 +32,7 @@ export default function PageIndex() {
           <Route path="/novosti" element={<Novosti />} />
           <Route path="/kontakt" element={<Kontakt />} />
           <Route path="/katalog" element={<Katalog/>}/>
+          <Route path="/like" element={<Like/>}/>
           <Route path="*" element={<NotFound />} />
         </Route>
       </Route>

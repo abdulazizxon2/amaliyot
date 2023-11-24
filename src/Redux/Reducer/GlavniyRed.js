@@ -2,6 +2,9 @@ import { GlavniyTypes } from "../Action/ActionTypes"
 let GlavniyData = {
   carddata: [
     {
+      id: 1,
+      catalog: "carddata",
+      like:false,
       img: "./glavniy IMG/Rectangle 22.png",
       art: "Артикул: XJ89YHGO",
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
@@ -9,6 +12,9 @@ let GlavniyData = {
       skidka: "15"
     },
     {
+      id: 2,
+      catalog: "carddata",
+      like:false,
       img: "./glavniy IMG/Rectangle 22 (8).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Смеситель Faris G-120 для раковины",
@@ -16,6 +22,9 @@ let GlavniyData = {
       skidka: null
     },
     {
+      id: 3,
+      catalog: "carddata",
+      like:false,
       img: "./glavniy IMG/Rectangle 22 (5).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Триммерная леска «Спираль-100»",
@@ -23,6 +32,9 @@ let GlavniyData = {
       skidka: 10,
     },
     {
+      id: 4,
+      catalog: "carddata",
+      like:false,
       img: "./glavniy IMG/Rectangle 22 (1).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Унитаз подвесной Aragio с двойным сливом",
@@ -30,6 +42,9 @@ let GlavniyData = {
       skidka: null
     },
     {
+      id: 5,
+      catalog: "carddata",
+      like:false,
       img: "./glavniy IMG/Rectangle 22 (7).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Водно-дисперсионный клей Cob",
@@ -123,7 +138,11 @@ let GlavniyData = {
     },
   ],
   CardData1: [
+    
     {
+      id: 6,
+      catalog: "CardData1",
+      like: false,
       img: "./glavniy IMG/Rectangle 22 (2).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
@@ -131,9 +150,11 @@ let GlavniyData = {
       skidka: "15",
       getting: false,
       rasp: false,
-      like:false
     },
     {
+      id: 7,
+      catalog: "CardData1",
+      like: false,
       img: "./glavniy IMG/Rectangle 22 (3).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Смеситель Faris G-120 для раковины",
@@ -143,6 +164,9 @@ let GlavniyData = {
       like:false
     },
     {
+      id: 8,
+      catalog: "CardData1",
+      like: false,
       img: "./glavniy IMG/Rectangle 22 (4).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Триммерная леска «Спираль-100»",
@@ -151,6 +175,9 @@ let GlavniyData = {
       like:false
     },
     {
+      id: 9,
+      catalog: "CardData1",
+      like: false,
       img: "./glavniy IMG/Rectangle 22 (6).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Унитаз подвесной Aragio с двойным сливом",
@@ -160,6 +187,9 @@ let GlavniyData = {
       like:false
     },
     {
+      id: 10,
+      catalog: "CardData1",
+      like: false,
       img: "./glavniy IMG/Rectangle 22 (7).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Водно-дисперсионный клей Cob",
@@ -219,11 +249,14 @@ let GlavniyData = {
 export default function GlavniyRed(state = GlavniyData, { type, payload }) {
   switch (type) {
     case GlavniyTypes.like:
-      let likes = state.CardData1.map((elem) => {
-        return elem.id === payload.id ? payload : elem
-      });
-      state = { ...state, CardData1: likes };
-      return state
-    default: return state
+      state = {
+        ...state,
+        [payload.catalog]: state?.[payload.catalog]?.map((elem) =>
+          elem.id === payload.id ? { ...elem, like: !elem.like } : elem
+        ),
+      };
+      return state;
+    default:
+      return state;
   }
 }

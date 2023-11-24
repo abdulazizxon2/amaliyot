@@ -14,6 +14,10 @@ function Navbars() {
   let state = useSelector((state) => state.NavbarRedux)
   let { katalogOpen } = state;
   let dispatch = useDispatch();
+
+  let states = useSelector((states) => states.GlavniyRed)
+  let { carddata,CardData1 } = states;
+  let son=carddata.filter((p) => p.like).length + CardData1.filter((p) => p.like).length
   return (<div>
     <nav>
       <div className="navbar">
@@ -56,7 +60,11 @@ function Navbars() {
             <p>Сравнение</p>
           </div>
           <div className="icons">
-            <AiOutlineHeart />
+            <NavLink to="/like">
+              <span className={carddata.filter((p) => p.like).length ? "sonBor" : "sonYoq"}>
+                {son}</span>
+              <AiOutlineHeart />
+            </NavLink>
             <p>Избранное</p>
           </div>
           <div className="icons">
@@ -65,7 +73,7 @@ function Navbars() {
           </div>
         </div>
       </div>
-    <ModalOyna />
+      <ModalOyna />
     </nav>
     <Katalog />
     <Outlet />

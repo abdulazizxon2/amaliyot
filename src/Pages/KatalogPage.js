@@ -1,16 +1,18 @@
 import React from 'react';
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 import { FiBarChart2 } from "react-icons/fi";
-import { AiOutlineHeart } from "react-icons/ai";
+import { AiOutlineHeart,AiFillHeart } from "react-icons/ai";
 import { PiShoppingCartSimple } from "react-icons/pi";
-import { useSelector } from 'react-redux';
-
+import { useDispatch, useSelector } from 'react-redux';
+import { setingLike } from "../Redux/Action/KatalogAction";
 export default function KatalogPage() {
   let state = useSelector((state) => state.KatalogRed);
   let { katalogdata } = state;
-  katalogdata = katalogdata.map(
-    (elem, index) => ({ ...elem, id: index + 1 })
-  )
+  let dispatch = useDispatch();
+  // console.log(state);
+  // katalogdata = katalogdata.map(
+  //   (elem, index) => ({ ...elem, id: index + 1 })
+  // )
   return (
     <div>
       <div className="elektr-instrument">
@@ -56,7 +58,9 @@ export default function KatalogPage() {
                           <button className='kupit'><PiShoppingCartSimple /> Купить</button>
                         </div>
                         <div className="btn-card">
-                          <button><AiOutlineHeart /></button>
+                        <button onClick={() => dispatch(setingLike(elem))}>
+                              {elem.likes ? <AiFillHeart /> : <AiOutlineHeart />}
+                            </button>
                           <button><FiBarChart2 /></button>
                         </div>
                       </div>

@@ -1505,3 +1505,25 @@ form {
 .elektr-instrument{
   padding-left:150px;
 }
+.icons a{
+  color: black;
+  text-decoration: none;
+  position: relative; 
+}
+.icons a .sonBor{
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  padding: 0px 5px;
+  font-size: 14px;
+  border-radius: 50%;
+  position: absolute;
+  top: -6px;
+  left: -9px;
+  /* text-decoration: none; */
+}
+.icons a .sonYoq{
+  display: none;
+  padding: 0;
+  background-color: none;
+}

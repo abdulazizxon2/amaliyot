@@ -16,7 +16,7 @@ export default function ModalOyna() {
                 <label className='labels' htmlFor="ism">Ваше имя *:</label>
                 <input type="text" name="" id="ism" placeholder='Как к вам обращаться?'/>
                 <label className='labelss' htmlFor="tel">Номер телефона *:</label>
-                <input type="tel" name="" id="tel" value="+7 (     )       -        -" />
+                <input type="tel" name="" id="tel"/>
                 <div className="check-modal">
                     <input type="checkbox" name="" id="" />
                     <p>Согласен с обработкой персональных данных в соответствии с политикой конфиденциальности</p>

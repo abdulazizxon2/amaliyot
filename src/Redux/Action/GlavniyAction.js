@@ -1,8 +1,8 @@
 import { GlavniyTypes } from "./ActionTypes"
-function like(param) {
+function setLike(param) {
     return {
         type: GlavniyTypes.like,
         payload: param,
     };
 }
-export { like }
+export { setLike }
