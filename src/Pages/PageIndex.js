@@ -14,6 +14,7 @@ import { Route, Routes } from "react-router-dom";
 import NotFound from "../components/NotFound/NotFound";
 import Katalog from "./KatalogPage";
 import Like from "./Like";
+import Korzinka from "./Korzinka";
 
 
 
@@ -33,6 +34,7 @@ export default function PageIndex() {
           <Route path="/kontakt" element={<Kontakt />} />
           <Route path="/katalog" element={<Katalog/>}/>
           <Route path="/like" element={<Like/>}/>
+          <Route path="/korzinka" element={<Korzinka/>}/>
           <Route path="*" element={<NotFound />} />
         </Route>
       </Route>

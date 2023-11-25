@@ -16,8 +16,8 @@ function Navbars() {
   let dispatch = useDispatch();
 
   let states = useSelector((states) => states.GlavniyRed)
-  let { carddata,CardData1 } = states;
-  let son=carddata.filter((p) => p.like).length + CardData1.filter((p) => p.like).length
+  let { carddata, CardData1 } = states;
+  let son = carddata.filter((p) => p.like).length + CardData1.filter((p) => p.like).length
   return (<div>
     <nav>
       <div className="navbar">
@@ -68,7 +68,9 @@ function Navbars() {
             <p>Избранное</p>
           </div>
           <div className="icons">
-            <RiShoppingCart2Line />
+            <NavLink to="/korzinka">
+              <RiShoppingCart2Line />
+            </NavLink>
             <p>Корзина</p>
           </div>
         </div>
