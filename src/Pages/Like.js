@@ -10,18 +10,22 @@ export default function Like() {
     function filterMassiv(param) {
         return (
             param.filter((p) => p.like)
-            )
-        }
-// console.log(katalogdata);
+        )
+    }
+    // console.log(katalogdata);
     // console.log(state);
     return (
         <>
+        <div className="likePage">
+            <div className="titles">
+                <b>Стройоптторг</b>/ <p>Oплаты</p>
+            </div>
             <table border={1}>
                 <thead>
                     <tr>
                         <th>№</th>
-                        <th>name </th>
-                        <th>price </th>
+                        <th>nomi</th>
+                        <th>narxi</th>
                         <th>chegirma</th>
                         <th> yoqtirilgan </th>
                         <th>soni</th>
@@ -52,6 +56,7 @@ export default function Like() {
                     )}
                 </tbody>
             </table>
+        </div>
         </>
     )
 }

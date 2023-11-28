@@ -1527,3 +1527,15 @@ form {
   padding: 0;
   background-color: none;
 }
+.likePage{
+  padding: 0px 150px;
+}
+.likePage table{
+  width: 100%;
+}
+.likePage table thead th{
+  align-items: center;
+}
+.likePage table tbody tr{
+  align-items: center;
+}

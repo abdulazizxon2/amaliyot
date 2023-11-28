@@ -5,6 +5,7 @@ import { AiOutlineHeart,AiFillHeart } from "react-icons/ai";
 import { PiShoppingCartSimple } from "react-icons/pi";
 import { useDispatch, useSelector } from 'react-redux';
 import { setingLike } from "../Redux/Action/KatalogAction";
+import { korzinkaFunc } from "../Redux/Action/GlavniyAction";
 export default function KatalogPage() {
   let state = useSelector((state) => state.KatalogRed);
   let { katalogdata } = state;
@@ -55,7 +56,7 @@ export default function KatalogPage() {
                       </b>) : (<span>{elem.narxi}₽</span>)}
                       <div className="btn-cards">
                         <div className="btn-cardsx">
-                          <button className='kupit'><PiShoppingCartSimple /> Купить</button>
+                          <button className='kupit'  onClick={() => dispatch(korzinkaFunc(elem))}><PiShoppingCartSimple /> Купить</button>
                         </div>
                         <div className="btn-card">
                         <button onClick={() => dispatch(setingLike(elem))}>

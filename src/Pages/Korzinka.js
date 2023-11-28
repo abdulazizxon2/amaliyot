@@ -9,15 +9,10 @@ export default function Korzinka() {
   let { korzinka } = state;
   let dispatch=useDispatch();
 
-  let { katalogdata } = useSelector((state) => state.KatalogRed);
-  function filterMassiv(param) {
-      return (
-          param.filter((p) => p.card)
-          )
-      }
+ 
   return (
     <div>
-      {korzinka.map((elem)=>{
+       {korzinka.map((elem)=>{
         return(
           <div className="cardBig" >
                     <div className="card-Big">
