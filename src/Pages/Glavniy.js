@@ -14,12 +14,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { korzinkaFunc, setLike } from "../Redux/Action/GlavniyAction";
 import { TbShoppingCartFilled } from "react-icons/tb";
+import { useState } from 'react';
 
 export default function Glavniy() {
   let state = useSelector((state) => state.GlavniyRed);
   let dispatch = useDispatch();
   let { carddata, cardBir, skidka, bosch, CardData1, son, novosti } = state;
 
+ 
 
   cardBir = cardBir.map(
     (elem, index) => ({ ...elem, id: index + 1 })
