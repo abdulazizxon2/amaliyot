@@ -17,7 +17,10 @@ function Navbars() {
 
   let states = useSelector((states) => states.GlavniyRed)
   let { carddata, CardData1 } = states;
-  let son = carddata.filter((p) => p.like).length + CardData1.filter((p) => p.like).length
+  let statec=useSelector((state)=>state.KatalogRed)
+  let {katalogdata}=statec
+  let likeData = [...carddata, ...CardData1,...katalogdata]
+  let son = likeData.filter((p) => p.like === true)
   return (<div>
     <nav>
       <div className="navbar">
@@ -61,8 +64,8 @@ function Navbars() {
           </div>
           <div className="icons">
             <NavLink to="/like">
-              <span className={carddata.filter((p) => p.like).length ? "sonBor" : "sonYoq"}>
-                {son}</span>
+              <span className={son.length ? "sonBor" : "sonYoq"}>
+                {son.length > 0 ? son.length : ""}</span>
               <AiOutlineHeart />
             </NavLink>
             <p>Избранное</p>

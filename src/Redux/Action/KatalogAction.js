@@ -11,4 +11,9 @@ function korzinkaFunc(param) {
         payload: param,
     };
 }
-export { setingLike,korzinkaFunc }
+function Openkatalog() {
+    return {
+        type: KatalogTypes.katalogs
+    }
+}
+export { setingLike, korzinkaFunc, Openkatalog }

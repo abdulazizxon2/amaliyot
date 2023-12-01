@@ -1,15 +1,26 @@
 import React from 'react';
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 import { FiBarChart2 } from "react-icons/fi";
-import { AiOutlineHeart,AiFillHeart } from "react-icons/ai";
+import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import { PiShoppingCartSimple } from "react-icons/pi";
 import { useDispatch, useSelector } from 'react-redux';
 import { setingLike } from "../Redux/Action/KatalogAction";
 import { korzinkaFunc } from "../Redux/Action/GlavniyAction";
+import { Openkatalog } from "../Redux//Action/KatalogAction";
+import Slider from '@mui/material/Slider';
+import { Box } from '@mui/material';
+
 export default function KatalogPage() {
+  const [value, setValue] = React.useState([20, 37]);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
   let state = useSelector((state) => state.KatalogRed);
-  let { katalogdata } = state;
+  let { katalogdata, katalogOpens } = state;
   let dispatch = useDispatch();
+  console.log(Openkatalog);
   // console.log(state);
   // katalogdata = katalogdata.map(
   //   (elem, index) => ({ ...elem, id: index + 1 })
@@ -17,25 +28,37 @@ export default function KatalogPage() {
   return (
     <div>
       <div className="elektr-instrument">
-          <div className="titles">
-            <b>Стройоптторг</b>/ <p>О компании</p>
-          </div>
-          <div className="elektr">
-            <h1>Электроинструмент</h1>
-            <p>3 457 товаров</p>
-          </div>
+        <div className="titles">
+          <b>Стройоптторг</b>/ <p>О компании</p>
+        </div>
+        <div className="elektr">
+          <h1>Электроинструмент</h1>
+          <p>3 457 товаров</p>
+        </div>
       </div>
       <div className="katalogs">
         <div className="chap-katalogs">
-          <div className="narx">
+          <div className="narx" onClick={() => dispatch(Openkatalog())}>
             <div className="sena-arrow">
-              <b>Цена, ₽</b><IoIosArrowDown /><IoIosArrowForward />
+              <b ><div className='narxP'><b>Цена,</b><b> ₽</b></div>{katalogOpens ? <IoIosArrowForward /> : <IoIosArrowDown />}</b>
             </div>
-            <div className="narx-btn">
+            <div className={katalogOpens ? "no-narxBTN" : "narx-btn"}>
+              <div className="narxlar">
+              <div className="ot-narx">
               <p>от</p><span><b>1222</b></span>
+              </div>
               <p>до</p><span><b>52 500</b></span>
-            </div>
-          </div>
+              </div>
+            <Box sx={{ width: 300 }}>
+              <Slider
+                getAriaLabel={() => 'Temperature range'}
+                value={value}
+                onChange={handleChange}
+                valueLabelDisplay="auto"
+                />
+            </Box>
+                </div>
+          </div>    
         </div>
         <div className="ong-katalogs">
           <div className="cards-katalog">
@@ -56,12 +79,12 @@ export default function KatalogPage() {
                       </b>) : (<span>{elem.narxi}₽</span>)}
                       <div className="btn-cards">
                         <div className="btn-cardsx">
-                          <button className='kupit'  onClick={() => dispatch(korzinkaFunc(elem))}><PiShoppingCartSimple /> Купить</button>
+                          <button className='kupit' onClick={() => dispatch(korzinkaFunc(elem))}><PiShoppingCartSimple /> Купить</button>
                         </div>
                         <div className="btn-card">
-                        <button onClick={() => dispatch(setingLike(elem))}>
-                              {elem.like ? <AiFillHeart /> : <AiOutlineHeart />}
-                            </button>
+                          <button onClick={() => dispatch(setingLike(elem))}>
+                            {elem.like ? <AiFillHeart /> : <AiOutlineHeart />}
+                          </button>
                           <button><FiBarChart2 /></button>
                         </div>
                       </div>

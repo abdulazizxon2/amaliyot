@@ -334,6 +334,11 @@
   padding: 0px 150px 55px 150px;
 }
 
+.katalog1 a {
+  color: black;
+  text-decoration: none;
+}
+
 .katalog-card {
   display: flex;
   flex-direction: column;
@@ -856,12 +861,14 @@ li {
   gap: 30px;
   padding-top: 100px;
 }
+
 .dostavka-ong {
   display: flex;
   flex-direction: column;
   gap: 30px;
   padding-top: 100px;
 }
+
 .oplata-CX {
   display: flex;
   flex-direction: column;
@@ -1088,7 +1095,7 @@ form {
   background-color: #fff;
 }
 
-.katalog-bolimlar a{
+.katalog-bolimlar a {
   display: flex;
   padding: 15px 25px;
   justify-content: space-between;
@@ -1100,9 +1107,12 @@ form {
   border-radius: 0px 0px 8px 8px;
   background-color: #fff;
   text-decoration: none;
-  color: ;
+  /* color: ; */
 }
 
+.no-narxBTN {
+  display: none;
+}
 
 .katalog-bolimi {
   display: flex;
@@ -1448,14 +1458,16 @@ form {
   color: #64676A;
   padding: 10px;
 }
-.garantya-minus{
+
+.garantya-minus {
   font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
 }
-.garantya-minus button{
+
+.garantya-minus button {
   padding: 15px;
   font-size: 20px;
   border-radius: 50%;
@@ -1463,54 +1475,71 @@ form {
   background-color: #EBF7FF;
   color: #186FD4;
 }
-.vozvrat-chap h1{
+
+.vozvrat-chap h1 {
   padding-bottom: 20px;
 }
-.vozvrat-chap p{
+
+.vozvrat-chap p {
   padding-bottom: 10px;
 }
-.vozvrat-chap ul{
+
+.vozvrat-chap ul {
   padding-left: 23px;
 }
-.vozvrat-chap li{
+
+.vozvrat-chap li {
   color: #EE0906;
 }
-.vozvrat-chap li p{
+
+.vozvrat-chap li p {
   color: #2C333D;
 }
-.katalogs{
+
+.katalogs {
   padding: 0px 150px;
 }
-.elektr{
+
+.elektr {
   display: flex;
   gap: 18px;
   align-items: center;
 }
-.elektr P{
+
+.elektr P {
   padding-top: 15px;
 }
-.elektr h1{
+
+.elektr h1 {
   font-size: 48px;
 }
-.narx-btn{
+
+.narx-btn {
   display: flex;
+  flex-direction: column;
+
 }
-.cards-katalog{
+
+.cards-katalog {
   display: grid;
   grid-template-columns: repeat(4, calc(100% / 4 - 20px));
 }
-.katalogs{
+
+.katalogs {
   display: flex;
 }
-.elektr-instrument{
-  padding-left:150px;
+
+.elektr-instrument {
+  padding-left: 150px;
 }
-.icons a{
+
+.icons a {
   color: black;
   text-decoration: none;
-  position: relative; 
+  position: relative;
 }
-.icons a .sonBor{
+
+.icons a .sonBor {
   background-color: red;
   color: white;
   text-decoration: none;
@@ -1522,20 +1551,46 @@ form {
   left: -9px;
   /* text-decoration: none; */
 }
-.icons a .sonYoq{
+
+.icons a .sonYoq {
   display: none;
   padding: 0;
   background-color: none;
 }
-.likePage{
+
+.likePage {
   padding: 0px 150px;
 }
-.likePage table{
+
+.likePage table {
   width: 100%;
 }
-.likePage table thead th{
+
+.likePage table thead th {
   align-items: center;
 }
-.likePage table tbody tr{
+
+.likePage table tbody tr {
   align-items: center;
+}
+
+.sena-arrow b {
+  display: flex;
+  gap: 231px;
+}
+
+.narxlar {
+  display: flex;
+}
+
+.narxP {
+  display: flex;
+  gap: 3px;
+}
+.ot-narx{
+  display: flex;
+  gap: 5px;
+  padding: 13px 35px 13px 15px;
+  border-radius: 6px;
+border: 1px solid #DFE0E2;
 }
