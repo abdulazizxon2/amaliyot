@@ -11,10 +11,10 @@ export default function Korzinka() {
 
  
   return (
-    <div>
+    <div className='kozinkaPage'>
        {korzinka.map((elem)=>{
         return(
-          <div className="cardBig" >
+          <div className="cardBig" key={elem.id}>
                     <div className="card-Big">
                       <button className='xit'>хит</button>
                       <img src={elem.img} alt={elem.nomi} />

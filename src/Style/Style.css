@@ -1620,3 +1620,25 @@ form {
   flex-direction: column;
   gap: 20px;
 }
+.likePage .titles{
+  padding-bottom: 60px;
+}
+.likePage table{
+  border-collapse: collapse;
+  border: 3px solid #117fe3 ;
+}
+.likePage table thead{
+  background-color: #117fe3;
+  color: white;
+  text-transform: capitalize;
+  border: 1px solid white;
+}
+.likePage table tbody{
+  color: #117fe3;
+  text-align: center;
+}
+.kozinkaPage{
+  padding: 0px 150px;
+  display: grid;
+  grid-template-columns: repeat(5, calc(100% / 5 - 20px));
+}

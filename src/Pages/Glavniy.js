@@ -253,9 +253,9 @@ export default function Glavniy() {
                       ).toFixed(2)}₽<b>-{elem.skidka}%</b>
                     </b>) : (<span>{elem.narxi}₽</span>)}
                     <div className="btn-cards">
-                      <div className="btn-cardsx">
-                        <button className='kupit'><PiShoppingCartSimple /> Купить</button>
-                      </div>
+                    <div className="btn-cardsx">
+                            <button className='kupit' onClick={() => dispatch(korzinkaFunc(elem))}>{korzinkaFunc ? <PiShoppingCartSimple /> : <TbShoppingCartFilled />} Купить</button>
+                          </div>
                       <div className="btn-card">
                         <button onClick={() => dispatch(setLike(elem))}>
                           {elem.like ? <AiFillHeart /> : <AiOutlineHeart />}
