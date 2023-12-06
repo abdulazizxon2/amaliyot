@@ -15,6 +15,7 @@ import NotFound from "../components/NotFound/NotFound";
 import Katalog from "./KatalogPage";
 import Like from "./Like";
 import Korzinka from "./Korzinka";
+import FullPage from "./FullPage";
 
 
 
@@ -35,6 +36,7 @@ export default function PageIndex() {
           <Route path="/katalog" element={<Katalog/>}/>
           <Route path="/like" element={<Like/>}/>
           <Route path="/korzinka" element={<Korzinka/>}/>
+          <Route path="/fullPage" element={<FullPage/>}/>
           <Route path="*" element={<NotFound />} />
         </Route>
       </Route>

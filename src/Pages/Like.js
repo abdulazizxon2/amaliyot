@@ -20,6 +20,7 @@ export default function Like() {
             <div className="titles">
                 <b>Стройоптторг</b>/ <p>Oплаты</p>
             </div>
+            <h1>Избранное</h1>
             <table border={1}>
                 <thead>
                     <tr>

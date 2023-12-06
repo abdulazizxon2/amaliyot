@@ -8,7 +8,7 @@ export default function Kompaniya() {
   let state = useSelector((state) => state.KampaniyaRed);
   let states = useSelector((state) => state.GlavniyRed);
   let { cardKomp } = state
-  let {novosti}=states
+  let { novosti } = states
   cardKomp = cardKomp.map(
     (elem, index) => ({ ...elem, id: index + 1 })
   )
@@ -89,28 +89,28 @@ export default function Kompaniya() {
           })}
           <div className="card-kampaniya3">
             <h3>Сегодня</h3>
-          <div className="card-kamp4">
-          <div className="card-kampaniya2">
-              <div className="h-lar">
-                <h3>17 805,3 м²</h3>
-                <p>- торговых и складских помещений</p>
+            <div className="card-kamp4">
+              <div className="card-kampaniya2">
+                <div className="h-lar">
+                  <h3>17 805,3 м²</h3>
+                  <p>- торговых и складских помещений</p>
+                </div>
+                <div className="h-lar">
+                  <h3>2 500+</h3>
+                  <p>- постоянных клиентов</p>
+                </div>
               </div>
-              <div className="h-lar">
-                <h3>2 500+</h3>
-                <p>- постоянных клиентов</p>
+              <div className="card-kampaniya2">
+                <div className="h-lar">
+                  <h3>50 000+</h3>
+                  <p>- наименований товаров</p>
+                </div>
+                <div className="h-lar">
+                  <h3>440</h3>
+                  <p>- опытных сотрудников</p>
+                </div>
               </div>
             </div>
-            <div className="card-kampaniya2">
-              <div className="h-lar">
-                <h3>50 000+</h3>
-                <p>- наименований товаров</p>
-              </div>
-              <div className="h-lar">
-                <h3>440</h3>
-                <p>- опытных сотрудников</p>
-              </div>
-            </div>
-          </div>
           </div>
         </div>
       </div>
@@ -130,6 +130,6 @@ export default function Kompaniya() {
         </div>
       </div>
     </div>
-    
-    );
+
+  );
 }

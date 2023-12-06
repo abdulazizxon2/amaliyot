@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   Openkatalog2,
   Openkatalog3,
+  Openkatalog4,
   setingLike,
   tipTovarBool,
 } from "../Redux/Action/KatalogAction";
@@ -30,6 +31,8 @@ export default function KatalogPage() {
     tiptavarData,
     katalogOpens3,
     brendData,
+    katalogOpens4,
+    materialData
   } = state;
   let dispatch = useDispatch();
 
@@ -50,10 +53,10 @@ export default function KatalogPage() {
             <div className="sena-arrow" onClick={() => dispatch(Openkatalog())}>
               <div className="narxP">
                 <b>Цена, ₽</b>
+              </div>
                 <b>
                   {katalogOpens ? <IoIosArrowForward /> : <IoIosArrowDown />}
                 </b>
-              </div>
             </div>
             <div className={katalogOpens ? "no-narxBTN" : "narx-btn"}>
               <div className="narxlar">
@@ -85,9 +88,12 @@ export default function KatalogPage() {
             >
               <b>
                 <div className="narxP">
-                  <b>Тип товара</b>
+                  <b>Тип </b>
+                  <b>товара</b>
                 </div>
-                {katalogOpens2 ? <IoIosArrowDown /> : <IoIosArrowForward />}
+                <b>
+                  {katalogOpens2 ? <IoIosArrowDown /> : <IoIosArrowForward />}
+                </b>
               </b>
             </div>
             <div className={katalogOpens2 ? "tavar" : "tavar-no"}>
@@ -97,7 +103,7 @@ export default function KatalogPage() {
                     <input
                       type="checkbox"
                       checked={elem.bool}
-                      onChange={() => {}}
+                      onChange={() => { }}
                     />
                     <p onClick={() => dispatch(tipTovarBool(elem))}>
                       {elem.title}
@@ -126,7 +132,36 @@ export default function KatalogPage() {
                     <input
                       type="checkbox"
                       checked={elem.bool}
-                      onChange={() => {}}
+                      onChange={() => { }}
+                    />
+                    <p onClick={() => dispatch(tipTovarBool(elem))}>
+                      {elem.title}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          <div className="materila">
+            <div
+              className="brend-material"
+              onClick={() => dispatch(Openkatalog4())}
+            >
+              <b>
+                <div className="narxP">
+                  <b>Материал</b>
+                </div>
+                {katalogOpens4 ? <IoIosArrowDown /> : <IoIosArrowForward />}
+              </b>
+            </div>
+            <div className={katalogOpens4 ? "tavar" : "tavar-no"}>
+              {materialData.map((elem, i) => {
+                return (
+                  <div className="chekc-tavar" key={i}>
+                    <input
+                      type="checkbox"
+                      checked={elem.bool}
+                      onChange={() => { }}
                     />
                     <p onClick={() => dispatch(tipTovarBool(elem))}>
                       {elem.title}
@@ -153,9 +188,9 @@ export default function KatalogPage() {
                           <del>{elem.narxi}₽</del>
                           {elem.skidka
                             ? (
-                                elem.narxi -
-                                (elem.narxi / 100) * elem.skidka
-                              ).toFixed(2)
+                              elem.narxi -
+                              (elem.narxi / 100) * elem.skidka
+                            ).toFixed(2)
                             : ""}
                           ₽<b>-{elem.skidka}%</b>
                         </b>

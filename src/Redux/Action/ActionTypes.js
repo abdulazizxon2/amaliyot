@@ -14,6 +14,7 @@ let KatalogTypes = {
   katalogs2:"katalogs2",
   chekced:"chekced",
   katalogs3:"katalogs3",
+  katalogs4:"katalogs4",
 }
 
 export { NavbarTypes, GlavniyTypes, KatalogTypes };

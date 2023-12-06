@@ -19,7 +19,6 @@ export default function Korzinka() {
                       <button className='xit'>хит</button>
                       <img src={elem.img} alt={elem.nomi} />
                       <div className="cardMiddle">
-
                         <p>{elem.art}</p>
                         <h1>{elem.nomi}</h1>
                         {elem.skidka ? (<b className='b1'>

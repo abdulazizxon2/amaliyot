@@ -1498,6 +1498,8 @@ form {
 
 .katalogs {
   padding: 0px 150px;
+  display: flex;
+  gap: 24px;
 }
 
 .elektr {
@@ -1575,17 +1577,14 @@ form {
 
 .narxP {
   display: flex;
-  gap: 229px;
+  gap: 3px;
 }
 
 .narxlar {
   display: flex;
 }
 
-.narxP b{
-  display: flex;
-  gap: 3px;
-}
+
 .ot-narx {
   display: flex;
   gap: 5px;
@@ -1596,7 +1595,7 @@ form {
 .tip-tavar-arrow b{
   display: flex;
   align-items:center;
-  gap: 201px;
+  gap: 198px;
 }
 .tavar{
   display: block;
@@ -1613,7 +1612,7 @@ form {
 .brend-tovar b{
   display: flex;
   align-items: center;
-  gap: 239px;
+  gap: 234px;
 }
 .chap-katalogs{
   display: flex;
@@ -1621,7 +1620,10 @@ form {
   gap: 20px;
 }
 .likePage .titles{
-  padding-bottom: 60px;
+  padding-bottom: 30px;
+}
+.likePage h1{
+  padding-bottom: 30px;
 }
 .likePage table{
   border-collapse: collapse;
@@ -1641,4 +1643,13 @@ form {
   padding: 0px 150px;
   display: grid;
   grid-template-columns: repeat(5, calc(100% / 5 - 20px));
+}
+.brend-material b{
+  display: flex;
+  align-items: center;
+  gap: 204px;
+}
+.sena-arrow{
+  display: flex;
+  gap: 222px;
 }

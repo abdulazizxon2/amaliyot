@@ -378,8 +378,35 @@ let KatalogData = {
       catalog: "brendData",
     },
   ],
+  materialData: [
+    {
+      title: "Латунь",
+      bool: false,
+      catalog: "materialData",
+    },
+    {
+      title: "Медь",
+      bool: false,
+      catalog: "materialData",
+    },
+    {
+      title: "Металл",
+      bool: false,
+      catalog: "materialData",
+    },
+    {
+      title: "Металл, пластик",
+      bool: false,
+      catalog: "materialData",
+    },
+    {
+      title: "Бумага",
+      bool: false,
+      catalog: "materialData",
+    },
+  ],
   korzinka: [],
-  categorya:[],
+  categorya: [],
 };
 export default function KatalogRed(state = KatalogData, { type, payload }) {
   switch (type) {
@@ -389,8 +416,11 @@ export default function KatalogRed(state = KatalogData, { type, payload }) {
     case KatalogTypes.katalogs2:
       state = { ...state, katalogOpens2: !state.katalogOpens2 };
       return state;
-      case KatalogTypes.katalogs3:
+    case KatalogTypes.katalogs3:
       state = { ...state, katalogOpens3: !state.katalogOpens3 };
+      return state;
+      case KatalogTypes.katalogs4:
+      state = { ...state, katalogOpens4: !state.katalogOpens4 };
       return state;
     case KatalogTypes.chekced:
       state = {

@@ -26,10 +26,15 @@ function Openkatalog3() {
       type: KatalogTypes.katalogs3,
     };
   }
+function Openkatalog4() {
+    return {
+      type: KatalogTypes.katalogs4,
+    };
+  }
 function tipTovarBool(param) {
   return {
     type: KatalogTypes.chekced,
     payload: param,
   };
 }
-export { setingLike, korzinkaFunc, Openkatalog, Openkatalog2,tipTovarBool,Openkatalog3 };
+export { setingLike, korzinkaFunc, Openkatalog, Openkatalog2,tipTovarBool,Openkatalog3,Openkatalog4 };
