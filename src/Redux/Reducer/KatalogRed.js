@@ -1,4 +1,4 @@
-import { KatalogTypes } from "../Action/ActionTypes"
+import { KatalogTypes } from "../Action/ActionTypes";
 let KatalogData = {
   katalogdata: [
     {
@@ -9,7 +9,7 @@ let KatalogData = {
       narxi: 15999,
       skidka: "15",
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ let KatalogData = {
       narxi: 1789,
       skidka: null,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 3,
@@ -29,7 +29,7 @@ let KatalogData = {
       narxi: 312,
       skidka: 10,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 4,
@@ -39,7 +39,7 @@ let KatalogData = {
       narxi: 15999,
       skidka: 12,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 5,
@@ -49,7 +49,7 @@ let KatalogData = {
       narxi: 15999,
       skidka: 15,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 6,
@@ -59,7 +59,7 @@ let KatalogData = {
       narxi: 15999,
       skidka: 15,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 7,
@@ -69,7 +69,7 @@ let KatalogData = {
       narxi: 1789,
       skidka: null,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 8,
@@ -79,7 +79,7 @@ let KatalogData = {
       narxi: 312,
       skidka: 10,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 9,
@@ -89,7 +89,7 @@ let KatalogData = {
       narxi: 15999,
       skidka: 15,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 10,
@@ -99,7 +99,7 @@ let KatalogData = {
       narxi: 15999,
       skidka: 12,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 11,
@@ -109,7 +109,7 @@ let KatalogData = {
       narxi: 15999,
       skidka: 15,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 12,
@@ -119,7 +119,7 @@ let KatalogData = {
       narxi: 15999,
       skidka: 15,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 13,
@@ -129,17 +129,17 @@ let KatalogData = {
       narxi: 1789,
       skidka: null,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
-      id:14,
+      id: 14,
       img: "./catalogGOODS/shlifovka_zubr.png",
       art: "Артикул: XJ89YHGO",
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 312,
       skidka: 10,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 15,
@@ -149,7 +149,7 @@ let KatalogData = {
       narxi: 15999,
       skidka: 12,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 16,
@@ -159,7 +159,7 @@ let KatalogData = {
       narxi: 15999,
       skidka: 15,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 17,
@@ -169,7 +169,7 @@ let KatalogData = {
       narxi: 312,
       skidka: 10,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 18,
@@ -179,7 +179,7 @@ let KatalogData = {
       narxi: 15999,
       skidka: 15,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 19,
@@ -189,7 +189,7 @@ let KatalogData = {
       narxi: 15999,
       skidka: 15,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 20,
@@ -199,7 +199,7 @@ let KatalogData = {
       narxi: 1789,
       skidka: null,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 21,
@@ -209,7 +209,7 @@ let KatalogData = {
       narxi: 15999,
       skidka: 15,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 22,
@@ -219,7 +219,7 @@ let KatalogData = {
       narxi: 15999,
       skidka: 12,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 23,
@@ -229,7 +229,7 @@ let KatalogData = {
       narxi: 15999,
       skidka: 12,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 24,
@@ -239,7 +239,7 @@ let KatalogData = {
       narxi: 15999,
       skidka: 12,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 25,
@@ -249,7 +249,7 @@ let KatalogData = {
       narxi: 312,
       skidka: 10,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 26,
@@ -259,7 +259,7 @@ let KatalogData = {
       narxi: 15999,
       skidka: 15,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 27,
@@ -269,7 +269,7 @@ let KatalogData = {
       narxi: 15999,
       skidka: 15,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 28,
@@ -279,7 +279,7 @@ let KatalogData = {
       narxi: 1789,
       skidka: null,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
     {
       id: 29,
@@ -288,7 +288,7 @@ let KatalogData = {
       nomi: "Смеситель Faris G-120 для раковины",
       narxi: 1789,
       skidka: null,
-      like: false
+      like: false,
     },
     {
       id: 30,
@@ -297,7 +297,7 @@ let KatalogData = {
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
       skidka: 12,
-      like: false
+      like: false,
     },
     {
       id: 31,
@@ -306,7 +306,7 @@ let KatalogData = {
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
       skidka: 12,
-      like: false
+      like: false,
     },
     {
       id: 32,
@@ -316,16 +316,90 @@ let KatalogData = {
       narxi: 15999,
       skidka: 15,
       like: false,
-      catalogs: "katalogdata"
+      catalogs: "katalogdata",
     },
   ],
-  korzinka:[]
-}
+  tiptavarData: [
+    {
+      title: "Набор",
+      bool: false,
+      catalog: "tiptavarData",
+    },
+    {
+      title: "Стойка",
+      bool: false,
+      catalog: "tiptavarData",
+    },
+    {
+      title: "Адаптер",
+      bool: false,
+      catalog: "tiptavarData",
+    },
+    {
+      title: "Держатель",
+      bool: false,
+      catalog: "tiptavarData",
+    },
+    {
+      title: "Фильтр",
+      bool: false,
+      catalog: "tiptavarData",
+    },
+    {
+      title: "Инструмент",
+      bool: false,
+      catalog: "tiptavarData",
+    },
+  ],
+  brendData: [
+    {
+      title: "STAYER",
+      bool: false,
+      catalog: "brendData",
+    },
+    {
+      title: "HOMEPROFEE",
+      bool: false,
+      catalog: "brendData",
+    },
+    {
+      title: "PECAHTA",
+      bool: false,
+      catalog: "brendData",
+    },
+    {
+      title: "MAKITA",
+      bool: false,
+      catalog: "brendData",
+    },
+    {
+      title: "HUNTER",
+      bool: false,
+      catalog: "brendData",
+    },
+  ],
+  korzinka: [],
+  categorya:[],
+};
 export default function KatalogRed(state = KatalogData, { type, payload }) {
   switch (type) {
     case KatalogTypes.katalogs:
-    state = { ...state, katalogOpens: !state.katalogOpens }
-    return state;
+      state = { ...state, katalogOpens: !state.katalogOpens };
+      return state;
+    case KatalogTypes.katalogs2:
+      state = { ...state, katalogOpens2: !state.katalogOpens2 };
+      return state;
+      case KatalogTypes.katalogs3:
+      state = { ...state, katalogOpens3: !state.katalogOpens3 };
+      return state;
+    case KatalogTypes.chekced:
+      state = {
+        ...state,
+        [payload.catalog]: state?.[payload.catalog].map((elem) =>
+          elem.title === payload.title ? { ...elem, bool: !elem.bool } : elem
+        ),
+      };
+      return state;
     case KatalogTypes.likes:
       state = {
         ...state,
@@ -334,6 +408,7 @@ export default function KatalogRed(state = KatalogData, { type, payload }) {
         ),
       };
       return state;
-    default: return state
+    default:
+      return state;
   }
 }

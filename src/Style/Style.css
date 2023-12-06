@@ -698,12 +698,12 @@
   align-items: center;
   justify-content: center;
   padding-left: 150px;
-  background-color: #F9FAFB;
+  background-color: #f9fafb;
 }
 
 .sel {
   font-size: 17px;
-  color: #2C333D;
+  color: #2c333d;
   font-weight: 550;
   width: 113%;
   padding-top: 15px;
@@ -719,7 +719,7 @@
 }
 
 .raqam h1 {
-  color: #117FE3;
+  color: #117fe3;
 }
 
 .mechta {
@@ -777,7 +777,7 @@ li {
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
-  color: #1E1E1E;
+  color: #1e1e1e;
 }
 
 .oplata ul {
@@ -790,11 +790,11 @@ li {
 }
 
 .oplata li {
-  color: #EE0906;
+  color: #ee0906;
 }
 
 .oplata li p {
-  color: #2C333D;
+  color: #2c333d;
 }
 
 .oplata-chap h3 {
@@ -811,7 +811,7 @@ li {
   padding: 10px;
   padding-top: 0px;
   padding-left: 0px;
-  color: #2C333D;
+  color: #2c333d;
 }
 
 .pris {
@@ -819,7 +819,7 @@ li {
   font-style: normal;
   font-weight: 550;
   line-height: 26px;
-  color: #2C333D;
+  color: #2c333d;
 }
 
 .oplata-C {
@@ -836,7 +836,7 @@ li {
 }
 
 .oplata-do h2 {
-  color: #2C333D;
+  color: #2c333d;
   font-size: 22px;
   font-style: normal;
   font-weight: 550;
@@ -881,7 +881,7 @@ form {
   gap: 13px;
   padding: 30px 25px;
   border-radius: 8px;
-  background: #F9FAFB;
+  background: #f9fafb;
 }
 
 #pochta {
@@ -893,7 +893,7 @@ form {
 .obuna {
   padding: 21px 27px;
   border-radius: 8px;
-  background: #186FD4;
+  background: #186fd4;
   color: white;
   border: none;
   font-size: 13px;
@@ -932,7 +932,7 @@ form {
 }
 
 .bir-p p {
-  color: #1E1E1E;
+  color: #1e1e1e;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -940,7 +940,7 @@ form {
 }
 
 .dostavka-chap h3 {
-  color: #1E1E1E;
+  color: #1e1e1e;
   font-size: 20px;
   font-style: normal;
   font-weight: 550;
@@ -950,7 +950,7 @@ form {
 }
 
 .dostavka-chap h4 {
-  color: #2C333D;
+  color: #2c333d;
   font-size: 18px;
   font-style: normal;
   font-weight: 550;
@@ -972,11 +972,11 @@ form {
 }
 
 .dostavka-chap ul li {
-  color: #EE0906;
+  color: #ee0906;
 }
 
 .dostavka-chap ul li p {
-  color: #2C333D;
+  color: #2c333d;
 }
 
 .ikki-p {
@@ -1063,7 +1063,7 @@ form {
   z-index: 1000;
   position: relative;
   align-items: center;
-  border-bottom: 1px solid #EBF2F6;
+  border-bottom: 1px solid #ebf2f6;
   gap: 10px;
   font-size: 16px;
 }
@@ -1077,7 +1077,7 @@ form {
   z-index: 1000;
   position: relative;
   align-items: center;
-  border-bottom: 1px solid #EBF2F6;
+  border-bottom: 1px solid #ebf2f6;
   background-color: #fff;
 }
 
@@ -1090,7 +1090,7 @@ form {
   z-index: 1000;
   position: relative;
   align-items: center;
-  border-bottom: 1px solid #EBF2F6;
+  border-bottom: 1px solid #ebf2f6;
   border-radius: 8px 8px 0px 0px;
   background-color: #fff;
 }
@@ -1134,7 +1134,7 @@ form {
   z-index: 1000;
   position: relative;
   align-items: center;
-  border-bottom: 1px solid #EBF2F6
+  border-bottom: 1px solid #ebf2f6;
 }
 
 .katalogs-bolims {
@@ -1146,9 +1146,9 @@ form {
   z-index: 1000;
   position: relative;
   align-items: center;
-  background: #186FD4;
+  background: #186fd4;
   color: white;
-  border-bottom: 1px solid #EBF2F6
+  border-bottom: 1px solid #ebf2f6;
 }
 
 .zakazOpen {
@@ -1234,7 +1234,7 @@ form {
   align-items: center;
   gap: 17px;
   border-radius: 8px;
-  background: #186FD4;
+  background: #186fd4;
   color: white;
   border: none;
 }
@@ -1248,7 +1248,7 @@ form {
   width: 1920px;
   display: flex;
   gap: 30px;
-  background: #F9FAFB;
+  background: #f9fafb;
 }
 
 .katalog-olim {
@@ -1261,7 +1261,7 @@ form {
 
 .katalog-title {
   border-radius: 8px;
-  background: #FFF;
+  background: #fff;
 }
 
 .komplekte-close {
@@ -1341,7 +1341,7 @@ form {
 
 .chap-udob {
   font-size: 30px;
-  color: #117FE3;
+  color: #117fe3;
 }
 
 .cards-kampaniya {
@@ -1372,7 +1372,7 @@ form {
 }
 
 .card-kampaniya p {
-  color: #2C333D;
+  color: #2c333d;
 }
 
 .card-kampaniya ul {
@@ -1380,7 +1380,7 @@ form {
 }
 
 .card-kampaniya b {
-  color: #186FD4;
+  color: #186fd4;
   font-size: 22px;
   position: relative;
   top: -16px;
@@ -1390,8 +1390,8 @@ form {
   padding: 35px 25px;
   padding-top: 0;
   border-radius: 8px;
-  border: 3px solid #E6EEF6;
-  background: #FFF;
+  border: 3px solid #e6eef6;
+  background: #fff;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -1404,11 +1404,11 @@ form {
   gap: 19px;
   padding: 35px 25px;
   border-radius: 8px;
-  border: 3px solid #186FD4;
+  border: 3px solid #186fd4;
 }
 
 .card-kampaniya3 h3 {
-  color: #186FD4;
+  color: #186fd4;
   font-size: 25px;
 }
 
@@ -1429,8 +1429,8 @@ form {
   font-size: 20px;
   border-radius: 50%;
   border: none;
-  background-color: #EBF7FF;
-  color: #186FD4;
+  background-color: #ebf7ff;
+  color: #186fd4;
 }
 
 .srok-minus {
@@ -1446,8 +1446,8 @@ form {
   font-size: 20px;
   border-radius: 50%;
   border: none;
-  background-color: #EBF7FF;
-  color: #186FD4;
+  background-color: #ebf7ff;
+  color: #186fd4;
 }
 
 .srok-plus-minus p {
@@ -1455,7 +1455,7 @@ form {
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
-  color: #64676A;
+  color: #64676a;
   padding: 10px;
 }
 
@@ -1472,8 +1472,8 @@ form {
   font-size: 20px;
   border-radius: 50%;
   border: none;
-  background-color: #EBF7FF;
-  color: #186FD4;
+  background-color: #ebf7ff;
+  color: #186fd4;
 }
 
 .vozvrat-chap h1 {
@@ -1489,11 +1489,11 @@ form {
 }
 
 .vozvrat-chap li {
-  color: #EE0906;
+  color: #ee0906;
 }
 
 .vozvrat-chap li p {
-  color: #2C333D;
+  color: #2c333d;
 }
 
 .katalogs {
@@ -1517,7 +1517,6 @@ form {
 .narx-btn {
   display: flex;
   flex-direction: column;
-
 }
 
 .cards-katalog {
@@ -1574,23 +1573,50 @@ form {
   align-items: center;
 }
 
-.sena-arrow b {
+.narxP {
   display: flex;
-  gap: 231px;
+  gap: 229px;
 }
 
 .narxlar {
   display: flex;
 }
 
-.narxP {
+.narxP b{
   display: flex;
   gap: 3px;
 }
-.ot-narx{
+.ot-narx {
   display: flex;
   gap: 5px;
   padding: 13px 35px 13px 15px;
   border-radius: 6px;
-border: 1px solid #DFE0E2;
+  border: 1px solid #dfe0e2;
+}
+.tip-tavar-arrow b{
+  display: flex;
+  align-items:center;
+  gap: 201px;
+}
+.tavar{
+  display: block;
+}
+.tavar-no{
+  display: none;
+}
+.chekc-tavar{
+  display: flex;
+  gap: 13px;
+  padding: 15px 0px;
+  font-size: 15px;
+}
+.brend-tovar b{
+  display: flex;
+  align-items: center;
+  gap: 239px;
+}
+.chap-katalogs{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
