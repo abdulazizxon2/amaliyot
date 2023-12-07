@@ -21,7 +21,6 @@ function Navbars() {
   let { katalogdata} = statec
   let likeData = [...carddata, ...CardData1, ...katalogdata]
   let son = likeData.filter((p) => p.like === true)
-  console.log(korzinka);
   return (<div>
     <nav>
       <div className="navbar">

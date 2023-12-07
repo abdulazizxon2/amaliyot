@@ -4,7 +4,7 @@ let KatalogData = {
     {
       id: 1,
       img: "./catalogGOODS/perforator.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
       narxi: 15999,
       skidka: "15",
@@ -14,7 +14,7 @@ let KatalogData = {
     {
       id: 2,
       img: "./catalogGOODS/bolgarka2.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Смеситель Faris G-120 для раковины",
       narxi: 1789,
       skidka: null,
@@ -24,7 +24,7 @@ let KatalogData = {
     {
       id: 3,
       img: "./catalogGOODS/circular_pila_bosch.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 312,
       skidka: 10,
@@ -34,7 +34,7 @@ let KatalogData = {
     {
       id: 4,
       img: "./catalogGOODS/shlifovka.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
       skidka: 12,
@@ -44,7 +44,7 @@ let KatalogData = {
     {
       id: 5,
       img: "./catalogGOODS/nabor.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Набор гравировальных насадок Nozzle-Tok",
       narxi: 15999,
       skidka: 15,
@@ -54,7 +54,7 @@ let KatalogData = {
     {
       id: 6,
       img: "./catalogGOODS/circular_pila_zubr.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Набор гравировальных насадок Nozzle-Tok",
       narxi: 15999,
       skidka: 15,
@@ -64,7 +64,7 @@ let KatalogData = {
     {
       id: 7,
       img: "./catalogGOODS/bolgarka2.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Смеситель Faris G-120 для раковины",
       narxi: 1789,
       skidka: null,
@@ -74,7 +74,7 @@ let KatalogData = {
     {
       id: 8,
       img: "./catalogGOODS/drell_makita_s_ruchkoy.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 312,
       skidka: 10,
@@ -84,7 +84,7 @@ let KatalogData = {
     {
       id: 9,
       img: "./catalogGOODS/betonomeshalka.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Набор гравировальных насадок Nozzle-Tok",
       narxi: 15999,
       skidka: 15,
@@ -94,7 +94,7 @@ let KatalogData = {
     {
       id: 10,
       img: "./catalogGOODS/perforator_bosch.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
       skidka: 12,
@@ -104,7 +104,7 @@ let KatalogData = {
     {
       id: 11,
       img: "./catalogGOODS/constr_mixer.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
       narxi: 15999,
       skidka: 15,
@@ -114,7 +114,7 @@ let KatalogData = {
     {
       id: 12,
       img: "./catalogGOODS/drell_makita_bez_ruchki.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Набор гравировальных насадок Nozzle-Tok",
       narxi: 15999,
       skidka: 15,
@@ -124,7 +124,7 @@ let KatalogData = {
     {
       id: 13,
       img: "./catalogGOODS/bolgarka_makita.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Смеситель Faris G-120 для раковины",
       narxi: 1789,
       skidka: null,
@@ -134,7 +134,7 @@ let KatalogData = {
     {
       id: 14,
       img: "./catalogGOODS/shlifovka_zubr.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 312,
       skidka: 10,
@@ -144,7 +144,7 @@ let KatalogData = {
     {
       id: 15,
       img: "./catalogGOODS/lobzik_makita.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
       skidka: 12,
@@ -154,7 +154,7 @@ let KatalogData = {
     {
       id: 16,
       img: "./catalogGOODS/shlifovka_makita.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
       narxi: 15999,
       skidka: 15,
@@ -164,7 +164,7 @@ let KatalogData = {
     {
       id: 17,
       img: "./catalogGOODS/stroy_fen_zubr.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 312,
       skidka: 10,
@@ -174,7 +174,7 @@ let KatalogData = {
     {
       id: 18,
       img: "./catalogGOODS/graver_zubr.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Набор гравировальных насадок Nozzle-Tok",
       narxi: 15999,
       skidka: 15,
@@ -184,7 +184,7 @@ let KatalogData = {
     {
       id: 19,
       img: "./catalogGOODS/drell_makita_bez_ruchki_2.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: " Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
       skidka: 15,
@@ -194,7 +194,7 @@ let KatalogData = {
     {
       id: 20,
       img: "./catalogGOODS/perforator_bosch_siniy.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Смеситель Faris G-120 для раковины",
       narxi: 1789,
       skidka: null,
@@ -204,7 +204,7 @@ let KatalogData = {
     {
       id: 21,
       img: "./catalogGOODS/drell_PIT.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
       narxi: 15999,
       skidka: 15,
@@ -214,7 +214,7 @@ let KatalogData = {
     {
       id: 22,
       img: "./catalogGOODS/perforator_zubr.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
       skidka: 12,
@@ -224,7 +224,7 @@ let KatalogData = {
     {
       id: 23,
       img: "./catalogGOODS/stanok_vixr.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
       narxi: 15999,
       skidka: 12,
@@ -234,7 +234,7 @@ let KatalogData = {
     {
       id: 24,
       img: "./catalogGOODS/rubanok_vixr.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
       narxi: 15999,
       skidka: 12,
@@ -244,7 +244,7 @@ let KatalogData = {
     {
       id: 25,
       img: "./catalogGOODS/perforator_PIT.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 312,
       skidka: 10,
@@ -254,7 +254,7 @@ let KatalogData = {
     {
       id: 26,
       img: "./catalogGOODS/kley_pistolet_stayer.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 15999,
       skidka: 15,
@@ -264,7 +264,7 @@ let KatalogData = {
     {
       id: 27,
       img: "./catalogGOODS/nabor.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Набор гравировальных насадок Nozzle-Tok",
       narxi: 15999,
       skidka: 15,
@@ -274,7 +274,7 @@ let KatalogData = {
     {
       id: 28,
       img: "./catalogGOODS/rubanok_makita.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Смеситель Faris G-120 для раковины",
       narxi: 1789,
       skidka: null,
@@ -284,7 +284,7 @@ let KatalogData = {
     {
       id: 29,
       img: "./catalogGOODS/pilesos_zubr.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Смеситель Faris G-120 для раковины",
       narxi: 1789,
       skidka: null,
@@ -293,7 +293,7 @@ let KatalogData = {
     {
       id: 30,
       img: "./catalogGOODS/drell_makita_bez_ruchki_2.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
       skidka: 12,
@@ -302,7 +302,7 @@ let KatalogData = {
     {
       id: 31,
       img: "./catalogGOODS/bolgarka1.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
       skidka: 12,
@@ -311,7 +311,7 @@ let KatalogData = {
     {
       id: 32,
       img: "./catalogGOODS/nabor.png",
-      art: "Артикул: XJ89YHGO",
+      count:1,
       nomi: "Набор гравировальных насадок Nozzle-Tok",
       narxi: 15999,
       skidka: 15,

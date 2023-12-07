@@ -5,6 +5,7 @@ let GlavniyData = {
     {
       id: 1,
       catalog: "carddata",
+      count:1,
       like: false,
       img: "./glavniy IMG/Rectangle 22.png",
       art: "Артикул: XJ89YHGO",
@@ -15,6 +16,7 @@ let GlavniyData = {
     {
       id: 2,
       catalog: "carddata",
+      count:1,
       like: false,
       img: "./glavniy IMG/Rectangle 22 (8).png",
       art: "Артикул: XJ89YHGO",
@@ -25,6 +27,7 @@ let GlavniyData = {
     {
       id: 3,
       catalog: "carddata",
+      count:1,
       like: false,
       img: "./glavniy IMG/Rectangle 22 (5).png",
       art: "Артикул: XJ89YHGO",
@@ -35,6 +38,7 @@ let GlavniyData = {
     {
       id: 4,
       catalog: "carddata",
+      count:1,
       like: false,
       img: "./glavniy IMG/Rectangle 22 (1).png",
       art: "Артикул: XJ89YHGO",
@@ -45,6 +49,7 @@ let GlavniyData = {
     {
       id: 5,
       catalog: "carddata",
+      count:1,
       like: false,
       img: "./glavniy IMG/Rectangle 22 (7).png",
       art: "Артикул: XJ89YHGO",
@@ -143,6 +148,7 @@ let GlavniyData = {
     {
       id: 6,
       catalog: "CardData1",
+      count:1,
       like: false,
       img: "./glavniy IMG/Rectangle 22 (2).png",
       art: "Артикул: XJ89YHGO",
@@ -155,6 +161,7 @@ let GlavniyData = {
     {
       id: 7,
       catalog: "CardData1",
+      count:1,
       like: false,
       img: "./glavniy IMG/Rectangle 22 (3).png",
       art: "Артикул: XJ89YHGO",
@@ -166,6 +173,7 @@ let GlavniyData = {
     {
       id: 8,
       catalog: "CardData1",
+      count:1,
       like: false,
       img: "./glavniy IMG/Rectangle 22 (4).png",
       art: "Артикул: XJ89YHGO",
@@ -176,6 +184,7 @@ let GlavniyData = {
     {
       id: 9,
       catalog: "CardData1",
+      count:1,
       like: false,
       img: "./glavniy IMG/Rectangle 22 (6).png",
       art: "Артикул: XJ89YHGO",
@@ -187,6 +196,7 @@ let GlavniyData = {
     {
       id: 10,
       catalog: "CardData1",
+      count:1,
       like: false,
       img: "./glavniy IMG/Rectangle 22 (7).png",
       art: "Артикул: XJ89YHGO",

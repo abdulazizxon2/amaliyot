@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom'
 export default function FullPage() {
     let {carddata} = useSelector((state) => state.GlavniyRed);
     const {nomi}=useParams();
+    console.log(nomi);
   return (
     <div>
       {carddata.filter((elem)=>elem.nomi===nomi).map((elem)=>(
