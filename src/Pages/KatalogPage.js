@@ -66,10 +66,12 @@ export default function KatalogPage() {
                     <b>1222</b>
                   </span>
                 </div>
+                <div className="do-narx">
                 <p>до</p>
                 <span>
                   <b>52 500</b>
                 </span>
+                </div>
               </div>
               <Box sx={{ width: 300 }}>
                 <Slider

@@ -256,12 +256,18 @@ export default function GlavniyRed(state = GlavniyData, { type, payload }) {
       return state;
     case "card":
       if (state.korzinka.filter(param => +param.id === +payload.id).length === 0) {
-        state = {
-          ...state,
-          korzinka: [...state.korzinka, payload]
-        };
+        if (state) {
+          state = {
+            ...state,
+            korzinka: [...state.korzinka, payload]
+          };
+        }
+        else {
+          state = {
+            korzinka: [...state.korzinka, payload]
+          }
+        }
       } else {
-
       }
       return state;
     default:
