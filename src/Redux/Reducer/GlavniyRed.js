@@ -1,4 +1,3 @@
-// import { Katalog } from "../../components/Navbar/Katalog";
 import { GlavniyTypes } from "../Action/ActionTypes"
 let GlavniyData = {
   carddata: [
