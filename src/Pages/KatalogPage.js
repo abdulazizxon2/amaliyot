@@ -1,15 +1,20 @@
-import React from "react";
+import { useState } from "react";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 import { FiBarChart2 } from "react-icons/fi";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import { PiShoppingCartSimple } from "react-icons/pi";
 import { useDispatch, useSelector } from "react-redux";
 import {
+  Categorya,
+  Categorya1,
+  ColorFilter,
   Openkatalog2,
   Openkatalog3,
   Openkatalog4,
+  Openkatalog5,
   setingLike,
   tipTovarBool,
+  tipTovarBool1,
 } from "../Redux/Action/KatalogAction";
 import { korzinkaFunc } from "../Redux/Action/GlavniyAction";
 import { Openkatalog } from "../Redux//Action/KatalogAction";
@@ -17,7 +22,7 @@ import Slider from "@mui/material/Slider";
 import { Box } from "@mui/material";
 
 export default function KatalogPage() {
-  const [value, setValue] = React.useState([20, 37]);
+  const [value, setValue] = useState([20, 37]);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -32,10 +37,15 @@ export default function KatalogPage() {
     katalogOpens3,
     brendData,
     katalogOpens4,
-    materialData
+    materialData,
+    categorya,
+    katalogOpens5,
+    colorfilter,
+    colorfiltr,
+    categorya1
   } = state;
   let dispatch = useDispatch();
-
+console.log();
   return (
     <div>
       <div className="elektr-instrument">
@@ -54,9 +64,7 @@ export default function KatalogPage() {
               <div className="narxP">
                 <b>Цена, ₽</b>
               </div>
-                <b>
-                  {katalogOpens ? <IoIosArrowForward /> : <IoIosArrowDown />}
-                </b>
+              <b>{katalogOpens ? <IoIosArrowForward /> : <IoIosArrowDown />}</b>
             </div>
             <div className={katalogOpens ? "no-narxBTN" : "narx-btn"}>
               <div className="narxlar">
@@ -67,10 +75,10 @@ export default function KatalogPage() {
                   </span>
                 </div>
                 <div className="do-narx">
-                <p>до</p>
-                <span>
-                  <b>52 500</b>
-                </span>
+                  <p>до</p>
+                  <span>
+                    <b>52 500</b>
+                  </span>
                 </div>
               </div>
               <Box sx={{ width: 300 }}>
@@ -107,7 +115,12 @@ export default function KatalogPage() {
                       checked={elem.bool}
                       onChange={() => { }}
                     />
-                    <p onClick={() => dispatch(tipTovarBool(elem))}>
+                    <p
+                      onClick={() => {
+                        dispatch(tipTovarBool(elem));
+                        dispatch(Categorya(elem));
+                      }}
+                    >
                       {elem.title}
                     </p>
                   </div>
@@ -136,7 +149,10 @@ export default function KatalogPage() {
                       checked={elem.bool}
                       onChange={() => { }}
                     />
-                    <p onClick={() => dispatch(tipTovarBool(elem))}>
+                    <p onClick={() => { 
+                      console.log(elem);
+                      dispatch(tipTovarBool1(elem));
+                       dispatch(Categorya1(elem));}}>
                       {elem.title}
                     </p>
                   </div>
@@ -173,55 +189,96 @@ export default function KatalogPage() {
               })}
             </div>
           </div>
+          <div className="materila">
+            <div
+              className="brend-color"
+              onClick={() => dispatch(Openkatalog5())}
+            >
+              <b>
+                <div className="narxP">
+                  <b>Цвет</b>
+                </div>
+                {katalogOpens5 ? <IoIosArrowDown /> : <IoIosArrowForward />}
+              </b>
+            </div>
+            <div className={katalogOpens5 ? "tavar" : "tavar-no"}>
+              {colorfilter.map((elem, i) => {
+                return (
+                  <div className="chekc-tavar" key={i}>
+                    <div
+                      className="rang"
+                      style={{ background: elem.translate }}
+                    ></div>
+                    <p onClick={() => dispatch(ColorFilter(elem.color))}>
+                      <b>{elem.color}</b>
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
         <div className="ong-katalogs">
           <div className="cards-katalog">
-            {katalogdata.map((elem) => {
-              return (
-                <div className="cardBig" key={elem.id}>
-                  <div className="card-Big">
-                    <button className="xit">хит</button>
-                    <img src={elem.img} alt={elem.nomi} />
-                    <div className="cardMiddle">
-                      <p>{elem.art}</p>
-                      <h1>{elem.nomi}</h1>
-                      {elem.skidka ? (
-                        <b className="b1">
-                          <del>{elem.narxi}₽</del>
-                          {elem.skidka
-                            ? (
-                              elem.narxi -
-                              (elem.narxi / 100) * elem.skidka
-                            ).toFixed(2)
-                            : ""}
-                          ₽<b>-{elem.skidka}%</b>
-                        </b>
-                      ) : (
-                        <span>{elem.narxi}₽</span>
-                      )}
-                      <div className="btn-cards">
-                        <div className="btn-cardsx">
-                          <button
-                            className="kupit"
-                            onClick={() => dispatch(korzinkaFunc(elem))}
-                          >
-                            <PiShoppingCartSimple /> Купить
-                          </button>
-                        </div>
-                        <div className="btn-card">
-                          <button onClick={() => dispatch(setingLike(elem))}>
-                            {elem.like ? <AiFillHeart /> : <AiOutlineHeart />}
-                          </button>
-                          <button>
-                            <FiBarChart2 />
-                          </button>
+            {katalogdata?.filter((elem) => {
+              if (elem.color.includes(colorfiltr))if (elem?.title?.includes(categorya1)) {
+                if (categorya.length > 0) {
+                  for (let item of categorya) {
+                    if (elem?.kategorya?.includes(item) ){
+                      return elem;
+                    }
+                  }
+                } else {
+                  return elem;
+                }
+              }
+            })
+              ?.map((elem) => {
+                return (
+                  <div className="cardBig" key={elem.id}>
+                    <div className="card-Big">
+                      <button className="xit">хит</button>
+                      <img src={elem.img} alt={elem.nomi} />
+                      <div className="cardMiddle">
+                        <p>{elem.art}</p>
+                        <h1>{elem.nomi}</h1>
+                        {elem.skidka ? (
+                          <b className="b1">
+                            <del>{elem.narxi}₽</del>
+                            {elem.skidka
+                              ? (
+                                elem.narxi -
+                                (elem.narxi / 100) * elem.skidka
+                              ).toFixed(2)
+                              : ""}
+                            ₽<b>-{elem.skidka}%</b>
+                          </b>
+                        ) : (
+                          <span>{elem.narxi}₽</span>
+                        )}
+                        <div className="btn-cards">
+                          <div className="btn-cardsx">
+                            <button
+                              className="kupit"
+                              onClick={() => dispatch(korzinkaFunc(elem))}
+                            >
+                              <PiShoppingCartSimple /> Купить
+                            </button>
+                          </div>
+                          <div className="btn-card">
+                            <button onClick={() => dispatch(setingLike(elem))}>
+                              {elem.like ? <AiFillHeart /> : <AiOutlineHeart />}
+                            </button>
+                            <button>
+                              <FiBarChart2 />
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
           </div>
           <div className="kupit-instrument">
             <h1>Купить электроинструмент</h1>

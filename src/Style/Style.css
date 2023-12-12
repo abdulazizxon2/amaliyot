@@ -1160,7 +1160,6 @@ form {
   height: 100vh;
   width: 100%;
   position: fixed;
-  backdrop-filter: blur(10px);
   top: 0;
   left: 0;
   overflow: hidden;
@@ -1582,7 +1581,7 @@ form {
 
 .narxlar {
   display: flex;
-  gap:18px;
+  gap: 18px;
   padding-top: 18px;
   padding-bottom: 25px;
 }
@@ -1595,71 +1594,104 @@ form {
   border-radius: 6px;
   border: 1px solid #dfe0e2;
 }
-.do-narx{
+
+.do-narx {
   display: flex;
   gap: 5px;
   padding: 13px 35px 13px 15px;
   border-radius: 6px;
   border: 1px solid #dfe0e2;
 }
-.tip-tavar-arrow b{
+
+.tip-tavar-arrow b {
   display: flex;
-  align-items:center;
+  align-items: center;
   gap: 217px;
 }
-.tavar{
+
+.tavar {
   display: block;
 }
-.tavar-no{
+
+.tavar-no {
   display: none;
 }
-.chekc-tavar{
+
+.chekc-tavar {
   display: flex;
   gap: 13px;
   padding: 15px 0px;
   font-size: 15px;
 }
-.brend-tovar b{
+
+.brend-tovar b {
   display: flex;
   align-items: center;
   gap: 250px;
 }
-.chap-katalogs{
+
+.chap-katalogs {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.likePage .titles{
+
+.likePage .titles {
   padding-bottom: 30px;
 }
-.likePage h1{
+
+.likePage h1 {
   padding-bottom: 30px;
 }
-.likePage table{
+
+.likePage table {
   border-collapse: collapse;
-  border: 3px solid #117fe3 ;
+  border: 3px solid #117fe3;
 }
-.likePage table thead{
+
+.likePage table thead {
   background-color: #117fe3;
   color: white;
   text-transform: capitalize;
   border: 1px solid white;
 }
-.likePage table tbody{
+
+.likePage table tbody {
   color: #117fe3;
   text-align: center;
 }
-.kozinkaPage{
+
+.kozinkaPage {
   padding: 0px 150px;
   display: grid;
   grid-template-columns: repeat(5, calc(100% / 5 - 20px));
 }
-.brend-material b{
+
+.brend-material b {
   display: flex;
   align-items: center;
-  gap: 218px;
+  gap: 219px;
 }
-.sena-arrow{
+
+.sena-arrow {
   display: flex;
   gap: 242px;
+}
+
+.rang {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.brend-color b{
+  display: flex;
+  align-items: center;
+  gap: 257px;
+}
+.tavar-korz{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 60px;
 }

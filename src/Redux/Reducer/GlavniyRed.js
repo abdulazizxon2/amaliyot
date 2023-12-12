@@ -1,4 +1,5 @@
-import { GlavniyTypes } from "../Action/ActionTypes"
+import { GlavniyTypes } from "../Action/ActionTypes";
+
 let GlavniyData = {
   carddata: [
     {

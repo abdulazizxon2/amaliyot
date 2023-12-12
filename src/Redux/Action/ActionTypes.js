@@ -15,6 +15,10 @@ let KatalogTypes = {
   chekced:"chekced",
   katalogs3:"katalogs3",
   katalogs4:"katalogs4",
+  katalogs5:"katalogs5",
+  categorya:"categorya",
+  colorfiltr:"colorfiltr",
+  categorya1:"categorya1",
 }
 
 export { NavbarTypes, GlavniyTypes, KatalogTypes };

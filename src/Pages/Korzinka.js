@@ -4,6 +4,7 @@ import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { FiBarChart2 } from "react-icons/fi";
 import { PiShoppingCartSimple } from "react-icons/pi";
 import { korzinkaFunc, setLike } from "../Redux/Action/GlavniyAction";
+import { TbShoppingCartX } from "react-icons/tb";
 export default function Korzinka() {
   let state = useSelector((state) => state.GlavniyRed);
   let { korzinka } = state;
@@ -12,6 +13,13 @@ export default function Korzinka() {
 
   return (
     <div className='kozinkaPage'>
+      <div className="tavar-korz">
+        <div className="titles">
+          <b>Стройоптторг</b>/ <p>Корзина товаров</p>
+        </div>
+        <h1>Корзина товаров</h1>
+      </div>
+      {korzinka ?  korzinka:<TbShoppingCartX /> }
       {korzinka.map((elem) => {
         return (
           <div className="cardBig" key={elem.id}>
