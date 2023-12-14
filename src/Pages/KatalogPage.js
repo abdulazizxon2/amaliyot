@@ -42,10 +42,32 @@ export default function KatalogPage() {
     katalogOpens5,
     colorfilter,
     colorfiltr,
-    categorya1
+    categorya1,
   } = state;
   let dispatch = useDispatch();
-console.log();
+  console.log(
+    katalogdata?.filter((elem) => {
+      if (elem.color.includes(colorfiltr)) {
+        return elem;
+      }
+    })?.filter((elem)=>{
+      if (categorya.length > 0){
+        for (let item of categorya){
+          if(elem?.kategorya?.includes(item)){
+            return elem;
+          }
+        }
+      }
+    })?.filter((elem)=>{
+      if (categorya1.length > 0){
+        for (let item of categorya1){
+          if(elem?.brend?.includes(item)){
+            return elem;
+          }
+        }
+      }
+    })
+  );
   return (
     <div>
       <div className="elektr-instrument">
@@ -104,16 +126,16 @@ console.log();
                 <b>
                   {katalogOpens2 ? <IoIosArrowDown /> : <IoIosArrowForward />}
                 </b>
-              </b>
+               </b>
             </div>
             <div className={katalogOpens2 ? "tavar" : "tavar-no"}>
               {tiptavarData.map((elem, i) => {
                 return (
-                  <div className="chekc-tavar" key={i}>
+                 <div className="chekc-tavar" key={i}>
                     <input
                       type="checkbox"
                       checked={elem.bool}
-                      onChange={() => { }}
+                      onChange={() => {}}
                     />
                     <p
                       onClick={() => {
@@ -147,12 +169,15 @@ console.log();
                     <input
                       type="checkbox"
                       checked={elem.bool}
-                      onChange={() => { }}
+                      onChange={() => {}}
                     />
-                    <p onClick={() => { 
-                      console.log(elem);
-                      dispatch(tipTovarBool1(elem));
-                       dispatch(Categorya1(elem));}}>
+                    <p
+                      onClick={() => {
+                        console.log(elem);
+                        dispatch(tipTovarBool1(elem));
+                        dispatch(Categorya1(elem));
+                      }}
+                    >
                       {elem.title}
                     </p>
                   </div>
@@ -179,7 +204,7 @@ console.log();
                     <input
                       type="checkbox"
                       checked={elem.bool}
-                      onChange={() => { }}
+                      onChange={() => {}}
                     />
                     <p onClick={() => dispatch(tipTovarBool(elem))}>
                       {elem.title}
@@ -220,19 +245,32 @@ console.log();
         </div>
         <div className="ong-katalogs">
           <div className="cards-katalog">
-            {katalogdata?.filter((elem) => {
-              if (elem.color.includes(colorfiltr))if (elem?.title?.includes(categorya1)) {
-                if (categorya.length > 0) {
-                  for (let item of categorya) {
-                    if (elem?.kategorya?.includes(item) ){
+            {katalogdata
+              .filter((elem) => {
+                if (elem.color.includes(colorfiltr)) {
+                  return elem;
+                }
+              }).filter((elem)=>{
+                if (categorya.length > 0){
+                  for (let item of categorya){
+                    if(elem?.kategorya?.includes(item)){
                       return elem;
                     }
                   }
-                } else {
-                  return elem;
+                }else{
+                  return elem
                 }
-              }
-            })
+              }).filter((elem)=>{
+                if (categorya1.length > 0){
+                  for (let item of categorya1){
+                    if(elem?.brend?.includes(item)){
+                      return elem;
+                    }
+                  }
+                }else{
+                  return elem
+                }
+              })
               ?.map((elem) => {
                 return (
                   <div className="cardBig" key={elem.id}>
@@ -247,9 +285,9 @@ console.log();
                             <del>{elem.narxi}₽</del>
                             {elem.skidka
                               ? (
-                                elem.narxi -
-                                (elem.narxi / 100) * elem.skidka
-                              ).toFixed(2)
+                                  elem.narxi -
+                                  (elem.narxi / 100) * elem.skidka
+                                ).toFixed(2)
                               : ""}
                             ₽<b>-{elem.skidka}%</b>
                           </b>

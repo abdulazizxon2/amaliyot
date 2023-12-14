@@ -528,6 +528,7 @@ let KatalogData = {
   ],
   korzinka: [],
   categorya: [],
+  categorya1: [],
   colorfiltr: "",
 };
 export default function KatalogRed(state = KatalogData, { type, payload }) {
