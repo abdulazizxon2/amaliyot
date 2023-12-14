@@ -25,7 +25,7 @@ export default function PageIndex() {
     <Routes>
       <Route element={<Navbar />}>
         <Route element={<Footer />}>
-          <Route path="/" element={<Glavniy />}/>
+          <Route path="/" element={<Glavniy />} />
           <Route path="/kampaniya" element={<Kampaniya />} />
           <Route path="/oplata" element={<Oplata />} />
           <Route path="/dostavka" element={<Dostavka />} />
@@ -34,11 +34,11 @@ export default function PageIndex() {
           <Route path="/vapros" element={<Vapros />} />
           <Route path="/novosti" element={<Novosti />} />
           <Route path="/kontakt" element={<Kontakt />} />
-          <Route path="/katalog" element={<Katalog/>}/>
-          <Route path="/like" element={<Like/>}/>
-          <Route path="/korzinka" element={<Korzinka/>}/>
-          <Route path="/fullPage/:nomi" element={<FullPage/>}/>
-          <Route path="/fullCard" element={<FullCard/>}/>
+          <Route path="/katalog" element={<Katalog />} />
+          <Route path="/like" element={<Like />} />
+          <Route path="/korzinka" element={<Korzinka />} />
+          <Route path="/fullPage/:id/:nomi" element={<FullPage />} />
+          <Route path="/fullCard" element={<FullCard />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Route>

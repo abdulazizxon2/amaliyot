@@ -22,7 +22,7 @@ import Slider from "@mui/material/Slider";
 import { Box } from "@mui/material";
 
 export default function KatalogPage() {
-  const [value, setValue] = useState([20, 37]);
+  const [value, setValue] = useState([3000, 52500]);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -50,18 +50,18 @@ export default function KatalogPage() {
       if (elem.color.includes(colorfiltr)) {
         return elem;
       }
-    })?.filter((elem)=>{
-      if (categorya.length > 0){
-        for (let item of categorya){
-          if(elem?.kategorya?.includes(item)){
+    })?.filter((elem) => {
+      if (categorya.length > 0) {
+        for (let item of categorya) {
+          if (elem?.kategorya?.includes(item)) {
             return elem;
           }
         }
       }
-    })?.filter((elem)=>{
-      if (categorya1.length > 0){
-        for (let item of categorya1){
-          if(elem?.brend?.includes(item)){
+    })?.filter((elem) => {
+      if (categorya1.length > 0) {
+        for (let item of categorya1) {
+          if (elem?.brend?.includes(item)) {
             return elem;
           }
         }
@@ -90,24 +90,17 @@ export default function KatalogPage() {
             </div>
             <div className={katalogOpens ? "no-narxBTN" : "narx-btn"}>
               <div className="narxlar">
-                <div className="ot-narx">
-                  <p>от</p>
-                  <span>
-                    <b>1222</b>
-                  </span>
-                </div>
-                <div className="do-narx">
-                  <p>до</p>
-                  <span>
-                    <b>52 500</b>
-                  </span>
-                </div>
+                <label htmlFor="ot-narx">от</label>
+                <input type="number"  id="ot-narx" value={`${value[0]}`}/>
+                <label htmlFor="do-narx">ДО</label>
+                <input type="number" id="do-narx" value={`${value[1]}`}/>
               </div>
               <Box sx={{ width: 300 }}>
                 <Slider
                   getAriaLabel={() => "Temperature range"}
                   value={value}
                   onChange={handleChange}
+                  max={100000}
                   valueLabelDisplay="auto"
                 />
               </Box>
@@ -126,16 +119,16 @@ export default function KatalogPage() {
                 <b>
                   {katalogOpens2 ? <IoIosArrowDown /> : <IoIosArrowForward />}
                 </b>
-               </b>
+              </b>
             </div>
             <div className={katalogOpens2 ? "tavar" : "tavar-no"}>
               {tiptavarData.map((elem, i) => {
                 return (
-                 <div className="chekc-tavar" key={i}>
+                  <div className="chekc-tavar" key={i}>
                     <input
                       type="checkbox"
                       checked={elem.bool}
-                      onChange={() => {}}
+                      onChange={() => { }}
                     />
                     <p
                       onClick={() => {
@@ -169,7 +162,7 @@ export default function KatalogPage() {
                     <input
                       type="checkbox"
                       checked={elem.bool}
-                      onChange={() => {}}
+                      onChange={() => { }}
                     />
                     <p
                       onClick={() => {
@@ -204,7 +197,7 @@ export default function KatalogPage() {
                     <input
                       type="checkbox"
                       checked={elem.bool}
-                      onChange={() => {}}
+                      onChange={() => { }}
                     />
                     <p onClick={() => dispatch(tipTovarBool(elem))}>
                       {elem.title}
@@ -247,27 +240,28 @@ export default function KatalogPage() {
           <div className="cards-katalog">
             {katalogdata
               .filter((elem) => {
-                if (elem.color.includes(colorfiltr)) {
+                if (elem.color.includes(colorfiltr) && value[0] <= elem.narxi &&
+                  value[1] >= elem.narxi) {
                   return elem;
                 }
-              }).filter((elem)=>{
-                if (categorya.length > 0){
-                  for (let item of categorya){
-                    if(elem?.kategorya?.includes(item)){
+              }).filter((elem) => {
+                if (categorya.length > 0) {
+                  for (let item of categorya) {
+                    if (elem?.kategorya?.includes(item)) {
                       return elem;
                     }
                   }
-                }else{
+                } else {
                   return elem
                 }
-              }).filter((elem)=>{
-                if (categorya1.length > 0){
-                  for (let item of categorya1){
-                    if(elem?.brend?.includes(item)){
+              }).filter((elem) => {
+                if (categorya1.length > 0) {
+                  for (let item of categorya1) {
+                    if (elem?.brend?.includes(item)) {
                       return elem;
                     }
                   }
-                }else{
+                } else {
                   return elem
                 }
               })
@@ -285,9 +279,9 @@ export default function KatalogPage() {
                             <del>{elem.narxi}₽</del>
                             {elem.skidka
                               ? (
-                                  elem.narxi -
-                                  (elem.narxi / 100) * elem.skidka
-                                ).toFixed(2)
+                                elem.narxi -
+                                (elem.narxi / 100) * elem.skidka
+                              ).toFixed(2)
                               : ""}
                             ₽<b>-{elem.skidka}%</b>
                           </b>

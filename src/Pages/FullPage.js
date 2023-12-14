@@ -3,16 +3,19 @@ import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom'
 
 export default function FullPage() {
-    let {carddata} = useSelector((state) => state.GlavniyRed);
-    const {nomi}=useParams();
-    console.log(nomi);
+  const prod = useParams();
+  console.log(prod);
+  let { carddata, CardData1 } = useSelector((state) => state.GlavniyRed);
+  let { katalogdata } = useSelector((state) => state.KatalogRed);
+  let data = [...carddata, ...CardData1, ...katalogdata]
+  let card = data.filter((elem) => elem.id === prod.id)?.[0]
+  console.log(card);
+
   return (
     <div>
-      {carddata.filter((elem)=>elem.nomi===nomi).map((elem)=>(
-        <div key={elem.id} className="fullPage">
-            <h1>{elem.nomi}</h1>
-        </div>
-      ))}
+      <div key={prod.id} className="fullPage">
+        <h1>{prod.nomi}</h1>
+      </div>
     </div>
   )
 }

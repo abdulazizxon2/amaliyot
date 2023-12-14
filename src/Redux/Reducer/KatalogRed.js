@@ -581,7 +581,19 @@ export default function KatalogRed(state = KatalogData, { type, payload }) {
       }
       return state;
     case KatalogTypes.categorya1:
-      state = { ...state, categorya1: payload };
+      if (
+        state.categorya1.filter((elem) => elem === payload.title).length === 0
+      ) {
+        state = {
+          ...state,
+          categorya1: [...state.categorya1, payload.title],
+        };
+      } else {
+        state = {
+          ...state,
+          categorya1: state.categorya1.filter((elem) => elem !== payload.title),
+        };
+      }
       return state;
     case KatalogTypes.colorfiltr:
       state = { ...state, colorfiltr: payload };

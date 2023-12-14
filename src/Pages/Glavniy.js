@@ -11,7 +11,7 @@ import { FiBarChart2 } from "react-icons/fi"
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { useDispatch, useSelector } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { korzinkaFunc, setLike } from "../Redux/Action/GlavniyAction";
 import { TbShoppingCartFilled } from "react-icons/tb";
 
@@ -19,7 +19,10 @@ export default function Glavniy() {
   let state = useSelector((state) => state.GlavniyRed);
   let dispatch = useDispatch();
   let { carddata, cardBir, skidka, bosch, CardData1, son, novosti } = state;
-
+  let nom = useNavigate();
+  function toNom(obj) {
+    nom(`/fullPage/${obj.id}/${obj.nomi}`)
+  }
 
 
   cardBir = cardBir.map(
@@ -140,7 +143,7 @@ export default function Glavniy() {
             {carddata.map((elem) => {
               return (
                 <SwiperSlide key={elem.id}>
-                  <div className="cardBig" >
+                  <div className="cardBig" onClick={() => toNom(elem)}>
                     <div className="card-Big">
                       <button className='xit'>хит</button>
                       <img src={elem.img} alt={elem.nomi} />
@@ -253,9 +256,9 @@ export default function Glavniy() {
                       ).toFixed(2)}₽<b>-{elem.skidka}%</b>
                     </b>) : (<span>{elem.narxi}₽</span>)}
                     <div className="btn-cards">
-                    <div className="btn-cardsx">
-                            <button className='kupit' onClick={() => dispatch(korzinkaFunc(elem))}>{korzinkaFunc ? <PiShoppingCartSimple /> : <TbShoppingCartFilled />} Купить</button>
-                          </div>
+                      <div className="btn-cardsx">
+                        <button className='kupit' onClick={() => dispatch(korzinkaFunc(elem))}>{korzinkaFunc ? <PiShoppingCartSimple /> : <TbShoppingCartFilled />} Купить</button>
+                      </div>
                       <div className="btn-card">
                         <button onClick={() => dispatch(setLike(elem))}>
                           {elem.like ? <AiFillHeart /> : <AiOutlineHeart />}
