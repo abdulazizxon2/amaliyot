@@ -16,7 +16,6 @@ import Katalog from "./KatalogPage";
 import Like from "./Like";
 import Korzinka from "./Korzinka";
 import FullPage from "./FullPage";
-import FullCard from "./FullCard";
 
 
 
@@ -37,8 +36,7 @@ export default function PageIndex() {
           <Route path="/katalog" element={<Katalog />} />
           <Route path="/like" element={<Like />} />
           <Route path="/korzinka" element={<Korzinka />} />
-          <Route path="/fullPage/:id/:nomi" element={<FullPage />} />
-          <Route path="/fullCard" element={<FullCard />} />
+          <Route path="/fullPage/:id/:img" element={<FullPage />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Route>

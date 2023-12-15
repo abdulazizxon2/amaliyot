@@ -14,7 +14,7 @@ export default function FullPage() {
   return (
     <div>
       <div key={prod.id} className="fullPage">
-        <h1>{prod.nomi}</h1>
+        <img src={prod.img} alt="" />
       </div>
     </div>
   )

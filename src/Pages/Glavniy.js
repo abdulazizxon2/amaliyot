@@ -21,7 +21,7 @@ export default function Glavniy() {
   let { carddata, cardBir, skidka, bosch, CardData1, son, novosti } = state;
   let nom = useNavigate();
   function toNom(obj) {
-    nom(`/fullPage/${obj.id}/${obj.nomi}`)
+    nom(`/fullPage/${obj.id}/${obj.img}`)
   }
 
 
@@ -143,10 +143,10 @@ export default function Glavniy() {
             {carddata.map((elem) => {
               return (
                 <SwiperSlide key={elem.id}>
-                  <div className="cardBig" onClick={() => toNom(elem)}>
+                  <div className="cardBig" >
                     <div className="card-Big">
                       <button className='xit'>хит</button>
-                      <img src={elem.img} alt={elem.nomi} />
+                      <img src={elem.img} alt={elem.nomi} onClick={() => toNom(elem)}/>
                       <div className="cardMiddle">
                         <p>{elem.art}</p>
                         <h1>{elem.nomi}</h1>
