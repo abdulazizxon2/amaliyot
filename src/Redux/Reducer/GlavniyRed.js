@@ -1,4 +1,4 @@
-import { GlavniyTypes } from "../Action/ActionTypes";
+import { GlavniyTypes,PlusMinusType } from "../Action/ActionTypes";
 
 let GlavniyData = {
   carddata: [
@@ -12,6 +12,7 @@ let GlavniyData = {
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
       narxi: 15999,
       skidka: "15",
+      soni:0
     },
     {
       id: 2,
@@ -22,7 +23,8 @@ let GlavniyData = {
       art: "Артикул: XJ89YHGO",
       nomi: "Смеситель Faris G-120 для раковины",
       narxi: 1789,
-      skidka: null
+      skidka: null,
+      soni:0
     },
     {
       id: 3,
@@ -34,6 +36,7 @@ let GlavniyData = {
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 312,
       skidka: 10,
+      soni:0
     },
     {
       id: 4,
@@ -44,7 +47,8 @@ let GlavniyData = {
       art: "Артикул: XJ89YHGO",
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
-      skidka: null
+      skidka: null,
+      soni:0
     },
     {
       id: 5,
@@ -56,7 +60,7 @@ let GlavniyData = {
       nomi: "Водно-дисперсионный клей Cob",
       narxi: 15999,
       skidka: 12,
-
+      soni:0
     },
   ],
   cardBir: [
@@ -280,6 +284,16 @@ export default function GlavniyRed(state = GlavniyData, { type, payload }) {
       } else {
       }
       return state;
+      case PlusMinusType.plus:
+        state = state.map((elem) =>
+          elem.id === payload ? { ...state, soni: elem.soni + 1 } : elem
+        );
+        return state;
+      case PlusMinusType.minus:
+        state = state.map((elem) =>
+          elem.id === payload ? { ...state, soni: elem.soni - 1 } : elem
+        );
+        return state;
     default:
       return state;
   }

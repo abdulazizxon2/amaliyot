@@ -3,16 +3,13 @@ import { useDispatch, useSelector } from 'react-redux';
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { ImBin } from "react-icons/im";
 import { PiShoppingCartSimple } from "react-icons/pi";
-import { korzinkaFunc, setLike } from "../Redux/Action/GlavniyAction";
+import { handleMinus, handlePlus, korzinkaFunc, setLike } from "../Redux/Action/GlavniyAction";
 import { NavLink } from 'react-router-dom';
 export default function Korzinka() {
   let state = useSelector((state) => state.GlavniyRed);
   let { korzinka } = state;
   let dispatch = useDispatch();
 
-  let handleDel=(id)=>{
-    
-  }
   return (
     <div className='kozinkaPage'>
       <div className="tavar-korz">
@@ -39,6 +36,11 @@ export default function Korzinka() {
                           elem.narxi - (elem.narxi / 100) * elem.skidka
                         ).toFixed(2) : ""}₽<b>-{elem.skidka}%</b>
                       </b>) : (<span>{elem.narxi}₽</span>)}
+                      <div className="plus-minus">
+                        <button onClick={() => dispatch(handleMinus(elem.id))}>+</button>
+                        <h1>{elem.soni}</h1>
+                        <button onClick={() => dispatch(handlePlus(elem.id))}>-</button>
+                      </div>
                       <div className="btn-cards">
                         <div className="btn-cardsx">
                           <button className='kupit' onClick={() => dispatch(korzinkaFunc(elem))}><PiShoppingCartSimple />  Купить</button>

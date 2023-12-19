@@ -144,7 +144,7 @@ export default function Glavniy() {
               return (
                 <SwiperSlide key={elem.id}>
                   <div className="cardBig" >
-                    <div className="card-Big">
+                    <div className="card-Big" >
                       <button className='xit'>хит</button>
                       <img src={elem.img} alt={elem.nomi} onClick={() => toNom(elem)}/>
                       <div className="cardMiddle">

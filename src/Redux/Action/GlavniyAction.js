@@ -1,4 +1,4 @@
-import { GlavniyTypes } from "./ActionTypes"
+import { GlavniyTypes, PlusMinusType } from "./ActionTypes"
 function setLike(param) {
     return {
         type: GlavniyTypes.like,
@@ -11,5 +11,17 @@ function korzinkaFunc(param) {
         payload: param,
     };
 }
+function handlePlus(param) {
+    return {
+        type: PlusMinusType.plus,
+        payload: param,
+    };
+}
+function handleMinus(param) {
+    return {
+        type: PlusMinusType.minus,
+        payload: param,
+    };
+}
 
-export { setLike, korzinkaFunc }
+export { setLike, korzinkaFunc, handlePlus, handleMinus }

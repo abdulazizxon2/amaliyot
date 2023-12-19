@@ -36,7 +36,7 @@ export default function PageIndex() {
           <Route path="/katalog" element={<Katalog />} />
           <Route path="/like" element={<Like />} />
           <Route path="/korzinka" element={<Korzinka />} />
-          <Route path="/fullPage/:id/:img" element={<FullPage />} />
+          <Route path="/fullPage/:id" element={<FullPage />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Route>

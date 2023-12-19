@@ -512,6 +512,11 @@
   padding: 7px 17px;
   border: none;
   border-radius: 6px;
+  display: flex;
+}
+.plus-minus{
+  display: flex;
+  gap: 1px;
 }
 
 .btn-card button {

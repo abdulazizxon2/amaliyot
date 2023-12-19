@@ -20,5 +20,9 @@ let KatalogTypes = {
   colorfiltr:"colorfiltr",
   categorya1:"categorya1",
 }
+let PlusMinusType={
+  plus: "plus",
+  minus: "minus",
+}
 
-export { NavbarTypes, GlavniyTypes, KatalogTypes };
+export { NavbarTypes, GlavniyTypes, KatalogTypes,PlusMinusType };
