@@ -9,8 +9,8 @@ export default function FullPage() {
   let { katalogdata } = useSelector((state) => state.KatalogRed);
   let data = [...carddata, ...CardData1, ...katalogdata]
   let card = data.filter((elem) => elem.id === +prod.id)?.[0]
-  // console.log(card);
-  console.log(data);
+  console.log(card);
+  // console.log(data);
 
   return (
     <div>

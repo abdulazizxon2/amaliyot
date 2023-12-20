@@ -21,7 +21,7 @@ export default function Glavniy() {
   let { carddata, cardBir, skidka, bosch, CardData1, son, novosti } = state;
   let nom = useNavigate();
   function toNom(obj) {
-    nom(`/fullPage/${obj.id}/${obj.img}`)
+    nom(`/fullPage/${obj.id}`)
   }
 
 
