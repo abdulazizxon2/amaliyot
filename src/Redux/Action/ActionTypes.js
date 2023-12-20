@@ -6,6 +6,7 @@ let NavbarTypes = {
 }
 let GlavniyTypes = {
   like: "like",
+  delete: "delete",
   // payload:useParams
 }
 let KatalogTypes = {

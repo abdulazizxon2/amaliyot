@@ -4,12 +4,13 @@ import { useParams } from 'react-router-dom'
 
 export default function FullPage() {
   const prod = useParams();
-  console.log(prod);
+  // console.log(prod);
   let { carddata, CardData1 } = useSelector((state) => state.GlavniyRed);
   let { katalogdata } = useSelector((state) => state.KatalogRed);
   let data = [...carddata, ...CardData1, ...katalogdata]
-  let card = data.filter((elem) => elem.id === prod.id)?.[0]
-  console.log(card);
+  let card = data.filter((elem) => elem.id === +prod.id)?.[0]
+  // console.log(card);
+  console.log(data);
 
   return (
     <div>

@@ -2,7 +2,7 @@ import { KatalogTypes } from "../Action/ActionTypes";
 let KatalogData = {
   katalogdata: [
     {
-      id: 1,
+      id: 11,
       img: "./catalogGOODS/perforator.png",
       count: 1,
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
@@ -15,7 +15,7 @@ let KatalogData = {
       brend: "STAYER"
     },
     {
-      id: 2,
+      id: 12,
       img: "./catalogGOODS/bolgarka2.png",
       count: 1,
       nomi: "Смеситель Faris G-120 для раковины",
@@ -28,7 +28,7 @@ let KatalogData = {
       brend: "STAYER"
     },
     {
-      id: 3,
+      id: 13,
       img: "./catalogGOODS/circular_pila_bosch.png",
       count: 1,
       nomi: "Триммерная леска «Спираль-100»",
@@ -41,7 +41,7 @@ let KatalogData = {
       brend: "STAYER"
     },
     {
-      id: 4,
+      id: 14,
       img: "./catalogGOODS/shlifovka.png",
       count: 1,
       nomi: "Унитаз подвесной Aragio с двойным сливом",
@@ -54,7 +54,7 @@ let KatalogData = {
       brend: "STAYER"
     },
     {
-      id: 5,
+      id: 15,
       img: "./catalogGOODS/nabor.png",
       count: 1,
       nomi: "Набор гравировальных насадок Nozzle-Tok",
@@ -67,7 +67,7 @@ let KatalogData = {
       brend: "STAYER"
     },
     {
-      id: 6,
+      id: 16,
       img: "./catalogGOODS/circular_pila_zubr.png",
       count: 1,
       nomi: "Набор гравировальных насадок Nozzle-Tok",
@@ -80,7 +80,7 @@ let KatalogData = {
       brend: "STAYER"
     },
     {
-      id: 7,
+      id: 17,
       img: "./catalogGOODS/bolgarka2.png",
       count: 1,
       nomi: "Смеситель Faris G-120 для раковины",
@@ -93,7 +93,7 @@ let KatalogData = {
       brend: "HOMEPROFEE"
     },
     {
-      id: 8,
+      id: 18,
       img: "./catalogGOODS/drell_makita_s_ruchkoy.png",
       count: 1,
       nomi: "Триммерная леска «Спираль-100»",
@@ -106,7 +106,7 @@ let KatalogData = {
       brend: "HOMEPROFEE"
     },
     {
-      id: 9,
+      id: 19,
       img: "./catalogGOODS/betonomeshalka.png",
       count: 1,
       nomi: "Набор гравировальных насадок Nozzle-Tok",
@@ -119,7 +119,7 @@ let KatalogData = {
       brend: "HOMEPROFEE"
     },
     {
-      id: 10,
+      id: 20,
       img: "./catalogGOODS/perforator_bosch.png",
       count: 1,
       nomi: "Унитаз подвесной Aragio с двойным сливом",
@@ -132,7 +132,7 @@ let KatalogData = {
       brend: "HOMEPROFEE"
     },
     {
-      id: 11,
+      id: 21,
       img: "./catalogGOODS/constr_mixer.png",
       count: 1,
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
@@ -145,7 +145,7 @@ let KatalogData = {
       brend: "HOMEPROFEE"
     },
     {
-      id: 12,
+      id: 22,
       img: "./catalogGOODS/drell_makita_bez_ruchki.png",
       count: 1,
       nomi: "Набор гравировальных насадок Nozzle-Tok",
@@ -158,7 +158,7 @@ let KatalogData = {
       brend: "HOMEPROFEE",
     },
     {
-      id: 13,
+      id: 23,
       img: "./catalogGOODS/bolgarka_makita.png",
       count: 1,
       nomi: "Смеситель Faris G-120 для раковины",
@@ -171,7 +171,7 @@ let KatalogData = {
       brend: "PECAHTA",
     },
     {
-      id: 14,
+      id: 24,
       img: "./catalogGOODS/shlifovka_zubr.png",
       count: 1,
       nomi: "Триммерная леска «Спираль-100»",
@@ -184,7 +184,7 @@ let KatalogData = {
       brend: "PECAHTA",
     },
     {
-      id: 15,
+      id: 25,
       img: "./catalogGOODS/lobzik_makita.png",
       count: 1,
       nomi: "Унитаз подвесной Aragio с двойным сливом",
@@ -197,7 +197,7 @@ let KatalogData = {
       brend: "PECAHTA",
     },
     {
-      id: 16,
+      id: 26,
       img: "./catalogGOODS/shlifovka_makita.png",
       count: 1,
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
@@ -210,7 +210,7 @@ let KatalogData = {
       brend: "PECAHTA",
     },
     {
-      id: 17,
+      id: 27,
       img: "./catalogGOODS/stroy_fen_zubr.png",
       count: 1,
       nomi: "Триммерная леска «Спираль-100»",
@@ -223,7 +223,7 @@ let KatalogData = {
       brend: "PECAHTA",
     },
     {
-      id: 18,
+      id: 28,
       img: "./catalogGOODS/graver_zubr.png",
       count: 1,
       nomi: "Набор гравировальных насадок Nozzle-Tok",
@@ -236,7 +236,7 @@ let KatalogData = {
       brend: "PECAHTA",
     },
     {
-      id: 19,
+      id: 29,
       img: "./catalogGOODS/drell_makita_bez_ruchki_2.png",
       count: 1,
       nomi: " Унитаз подвесной Aragio с двойным сливом",
@@ -249,7 +249,7 @@ let KatalogData = {
       brend: "MAKITA",
     },
     {
-      id: 20,
+      id: 30,
       img: "./catalogGOODS/perforator_bosch_siniy.png",
       count: 1,
       nomi: "Смеситель Faris G-120 для раковины",
@@ -262,7 +262,7 @@ let KatalogData = {
       brend: "MAKITA",
     },
     {
-      id: 21,
+      id: 31,
       img: "./catalogGOODS/drell_PIT.png",
       count: 1,
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
@@ -275,7 +275,7 @@ let KatalogData = {
       brend: "MAKITA",
     },
     {
-      id: 22,
+      id: 32,
       img: "./catalogGOODS/perforator_zubr.png",
       count: 1,
       nomi: "Унитаз подвесной Aragio с двойным сливом",
@@ -288,7 +288,7 @@ let KatalogData = {
       brend: "MAKITA",
     },
     {
-      id: 23,
+      id: 33,
       img: "./catalogGOODS/stanok_vixr.png",
       count: 1,
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
@@ -301,7 +301,7 @@ let KatalogData = {
       brend: "MAKITA",
     },
     {
-      id: 24,
+      id: 34,
       img: "./catalogGOODS/rubanok_vixr.png",
       count: 1,
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
@@ -314,7 +314,7 @@ let KatalogData = {
       brend: "MAKITA",
     },
     {
-      id: 25,
+      id: 35,
       img: "./catalogGOODS/perforator_PIT.png",
       count: 1,
       nomi: "Триммерная леска «Спираль-100»",
@@ -327,7 +327,7 @@ let KatalogData = {
       brend: "HUNTER",
     },
     {
-      id: 26,
+      id: 36,
       img: "./catalogGOODS/kley_pistolet_stayer.png",
       count: 1,
       nomi: "Триммерная леска «Спираль-100»",
@@ -340,7 +340,7 @@ let KatalogData = {
       brend: "HUNTER",
     },
     {
-      id: 27,
+      id: 37,
       img: "./catalogGOODS/nabor.png",
       count: 1,
       nomi: "Набор гравировальных насадок Nozzle-Tok",
@@ -353,7 +353,7 @@ let KatalogData = {
       brend: "HUNTER",
     },
     {
-      id: 28,
+      id: 38,
       img: "./catalogGOODS/rubanok_makita.png",
       count: 1,
       nomi: "Смеситель Faris G-120 для раковины",
@@ -366,7 +366,7 @@ let KatalogData = {
       brend: "HUNTER",
     },
     {
-      id: 29,
+      id: 39,
       img: "./catalogGOODS/pilesos_zubr.png",
       count: 1,
       nomi: "Смеситель Faris G-120 для раковины",
@@ -379,7 +379,7 @@ let KatalogData = {
       brend: "HUNTER",
     },
     {
-      id: 30,
+      id: 40,
       img: "./catalogGOODS/drell_makita_bez_ruchki_2.png",
       count: 1,
       nomi: "Унитаз подвесной Aragio с двойным сливом",
@@ -392,7 +392,7 @@ let KatalogData = {
       brend: "HUNTER",
     },
     {
-      id: 31,
+      id: 41,
       img: "./catalogGOODS/bolgarka1.png",
       count: 1,
       nomi: "Унитаз подвесной Aragio с двойным сливом",
@@ -405,7 +405,7 @@ let KatalogData = {
       brend: "HUNTER",
     },
     {
-      id: 32,
+      id: 42,
       img: "./catalogGOODS/nabor.png",
       count: 1,
       nomi: "Набор гравировальных насадок Nozzle-Tok",

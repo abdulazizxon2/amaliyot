@@ -1,66 +1,66 @@
-import { GlavniyTypes,PlusMinusType } from "../Action/ActionTypes";
+import { GlavniyTypes, PlusMinusType } from "../Action/ActionTypes";
 
 let GlavniyData = {
   carddata: [
     {
       id: 1,
       catalog: "carddata",
-      count:1,
+      count: 1,
       like: false,
       img: "./glavniy IMG/Rectangle 22.png",
       art: "Артикул: XJ89YHGO",
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
       narxi: 15999,
       skidka: "15",
-      soni:0
+      soni: 0
     },
     {
       id: 2,
       catalog: "carddata",
-      count:1,
+      count: 1,
       like: false,
       img: "./glavniy IMG/Rectangle 22 (8).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Смеситель Faris G-120 для раковины",
       narxi: 1789,
       skidka: null,
-      soni:0
+      soni: 0
     },
     {
       id: 3,
       catalog: "carddata",
-      count:1,
+      count: 1,
       like: false,
       img: "./glavniy IMG/Rectangle 22 (5).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 312,
       skidka: 10,
-      soni:0
+      soni: 0
     },
     {
       id: 4,
       catalog: "carddata",
-      count:1,
+      count: 1,
       like: false,
       img: "./glavniy IMG/Rectangle 22 (1).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
       skidka: null,
-      soni:0
+      soni: 0
     },
     {
       id: 5,
       catalog: "carddata",
-      count:1,
+      count: 1,
       like: false,
       img: "./glavniy IMG/Rectangle 22 (7).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Водно-дисперсионный клей Cob",
       narxi: 15999,
       skidka: 12,
-      soni:0
+      soni: 0
     },
   ],
   cardBir: [
@@ -152,7 +152,7 @@ let GlavniyData = {
     {
       id: 6,
       catalog: "CardData1",
-      count:1,
+      count: 1,
       like: false,
       img: "./glavniy IMG/Rectangle 22 (2).png",
       art: "Артикул: XJ89YHGO",
@@ -165,7 +165,7 @@ let GlavniyData = {
     {
       id: 7,
       catalog: "CardData1",
-      count:1,
+      count: 1,
       like: false,
       img: "./glavniy IMG/Rectangle 22 (3).png",
       art: "Артикул: XJ89YHGO",
@@ -177,7 +177,7 @@ let GlavniyData = {
     {
       id: 8,
       catalog: "CardData1",
-      count:1,
+      count: 1,
       like: false,
       img: "./glavniy IMG/Rectangle 22 (4).png",
       art: "Артикул: XJ89YHGO",
@@ -188,7 +188,7 @@ let GlavniyData = {
     {
       id: 9,
       catalog: "CardData1",
-      count:1,
+      count: 1,
       like: false,
       img: "./glavniy IMG/Rectangle 22 (6).png",
       art: "Артикул: XJ89YHGO",
@@ -200,7 +200,7 @@ let GlavniyData = {
     {
       id: 10,
       catalog: "CardData1",
-      count:1,
+      count: 1,
       like: false,
       img: "./glavniy IMG/Rectangle 22 (7).png",
       art: "Артикул: XJ89YHGO",
@@ -284,16 +284,27 @@ export default function GlavniyRed(state = GlavniyData, { type, payload }) {
       } else {
       }
       return state;
-      case PlusMinusType.plus:
-        state = state.map((elem) =>
-          elem.id === payload ? { ...state, soni: elem.soni + 1 } : elem
-        );
-        return state;
-      case PlusMinusType.minus:
-        state = state.map((elem) =>
-          elem.id === payload ? { ...state, soni: elem.soni - 1 } : elem
-        );
-        return state;
+    case GlavniyTypes.delete:
+      state = {
+        ...state,
+        korzinka: state.korzinka.filter(param => param.id !== payload)
+      }
+    case PlusMinusType.plus:
+      state = {
+        ...state,
+        korzinka: state.korzinka.map((elem) =>
+          elem.id === payload ? { ...elem, count: elem.count + 1 } : elem
+        ),
+      };
+      return state;
+    case PlusMinusType.minus:
+      state = {
+        ...state,
+        korzinka: state.korzinka.map((elem) =>
+          elem.id === payload ? { ...elem, count: elem.count - 1 } : elem
+        ),
+      };
+      return state;
     default:
       return state;
   }

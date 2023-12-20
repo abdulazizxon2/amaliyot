@@ -146,7 +146,7 @@ export default function Glavniy() {
                   <div className="cardBig" >
                     <div className="card-Big" >
                       <button className='xit'>хит</button>
-                      <img src={elem.img} alt={elem.nomi} onClick={() => toNom(elem)}/>
+                      <img src={elem.img} alt={elem.nomi} onClick={() => toNom(elem)} />
                       <div className="cardMiddle">
                         <p>{elem.art}</p>
                         <h1>{elem.nomi}</h1>
