@@ -13,10 +13,10 @@ export default function FullPage() {
   let { carddata, CardData1 } = useSelector((state) => state.GlavniyRed);
   let { katalogdata } = useSelector((state) => state.KatalogRed);
   let data = [...carddata, ...CardData1, ...katalogdata]
-  let card = data.filter((elem) => elem.id === +prod.id)?.[0]
+  let card = data.find((elem) => elem.id === +prod.id)
   console.log(card);
   // console.log(data);
-  card.img = [card?.img, card?.img, card?.img, card?.img, card?.img]
+  let card2 = [card?.img, card?.img, card?.img, card?.img, card?.img]
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
     <div>
@@ -34,10 +34,9 @@ export default function FullPage() {
           className="mySwiper2"
         >
           <SwiperSlide>
-            {card?.img.map((el, index) => {
+            {card2?.map((el, index) => {
               return (
                 <img src={el} key={index}/>
-
               )
             })}
           </SwiperSlide>
