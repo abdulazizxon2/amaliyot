@@ -43,31 +43,9 @@ export default function KatalogPage() {
     colorfilter,
     colorfiltr,
     categorya1,
+    categorya2,
   } = state;
   let dispatch = useDispatch();
-  console.log(
-    katalogdata?.filter((elem) => {
-      if (elem.color.includes(colorfiltr)) {
-        return elem;
-      }
-    })?.filter((elem) => {
-      if (categorya.length > 0) {
-        for (let item of categorya) {
-          if (elem?.kategorya?.includes(item)) {
-            return elem;
-          }
-        }
-      }
-    })?.filter((elem) => {
-      if (categorya1.length > 0) {
-        for (let item of categorya1) {
-          if (elem?.brend?.includes(item)) {
-            return elem;
-          }
-        }
-      }
-    })
-  );
   return (
     <div>
       <div className="elektr-instrument">
@@ -258,6 +236,16 @@ export default function KatalogPage() {
                 if (categorya1.length > 0) {
                   for (let item of categorya1) {
                     if (elem?.brend?.includes(item)) {
+                      return elem;
+                    }
+                  }
+                } else {
+                  return elem
+                }
+              }).filter((elem) => {
+                if (categorya2.length > 0) {
+                  for (let item of categorya2) {
+                    if (elem?.material?.includes(item)) {
                       return elem;
                     }
                   }

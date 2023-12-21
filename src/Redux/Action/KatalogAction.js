@@ -48,6 +48,12 @@ function Categorya1(param) {
     payload:param,
   };
 }
+function Categorya2(param) {
+  return {
+    type: KatalogTypes.categorya2,
+    payload:param,
+  };
+}
 function tipTovarBool(param) {
   return {
     type: KatalogTypes.chekced,
@@ -78,5 +84,6 @@ export {
   Categorya,
   ColorFilter,
   Openkatalog5,
-  Categorya1
+  Categorya1,
+  Categorya2
 };

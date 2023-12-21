@@ -20,6 +20,7 @@ let KatalogTypes = {
   categorya:"categorya",
   colorfiltr:"colorfiltr",
   categorya1:"categorya1",
+  categorya2:"categorya2",
 }
 let PlusMinusType={
   plus: "plus",

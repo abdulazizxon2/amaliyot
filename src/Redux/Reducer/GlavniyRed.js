@@ -7,7 +7,7 @@ let GlavniyData = {
       catalog: "carddata",
       count: 1,
       like: false,
-      img: "./glavniy IMG/Rectangle 22.png",
+      img: "../glavniy IMG/Rectangle 22.png",
       art: "Артикул: XJ89YHGO",
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
       narxi: 15999,
@@ -19,7 +19,7 @@ let GlavniyData = {
       catalog: "carddata",
       count: 1,
       like: false,
-      img: "./glavniy IMG/Rectangle 22 (8).png",
+      img: "../glavniy IMG/Rectangle 22 (8).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Смеситель Faris G-120 для раковины",
       narxi: 1789,
@@ -31,7 +31,7 @@ let GlavniyData = {
       catalog: "carddata",
       count: 1,
       like: false,
-      img: "./glavniy IMG/Rectangle 22 (5).png",
+      img: "../glavniy IMG/Rectangle 22 (5).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 312,
@@ -43,7 +43,7 @@ let GlavniyData = {
       catalog: "carddata",
       count: 1,
       like: false,
-      img: "./glavniy IMG/Rectangle 22 (1).png",
+      img: "../glavniy IMG/Rectangle 22 (1).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
@@ -55,7 +55,7 @@ let GlavniyData = {
       catalog: "carddata",
       count: 1,
       like: false,
-      img: "./glavniy IMG/Rectangle 22 (7).png",
+      img: "../glavniy IMG/Rectangle 22 (7).png",
       art: "Артикул: XJ89YHGO",
       nomi: "Водно-дисперсионный клей Cob",
       narxi: 15999,
@@ -294,7 +294,7 @@ export default function GlavniyRed(state = GlavniyData, { type, payload }) {
       state = {
         ...state,
         korzinka: state.korzinka.map((elem) =>
-          elem.id === payload ? { ...elem, count: elem.count + 1 } : elem
+          elem.id === payload && elem.count < 10 ? { ...elem, count: elem.count + 1 } : elem
         ),
       };
       return state;
@@ -302,7 +302,7 @@ export default function GlavniyRed(state = GlavniyData, { type, payload }) {
       state = {
         ...state,
         korzinka: state.korzinka.map((elem) =>
-          elem.id === payload ? { ...elem, count: elem.count - 1 } : elem
+          elem.id === payload && elem.count > 1 ? { ...elem, count: elem.count - 1 } : elem
         ),
       };
       return state;

@@ -1,9 +1,8 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { ImBin } from "react-icons/im";
 import { PiShoppingCartSimple } from "react-icons/pi";
-import { handleDelete, handleMinus, handlePlus, korzinkaFunc, setLike } from "../Redux/Action/GlavniyAction";
+import { handleDelete, handleMinus, handlePlus, korzinkaFunc } from "../Redux/Action/GlavniyAction";
 import { NavLink } from 'react-router-dom';
 export default function Korzinka() {
   let state = useSelector((state) => state.GlavniyRed);
@@ -12,8 +11,7 @@ export default function Korzinka() {
   let totalPrice = korzinka.reduce(
     (a, b) => parseInt(a + b.count * (b.narxi - (b.narxi / 100) * b.skidka)), 0
   )
-  let totalSkidka = totalPrice > 3433 ? parseInt((totalPrice /100) * 7) : 0
-  console.log(totalSkidka)
+  let totalSkidka = totalPrice > 3433 ? parseInt((totalPrice / 100) * 7) : 0
   return (
     <div className='kozinkaPage'>
       <div className="tavar-korz">
@@ -21,12 +19,14 @@ export default function Korzinka() {
           <b>Стройоптторг</b>/ <p>Корзина товаров</p>
         </div>
         <h1>{totalPrice}</h1>
+        <h2>{totalSkidka}</h2>
         <h1>Корзина товаров</h1>
       </div>
       <div className="tovar-no">
         {
           korzinka.length > 0 ? (
             korzinka.map((elem) => {
+              console.log(elem?.like);
               return (
                 <div className="cardBig" key={elem.id}>
                   <div className="card-Big">
@@ -51,9 +51,7 @@ export default function Korzinka() {
                           <button className='kupit' onClick={() => dispatch(korzinkaFunc(elem))}><PiShoppingCartSimple />  Купить</button>
                         </div>
                         <div className="btn-card">
-                          <button onClick={() => dispatch(setLike(elem))}>
-                            {elem.like ? <AiFillHeart /> : <AiOutlineHeart />}
-                          </button>
+
                           <button onClick={() => dispatch(handleDelete(elem.id))}><ImBin /></button>
                         </div>
                       </div>

@@ -25,9 +25,9 @@ function handleMinus(param) {
 }
 function handleDelete(param) {
     return {
-      type: GlavniyTypes.delete,
-      payload: param,
+        type: GlavniyTypes.delete,
+        payload: param,
     };
-  }
+}
 
-export { setLike, korzinkaFunc, handlePlus, handleMinus,handleDelete }
+export { setLike, korzinkaFunc, handlePlus, handleMinus, handleDelete }
