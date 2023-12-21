@@ -41,6 +41,24 @@ export default function FullPage() {
             })}
           </SwiperSlide>
         </Swiper>
+        <Swiper
+        onSwiper={setThumbsSwiper}
+        loop={true}
+        spaceBetween={10}
+        slidesPerView={4}
+        freeMode={true}
+        watchSlidesProgress={true}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+        {/* {card2?.map((el, index) => {
+              return (
+                <img src={el} key={index}/>
+              )
+            })} */}
+        </SwiperSlide>
+      </Swiper>
       </div>
     </div>
   )
