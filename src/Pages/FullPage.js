@@ -57,7 +57,7 @@ export default function FullPage() {
                 <img src={el} key={index}/>
               )
             })} */}
-        </SwiperSlide>
+        </SwiperSlide>git
       </Swiper>
       </div>
     </div>
