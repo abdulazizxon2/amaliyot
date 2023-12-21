@@ -24,7 +24,6 @@ export default function Glavniy() {
     nom(`/fullPage/${obj.id}`)
   }
 
-
   cardBir = cardBir.map(
     (elem, index) => ({ ...elem, id: index + 1 })
   )

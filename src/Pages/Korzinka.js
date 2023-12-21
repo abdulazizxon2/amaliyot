@@ -9,13 +9,18 @@ export default function Korzinka() {
   let state = useSelector((state) => state.GlavniyRed);
   let { korzinka } = state;
   let dispatch = useDispatch();
-
+  let totalPrice = korzinka.reduce(
+    (a, b) => parseInt(a + b.count * (b.narxi - (b.narxi / 100) * b.skidka)), 0
+  )
+  let totalSkidka = totalPrice > 3433 ? parseInt((totalPrice /100) * 7) : 0
+  console.log(totalSkidka)
   return (
     <div className='kozinkaPage'>
       <div className="tavar-korz">
         <div className="titles">
           <b>Стройоптторг</b>/ <p>Корзина товаров</p>
         </div>
+        <h1>{totalPrice}</h1>
         <h1>Корзина товаров</h1>
       </div>
       <div className="tovar-no">

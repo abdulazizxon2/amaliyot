@@ -289,6 +289,7 @@ export default function GlavniyRed(state = GlavniyData, { type, payload }) {
         ...state,
         korzinka: state.korzinka.filter(param => param.id !== payload)
       }
+      return state;
     case PlusMinusType.plus:
       state = {
         ...state,
