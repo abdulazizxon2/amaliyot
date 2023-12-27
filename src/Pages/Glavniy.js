@@ -14,15 +14,19 @@ import { useDispatch, useSelector } from 'react-redux';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { korzinkaFunc, setLike } from "../Redux/Action/GlavniyAction";
 import { TbShoppingCartFilled } from "react-icons/tb";
+// import { ToastContainer, toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
 
 export default function Glavniy() {
   let state = useSelector((state) => state.GlavniyRed);
   let dispatch = useDispatch();
   let { carddata, cardBir, skidka, bosch, CardData1, son, novosti } = state;
+  // const notify = () => toast("Wow so easy!");
   let nom = useNavigate();
   function toNom(obj) {
     nom(`/fullPage/${obj.id}`)
   }
+
 
   cardBir = cardBir.map(
     (elem, index) => ({ ...elem, id: index + 1 })
@@ -145,7 +149,7 @@ export default function Glavniy() {
                   <div className="cardBig" >
                     <div className="card-Big" >
                       <button className='xit'>хит</button>
-                      <img src={elem?.img} alt={elem.nomi} onClick={() => toNom(elem)} />
+                      <img src={elem.img} alt={elem.nomi} onClick={() => toNom(elem)} />
                       <div className="cardMiddle">
                         <p>{elem.art}</p>
                         <h1>{elem.nomi}</h1>
@@ -244,7 +248,7 @@ export default function Glavniy() {
                   ) : (
                     ""
                   )}
-                  <img src={elem.img} alt={elem.nomi} />
+                  <img src={elem.img} alt={elem.nomi} onClick={() => toNom(elem)}/>
                   <div className="cardMiddle">
                     <p>{elem.art}</p>
                     <h1>{elem.nomi}</h1>

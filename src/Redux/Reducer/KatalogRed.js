@@ -3,7 +3,7 @@ let KatalogData = {
   katalogdata: [
     {
       id: 11,
-      img: "./catalogGOODS/perforator.png",
+      img: "../catalogGOODS/perforator.png",
       count: 1,
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
       narxi: 15999,
@@ -12,12 +12,11 @@ let KatalogData = {
       catalogs: "katalogdata",
       kategorya: "Инструмент",
       color: "синий",
-      brend: "STAYER",
-      material:"Латунь"
+      brend: "STAYER"
     },
     {
       id: 12,
-      img: "./catalogGOODS/bolgarka2.png",
+      img: "../catalogGOODS/bolgarka2.png",
       count: 1,
       nomi: "Смеситель Faris G-120 для раковины",
       narxi: 1789,
@@ -26,12 +25,11 @@ let KatalogData = {
       catalogs: "katalogdata",
       kategorya: "Инструмент",
       color: "синий",
-      brend: "STAYER",
-      material:"Латунь",
+      brend: "STAYER"
     },
     {
       id: 13,
-      img: "./catalogGOODS/circular_pila_bosch.png",
+      img: "../catalogGOODS/circular_pila_bosch.png",
       count: 1,
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 312,
@@ -40,12 +38,11 @@ let KatalogData = {
       catalogs: "katalogdata",
       kategorya: "Инструмент",
       color: "синий",
-      brend: "STAYER",
-      material:"Латунь",
+      brend: "STAYER"
     },
     {
       id: 14,
-      img: "./catalogGOODS/shlifovka.png",
+      img: "../catalogGOODS/shlifovka.png",
       count: 1,
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
@@ -54,12 +51,11 @@ let KatalogData = {
       catalogs: "katalogdata",
       kategorya: "Инструмент",
       color: "синий",
-      brend: "STAYER",
-      material:"Латунь",
+      brend: "STAYER"
     },
     {
       id: 15,
-      img: "./catalogGOODS/nabor.png",
+      img: "../catalogGOODS/nabor.png",
       count: 1,
       nomi: "Набор гравировальных насадок Nozzle-Tok",
       narxi: 15999,
@@ -68,12 +64,11 @@ let KatalogData = {
       catalogs: "katalogdata",
       kategorya: "Инструмент ",
       color: "чёрный",
-      brend: "STAYER",
-      material:"Латунь",
+      brend: "STAYER"
     },
     {
       id: 16,
-      img: "./catalogGOODS/circular_pila_zubr.png",
+      img: "../catalogGOODS/circular_pila_zubr.png",
       count: 1,
       nomi: "Набор гравировальных насадок Nozzle-Tok",
       narxi: 15999,
@@ -82,12 +77,11 @@ let KatalogData = {
       catalogs: "katalogdata",
       kategorya: "Набор",
       color: "чёрный",
-      brend: "STAYER",
-      material:"Латунь",
+      brend: "STAYER"
     },
     {
       id: 17,
-      img: "./catalogGOODS/bolgarka2.png",
+      img: "../catalogGOODS/bolgarka2.png",
       count: 1,
       nomi: "Смеситель Faris G-120 для раковины",
       narxi: 1789,
@@ -96,12 +90,11 @@ let KatalogData = {
       catalogs: "katalogdata",
       kategorya: "Инструмент",
       color: "чёрный",
-      brend: "HOMEPROFEE",
-      material:"Медь",
+      brend: "HOMEPROFEE"
     },
     {
       id: 18,
-      img: "./catalogGOODS/drell_makita_s_ruchkoy.png",
+      img: "../catalogGOODS/drell_makita_s_ruchkoy.png",
       count: 1,
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 312,
@@ -110,12 +103,11 @@ let KatalogData = {
       catalogs: "katalogdata",
       kategorya: "Инструмент",
       color: "серый",
-      brend: "HOMEPROFEE",
-      material:"Медь",
+      brend: "HOMEPROFEE"
     },
     {
       id: 19,
-      img: "./catalogGOODS/betonomeshalka.png",
+      img: "../catalogGOODS/betonomeshalka.png",
       count: 1,
       nomi: "Набор гравировальных насадок Nozzle-Tok",
       narxi: 15999,
@@ -124,12 +116,11 @@ let KatalogData = {
       catalogs: "katalogdata",
       kategorya: "Инструмент",
       color: "серый",
-      brend: "HOMEPROFEE",
-      material:"Медь",
+      brend: "HOMEPROFEE"
     },
     {
       id: 20,
-      img: "./catalogGOODS/perforator_bosch.png",
+      img: "../catalogGOODS/perforator_bosch.png",
       count: 1,
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
@@ -138,12 +129,11 @@ let KatalogData = {
       catalogs: "katalogdata",
       kategorya: "Держатель",
       color: "серый",
-      brend: "HOMEPROFEE",
-      material:"Медь",
+      brend: "HOMEPROFEE"
     },
     {
       id: 21,
-      img: "./catalogGOODS/constr_mixer.png",
+      img: "../catalogGOODS/constr_mixer.png",
       count: 1,
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
       narxi: 15999,
@@ -152,12 +142,11 @@ let KatalogData = {
       catalogs: "katalogdata",
       kategorya: "Адаптер",
       color: "серый",
-      brend: "HOMEPROFEE",
-      material:"Медь",
+      brend: "HOMEPROFEE"
     },
     {
       id: 22,
-      img: "./catalogGOODS/drell_makita_bez_ruchki.png",
+      img: "../catalogGOODS/drell_makita_bez_ruchki.png",
       count: 1,
       nomi: "Набор гравировальных насадок Nozzle-Tok",
       narxi: 15999,
@@ -167,11 +156,10 @@ let KatalogData = {
       kategorya: "Фильтр",
       color: "оранжывый",
       brend: "HOMEPROFEE",
-      material:"Медь",
     },
     {
       id: 23,
-      img: "./catalogGOODS/bolgarka_makita.png",
+      img: "../catalogGOODS/bolgarka_makita.png",
       count: 1,
       nomi: "Смеситель Faris G-120 для раковины",
       narxi: 1789,
@@ -181,11 +169,10 @@ let KatalogData = {
       kategorya: "Фильтр",
       color: "оранжывый",
       brend: "PECAHTA",
-      material:"Металл",
     },
     {
       id: 24,
-      img: "./catalogGOODS/shlifovka_zubr.png",
+      img: "../catalogGOODS/shlifovka_zubr.png",
       count: 1,
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 312,
@@ -195,11 +182,10 @@ let KatalogData = {
       kategorya: "Адаптер",
       color: "оранжывый",
       brend: "PECAHTA",
-      material:"Металл",
     },
     {
       id: 25,
-      img: "./catalogGOODS/lobzik_makita.png",
+      img: "../catalogGOODS/lobzik_makita.png",
       count: 1,
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
@@ -209,11 +195,10 @@ let KatalogData = {
       kategorya: "Адаптер",
       color: "красный",
       brend: "PECAHTA",
-      material:"Металл",
     },
     {
       id: 26,
-      img: "./catalogGOODS/shlifovka_makita.png",
+      img: "../catalogGOODS/shlifovka_makita.png",
       count: 1,
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
       narxi: 15999,
@@ -223,11 +208,10 @@ let KatalogData = {
       kategorya: "Стойка",
       color: "красный",
       brend: "PECAHTA",
-      material:"Металл",
     },
     {
       id: 27,
-      img: "./catalogGOODS/stroy_fen_zubr.png",
+      img: "../catalogGOODS/stroy_fen_zubr.png",
       count: 1,
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 312,
@@ -237,12 +221,10 @@ let KatalogData = {
       kategorya: "Стойка",
       color: "красный",
       brend: "PECAHTA",
-      material:"Металл",
-
     },
     {
       id: 28,
-      img: "./catalogGOODS/graver_zubr.png",
+      img: "../catalogGOODS/graver_zubr.png",
       count: 1,
       nomi: "Набор гравировальных насадок Nozzle-Tok",
       narxi: 15999,
@@ -252,11 +234,10 @@ let KatalogData = {
       kategorya: "Фильтр",
       color: "красный",
       brend: "PECAHTA",
-      material:"Металл",
     },
     {
       id: 29,
-      img: "./catalogGOODS/drell_makita_bez_ruchki_2.png",
+      img: "../catalogGOODS/drell_makita_bez_ruchki_2.png",
       count: 1,
       nomi: " Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
@@ -266,11 +247,10 @@ let KatalogData = {
       kategorya: "Фильтр",
       color: "красный",
       brend: "MAKITA",
-      material:"Металл, пластик",
     },
     {
       id: 30,
-      img: "./catalogGOODS/perforator_bosch_siniy.png",
+      img: "../catalogGOODS/perforator_bosch_siniy.png",
       count: 1,
       nomi: "Смеситель Faris G-120 для раковины",
       narxi: 1789,
@@ -280,11 +260,10 @@ let KatalogData = {
       kategorya: "Фильтр",
       color: "серый",
       brend: "MAKITA",
-      material:"Металл, пластик",
     },
     {
       id: 31,
-      img: "./catalogGOODS/drell_PIT.png",
+      img: "../catalogGOODS/drell_PIT.png",
       count: 1,
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
       narxi: 15999,
@@ -294,11 +273,10 @@ let KatalogData = {
       kategorya: "Набор",
       color: "серый",
       brend: "MAKITA",
-      material:"Металл, пластик",
     },
     {
       id: 32,
-      img: "./catalogGOODS/perforator_zubr.png",
+      img: "../catalogGOODS/perforator_zubr.png",
       count: 1,
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
@@ -308,11 +286,10 @@ let KatalogData = {
       kategorya: "Набор",
       color: "серый",
       brend: "MAKITA",
-      material:"Металл, пластик",
     },
     {
       id: 33,
-      img: "./catalogGOODS/stanok_vixr.png",
+      img: "../catalogGOODS/stanok_vixr.png",
       count: 1,
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
       narxi: 15999,
@@ -322,11 +299,10 @@ let KatalogData = {
       kategorya: "Держатель",
       color: "чёрный",
       brend: "MAKITA",
-      material:"Металл, пластик",
     },
     {
       id: 34,
-      img: "./catalogGOODS/rubanok_vixr.png",
+      img: "../catalogGOODS/rubanok_vixr.png",
       count: 1,
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
       narxi: 15999,
@@ -336,11 +312,10 @@ let KatalogData = {
       kategorya: "Держатель",
       color: "синий",
       brend: "MAKITA",
-      material:"Металл, пластик",
     },
     {
       id: 35,
-      img: "./catalogGOODS/perforator_PIT.png",
+      img: "../catalogGOODS/perforator_PIT.png",
       count: 1,
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 312,
@@ -350,11 +325,10 @@ let KatalogData = {
       kategorya: "Инструмент",
       color: "синий",
       brend: "HUNTER",
-      material:"Бумага",
     },
     {
       id: 36,
-      img: "./catalogGOODS/kley_pistolet_stayer.png",
+      img: "../catalogGOODS/kley_pistolet_stayer.png",
       count: 1,
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 15999,
@@ -364,11 +338,10 @@ let KatalogData = {
       kategorya: "Инструмент",
       color: "синий",
       brend: "HUNTER",
-      material:"Бумага",
     },
     {
       id: 37,
-      img: "./catalogGOODS/nabor.png",
+      img: "../catalogGOODS/nabor.png",
       count: 1,
       nomi: "Набор гравировальных насадок Nozzle-Tok",
       narxi: 15999,
@@ -378,11 +351,10 @@ let KatalogData = {
       kategorya: "Инструмент",
       color: "красный",
       brend: "HUNTER",
-      material:"Бумага",
     },
     {
       id: 38,
-      img: "./catalogGOODS/rubanok_makita.png",
+      img: "../catalogGOODS/rubanok_makita.png",
       count: 1,
       nomi: "Смеситель Faris G-120 для раковины",
       narxi: 1789,
@@ -392,11 +364,10 @@ let KatalogData = {
       kategorya: "Стойка",
       color: "красный",
       brend: "HUNTER",
-      material:"Бумага",
     },
     {
       id: 39,
-      img: "./catalogGOODS/pilesos_zubr.png",
+      img: "../catalogGOODS/pilesos_zubr.png",
       count: 1,
       nomi: "Смеситель Faris G-120 для раковины",
       narxi: 1789,
@@ -406,11 +377,10 @@ let KatalogData = {
       kategorya: "Стойка",
       color: "красный",
       brend: "HUNTER",
-      material:"Бумага",
     },
     {
       id: 40,
-      img: "./catalogGOODS/drell_makita_bez_ruchki_2.png",
+      img: "../catalogGOODS/drell_makita_bez_ruchki_2.png",
       count: 1,
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
@@ -420,11 +390,10 @@ let KatalogData = {
       kategorya: "Стойка",
       color: "красный",
       brend: "HUNTER",
-      material:"Бумага",
     },
     {
       id: 41,
-      img: "./catalogGOODS/bolgarka1.png",
+      img: "../catalogGOODS/bolgarka1.png",
       count: 1,
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
@@ -434,11 +403,10 @@ let KatalogData = {
       kategorya: "Стойка",
       color: "красный",
       brend: "HUNTER",
-      material:"Бумага",
     },
     {
       id: 42,
-      img: "./catalogGOODS/nabor.png",
+      img: "../catalogGOODS/nabor.png",
       count: 1,
       nomi: "Набор гравировальных насадок Nozzle-Tok",
       narxi: 15999,
@@ -448,7 +416,6 @@ let KatalogData = {
       kategorya: "Стойка",
       color: "красный",
       brend: "HUNTER",
-      material:"Бумага",
     },
   ],
   tiptavarData: [
@@ -562,7 +529,6 @@ let KatalogData = {
   korzinka: [],
   categorya: [],
   categorya1: [],
-  categorya2: [],
   colorfiltr: "",
 };
 export default function KatalogRed(state = KatalogData, { type, payload }) {
@@ -594,7 +560,7 @@ export default function KatalogRed(state = KatalogData, { type, payload }) {
       state = {
         ...state,
         katalogdata: state?.katalogdata?.map((elem) =>
-          elem.id === payload.id ? { ...elem, like: !elem.like } : elem
+          elem.id === payload.id ? { ...elem, like: !elem.like} : elem
         ),
       };
       return state;
@@ -626,21 +592,6 @@ export default function KatalogRed(state = KatalogData, { type, payload }) {
         state = {
           ...state,
           categorya1: state.categorya1.filter((elem) => elem !== payload.title),
-        };
-      }
-      return state;
-    case KatalogTypes.categorya2:
-      if (
-        state.categorya2.filter((elem) => elem === payload.title).length === 0
-      ) {
-        state = {
-          ...state,
-          categorya2: [...state.categorya2, payload.title],
-        };
-      } else {
-        state = {
-          ...state,
-          categorya2: state.categorya2.filter((elem) => elem !== payload.title),
         };
       }
       return state;
