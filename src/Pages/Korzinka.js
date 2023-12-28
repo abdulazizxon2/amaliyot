@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { ImBin } from "react-icons/im";
+import { RiDeleteBin2Line } from "react-icons/ri";
 import { PiShoppingCartSimple } from "react-icons/pi";
 import { handleDelete, handleMinus, handlePlus, korzinkaFunc } from "../Redux/Action/GlavniyAction";
 import { NavLink } from 'react-router-dom';
@@ -26,7 +26,7 @@ export default function Korzinka() {
         {
           korzinka.length > 0 ? (
             korzinka.map((elem) => {
-              console.log(elem?.like);
+              // console.log(elem?.like);
               return (
                 <div className="cardBig" key={elem.id}>
                   <div className="card-Big">
@@ -52,7 +52,7 @@ export default function Korzinka() {
                         </div>
                         <div className="btn-card">
 
-                          <button onClick={() => dispatch(handleDelete(elem.id))}><ImBin /></button>
+                          <button onClick={() => dispatch(handleDelete(elem.id))}><RiDeleteBin2Line /></button>
                         </div>
                       </div>
                     </div>

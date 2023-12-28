@@ -1786,8 +1786,13 @@ border: none;
 .fullPage{
   padding: 0px 150px;
   display: flex;
-  gap: 20px;
+  gap: 49px;
   align-items: center;
+}
+.fulsPages{
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 .tepaFull{
   overflow: hidden;
@@ -1813,16 +1818,15 @@ border: none;
 .pagesFull{
   display: flex;
   justify-content: space-between;
-  width: 300px;
+  width: 350px;
+  padding: 11px 0px;
 }
 .tolov-s{
   display: flex;
   flex-direction: column;
   gap: 37px;
 }
-.pagesFull{
-  padding: 11px 0px;
-}
+
 .fullmalumot .bolshe{
   margin-bottom: 46px;
   color: #117fe3;
@@ -1830,4 +1834,71 @@ border: none;
 .fullmalumot{
   display: flex;
   flex-direction: column;
+}
+.pagesFull-imya{
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  padding: 11px 0px;
+}
+.pagesFull-imya b{
+  font-size: 14px;
+}
+.kolichestva{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.like-kozinka{
+  display: flex;
+}
+.kupit-korzinka{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.plus-minus-kupits{
+  display: flex;
+}
+.plus-kupits{
+  padding: 3px 15px;
+  font-size: 18px;
+  border-radius: 44%;
+  border: none;
+  background-color: #F3F4F5;
+}
+.minus-kupits{
+  padding: 3px 15px;
+  font-size: 18px;
+  border-radius: 44%;
+  border: none;
+  background-color: #F3F4F5;
+}
+.qosh-korzinka{
+  padding: 24px;
+  background-color: #186FD4;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+}
+.kupit-korzinka p i{
+  color: #1B9665;
+}
+.kupit-narx{
+  display: flex;
+  gap: 7px;
+}
+.kupit-narx .b1{
+  color: #003B73;
+  font-size: 25px;
+}
+.kupit-narx del{
+  font-size: 18px;
+}
+.kupit-narx .foiz{
+  background-color: #1b9665;
+  color: white;
+  font-size: 15px;
+  border-radius: 4px;
+  padding: 3px 7px;
 }
