@@ -248,7 +248,7 @@ export default function Glavniy() {
                   ) : (
                     ""
                   )}
-                  <img src={elem.img} alt={elem.nomi} onClick={() => toNom(elem)}/>
+                  <img src={elem.img} alt={elem.nomi} onClick={() => toNom(elem)} className='img-cards' />
                   <div className="cardMiddle">
                     <p>{elem.art}</p>
                     <h1>{elem.nomi}</h1>

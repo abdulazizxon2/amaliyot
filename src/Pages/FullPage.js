@@ -6,10 +6,11 @@ import { IoIosArrowDown } from "react-icons/io";
 import { TbDiscount } from "react-icons/tb";
 import { BsCreditCard2Front, BsBox2Fill } from "react-icons/bs";
 import { FaRegAddressCard } from "react-icons/fa";
-import { handleMinus, handlePlus, setLike } from "../Redux/Action/GlavniyAction";
+import { handleMinus, handlePlus2, setLike } from "../Redux/Action/GlavniyAction";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { FaCheck } from "react-icons/fa";
 import { FaMinus, FaPlus } from "react-icons/fa6";
+import { setingLike } from "../Redux/Action/KatalogAction";
 
 export default function FullPage() {
   let dispatch = useDispatch()
@@ -124,13 +125,13 @@ export default function FullPage() {
           <div className="plus-minus-kupits">
             <button className='plus-kupits' onClick={() => dispatch(handleMinus(elem.id))}><FaMinus /></button>
             <h1 className='count'>{elem.count} </h1>
-            <button className='minus-kupits' onClick={() => dispatch(handlePlus(elem.id))}><FaPlus /></button>
+            <button className='minus-kupits' onClick={() => dispatch(handlePlus2(elem))}><FaPlus /></button>
           </div>
         </div>
         <button className="qosh-korzinka">Добавить в корзину</button>
         <div className="like-kozinka">
           <button>Купить в 1 клик</button>
-          <button onClick={() => dispatch(setLike(elem))}>
+          <button onClick={() => { dispatch(setLike(elem)) && dispatch(setingLike(elem)) }}>
             {elem.like ? <AiFillHeart /> : <AiOutlineHeart />}В избранное
           </button>
         </div>

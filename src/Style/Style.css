@@ -14,6 +14,8 @@
 
 .navbar {
   display: flex;
+  /* position: sticky;
+  top: 0; */
   justify-content: space-between;
   padding: 10px 150px;
   align-items: center;
@@ -52,6 +54,8 @@
 
 .navbarBig {
   display: flex;
+  position: sticky;
+  top: 0;
   align-items: center;
   justify-content: space-between;
   padding: 27px 150px;
@@ -388,7 +392,8 @@
   justify-content: space-between;
   padding: 0px 150px 90px 150px;
 }
-.skidkas img{
+
+.skidkas img {
   width: 100%;
 }
 
@@ -472,6 +477,7 @@
   display: flex;
   gap: 20px;
 }
+
 /* .card-Bigs img{
   width: 100%;
 } */
@@ -487,7 +493,7 @@
 }
 
 .cardMiddle h1 {
-  width: 260px;
+  width: 250px;
   font-size: 16px;
 }
 
@@ -519,14 +525,16 @@
   border-radius: 6px;
   display: flex;
 }
-.plus-minus{
+
+.plus-minus {
   display: flex;
   gap: 1px;
   width: 20px;
   padding-left: 35px;
   justify-content: center;
 }
-.plus{
+
+.plus {
   padding: 3px 9px;
   border: none;
   background-color: blue;
@@ -534,7 +542,8 @@
   border-radius: 3px;
   font-size: 19px;
 }
-.minus{
+
+.minus {
   padding: 3px 7px;
   border: none;
   background-color: red;
@@ -542,7 +551,8 @@
   border-radius: 3px;
   font-size: 19px;
 }
-.count{
+
+.count {
   padding: 5px;
   font-family: 'Courier New', Courier, monospace;
 }
@@ -615,7 +625,8 @@
 .bosch img {
   padding: 10px;
   background-color: white;
-  width: 150px;
+  /* width: 200px; */
+  object-fit: cover;
 }
 
 .boschX {
@@ -647,12 +658,16 @@
 
 .cardBigs {
   display: flex;
-  gap: 75px;
+  gap: 5%;
 }
 
+/* .cardBigs img{
+  width: 100%;
+} */
 
-
-
+.cardBigs .img-cards {
+  width: 100%;
+}
 
 .deals {
   padding: 90px 150px;
@@ -789,6 +804,7 @@
   flex-direction: column;
   gap: 15px;
 }
+
 .card-C img {
   width: 100%;
 }
@@ -1721,27 +1737,31 @@ form {
   align-items: center;
   gap: 20px;
 }
-.icon-kozika h3{
+
+.icon-kozika h3 {
   font-size: 20px;
   color: #2C333D;
 }
-.icon-kozika p{
+
+.icon-kozika p {
   font-size: 15px;
   color: #2C333D;
   text-align: center;
 }
-.vkatalog{
-display: flex;
-padding: 25px 32px;
-justify-content: center;
-align-items: center;
-gap: 17px;
-border-radius: 8px;
-background: #186FD4;
-color: white;
-border: none;
+
+.vkatalog {
+  display: flex;
+  padding: 25px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  border-radius: 8px;
+  background: #186FD4;
+  color: white;
+  border: none;
 }
-.vkatalog a{
+
+.vkatalog a {
   color: white;
   text-decoration: none;
 }
@@ -1776,126 +1796,156 @@ border: none;
   gap: 30px;
   padding-bottom: 60px;
 }
-.likePege{
+
+.likePege {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-.fullPage{
+
+.fullPage {
   padding: 0px 150px;
   display: flex;
   gap: 49px;
   align-items: center;
 }
-.fulsPages{
+
+.fulsPages {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.tepaFull{
+
+.tepaFull {
   overflow: hidden;
   width: 150px;
   text-align: center;
 }
-.tepaFull button{
+
+.tepaFull button {
   position: relative;
   border: none;
 }
-.tepaFull img{
+
+.tepaFull img {
   width: 150px;
 }
-.pastFull{
+
+.pastFull {
   width: 683px;
   height: 544px;
   overflow: hidden;
 }
-.pastFull img{
+
+.pastFull img {
   width: 100%;
   height: 100%;
 }
-.pagesFull{
+
+.pagesFull {
   display: flex;
   justify-content: space-between;
   width: 350px;
   padding: 11px 0px;
 }
-.tolov-s{
+
+.tolov-s {
   display: flex;
   flex-direction: column;
   gap: 37px;
 }
 
-.fullmalumot .bolshe{
+.fullmalumot .bolshe {
   margin-bottom: 46px;
   color: #117fe3;
 }
-.fullmalumot{
+
+.fullmalumot {
   display: flex;
   flex-direction: column;
 }
-.pagesFull-imya{
+
+.pagesFull-imya {
   display: flex;
   justify-content: space-between;
   width: 350px;
   padding: 11px 0px;
 }
-.pagesFull-imya b{
+
+.pagesFull-imya b {
   font-size: 14px;
 }
-.kolichestva{
+
+.kolichestva {
   display: flex;
   align-items: center;
   gap: 25px;
 }
-.like-kozinka{
+
+.like-kozinka {
   display: flex;
 }
-.kupit-korzinka{
+
+.like-kozinka button {
+  padding: 10px 13px;
+  border: none;
+}
+
+.kupit-korzinka {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.plus-minus-kupits{
+
+.plus-minus-kupits {
   display: flex;
 }
-.plus-kupits{
+
+.plus-kupits {
   padding: 3px 15px;
   font-size: 18px;
   border-radius: 44%;
   border: none;
   background-color: #F3F4F5;
 }
-.minus-kupits{
+
+.minus-kupits {
   padding: 3px 15px;
   font-size: 18px;
   border-radius: 44%;
   border: none;
   background-color: #F3F4F5;
 }
-.qosh-korzinka{
+
+.qosh-korzinka {
   padding: 24px;
   background-color: #186FD4;
   color: #FFFFFF;
   border: none;
   border-radius: 8px;
 }
-.kupit-korzinka p i{
+
+.kupit-korzinka p i {
   color: #1B9665;
 }
-.kupit-narx{
+
+.kupit-narx {
   display: flex;
   gap: 7px;
 }
-.kupit-narx .b1{
+
+.kupit-narx .b1 {
   color: #003B73;
   font-size: 25px;
 }
-.kupit-narx del{
+
+.kupit-narx del {
   font-size: 18px;
 }
-.kupit-narx .foiz{
+
+.kupit-narx .foiz {
   background-color: #1b9665;
   color: white;
   font-size: 15px;

@@ -39,21 +39,22 @@ function Openkatalog4() {
 function Categorya(param) {
   return {
     type: KatalogTypes.categorya,
-    payload:param,
+    payload: param,
   };
 }
 function Categorya1(param) {
   return {
     type: KatalogTypes.categorya1,
-    payload:param,
+    payload: param,
   };
 }
 function Categorya2(param) {
   return {
     type: KatalogTypes.categorya2,
-    payload:param,
+    payload: param,
   };
 }
+
 function tipTovarBool(param) {
   return {
     type: KatalogTypes.chekced,

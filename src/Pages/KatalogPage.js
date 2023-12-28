@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   Categorya,
   Categorya1,
+  Categorya2,
   ColorFilter,
   Openkatalog2,
   Openkatalog3,
@@ -20,6 +21,7 @@ import { korzinkaFunc } from "../Redux/Action/GlavniyAction";
 import { Openkatalog } from "../Redux//Action/KatalogAction";
 import Slider from "@mui/material/Slider";
 import { Box } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 export default function KatalogPage() {
   const [value, setValue] = useState([3000, 52500]);
@@ -46,6 +48,11 @@ export default function KatalogPage() {
     categorya2,
   } = state;
   let dispatch = useDispatch();
+  let nom = useNavigate();
+  function toNom(obj) {
+    nom(`/fullPage/${obj.id}`)
+  }
+  // console.log(categorya2);
   return (
     <div>
       <div className="elektr-instrument">
@@ -69,9 +76,9 @@ export default function KatalogPage() {
             <div className={katalogOpens ? "no-narxBTN" : "narx-btn"}>
               <div className="narxlar">
                 <label htmlFor="ot-narx">от</label>
-                <input type="number"  id="ot-narx" value={`${value[0]}`}/>
+                <input type="number" id="ot-narx" value={`${value[0]}`} />
                 <label htmlFor="do-narx">ДО</label>
-                <input type="number" id="do-narx" value={`${value[1]}`}/>
+                <input type="number" id="do-narx" value={`${value[1]}`} />
               </div>
               <Box sx={{ width: 300 }}>
                 <Slider
@@ -144,7 +151,7 @@ export default function KatalogPage() {
                     />
                     <p
                       onClick={() => {
-                        console.log(elem);
+                        // console.log(elem);
                         dispatch(tipTovarBool1(elem));
                         dispatch(Categorya1(elem));
                       }}
@@ -177,7 +184,10 @@ export default function KatalogPage() {
                       checked={elem.bool}
                       onChange={() => { }}
                     />
-                    <p onClick={() => dispatch(tipTovarBool(elem))}>
+                    <p onClick={() => {
+                      dispatch(tipTovarBool(elem));
+                      dispatch(Categorya2(elem));
+                    }}>
                       {elem.title}
                     </p>
                   </div>
@@ -258,7 +268,7 @@ export default function KatalogPage() {
                   <div className="cardBig" key={elem.id}>
                     <div className="card-Big">
                       <button className="xit">хит</button>
-                      <img src={elem.img} alt={elem.nomi} />
+                      <img src={elem.img} alt={elem.nomi} onClick={() => toNom(elem)} />
                       <div className="cardMiddle">
                         <p>{elem.art}</p>
                         <h1>{elem.nomi}</h1>

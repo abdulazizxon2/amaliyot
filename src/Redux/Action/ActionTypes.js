@@ -26,5 +26,9 @@ let PlusMinusType={
   plus: "plus",
   minus: "minus",
 }
+let PlusMinusType2={
+  plus2: "plus2",
+  minus2: "minus2",
+}
 
-export { NavbarTypes, GlavniyTypes, KatalogTypes,PlusMinusType };
+export { NavbarTypes, GlavniyTypes, KatalogTypes,PlusMinusType,PlusMinusType2 };

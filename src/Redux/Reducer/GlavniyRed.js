@@ -1,4 +1,4 @@
-import { GlavniyTypes, PlusMinusType } from "../Action/ActionTypes";
+import { GlavniyTypes, PlusMinusType, PlusMinusType2 } from "../Action/ActionTypes";
 
 let GlavniyData = {
   carddata: [
@@ -173,7 +173,7 @@ let GlavniyData = {
       art: "Артикул: XJ89YHGO",
       nomi: "Перфоратор универсальный Wander X645-46 GF 1450W",
       narxi: 15999,
-      skidka: "15",
+      skidka: 15,
       getting: false,
       rasp: false,
       kategorya: "Инструмент",
@@ -204,6 +204,7 @@ let GlavniyData = {
       art: "Артикул: XJ89YHGO",
       nomi: "Триммерная леска «Спираль-100»",
       narxi: 312,
+      getting: false,
       skidka: 10,
       kategorya: "Фильтр",
       color: "оранжывый",
@@ -218,6 +219,7 @@ let GlavniyData = {
       art: "Артикул: XJ89YHGO",
       nomi: "Унитаз подвесной Aragio с двойным сливом",
       narxi: 15999,
+      skidka: 12,
       getting: false,
       rasp: true,
       kategorya: "Стойка",
@@ -288,6 +290,8 @@ let GlavniyData = {
   korzinka: []
 }
 
+// let data = [...carddata, ...CardData1, ...korzinka]
+
 export default function GlavniyRed(state = GlavniyData, { type, payload }) {
   switch (type) {
     case GlavniyTypes.like:
@@ -335,6 +339,15 @@ export default function GlavniyRed(state = GlavniyData, { type, payload }) {
           elem.id === payload && elem.count > 1 ? { ...elem, count: elem.count - 1 } : elem
         ),
       };
+      return state;
+    case PlusMinusType2.plus2:
+  // console.log(payload);
+      state = {
+        ...state,
+        korzinka: state.korzinka.map((elem) =>
+          elem.id === payload && elem.count > 1 ? { ...elem, count: elem.count + 1 } : elem
+        ),
+      }
       return state;
     default:
       return state;
