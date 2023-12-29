@@ -12,23 +12,26 @@ let GlavniyTypes = {
 let KatalogTypes = {
   likes: "likes",
   katalogs: "katalogs",
-  katalogs2:"katalogs2",
-  chekced:"chekced",
-  katalogs3:"katalogs3",
-  katalogs4:"katalogs4",
-  katalogs5:"katalogs5",
-  categorya:"categorya",
-  colorfiltr:"colorfiltr",
-  categorya1:"categorya1",
-  categorya2:"categorya2",
+  katalogs2: "katalogs2",
+  chekced: "chekced",
+  katalogs3: "katalogs3",
+  katalogs4: "katalogs4",
+  katalogs5: "katalogs5",
+  categorya: "categorya",
+  colorfiltr: "colorfiltr",
+  categorya1: "categorya1",
+  categorya2: "categorya2",
 }
-let PlusMinusType={
+let PlusMinusType = {
   plus: "plus",
   minus: "minus",
 }
-let PlusMinusType2={
+let PlusMinusType2 = {
   plus2: "plus2",
   minus2: "minus2",
 }
+let Fulltypes = {
+  kupit: "kupit"
+}
 
-export { NavbarTypes, GlavniyTypes, KatalogTypes,PlusMinusType,PlusMinusType2 };
+export { NavbarTypes, GlavniyTypes, KatalogTypes, PlusMinusType, PlusMinusType2, Fulltypes };

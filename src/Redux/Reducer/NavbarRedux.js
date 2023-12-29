@@ -1,8 +1,9 @@
-import { NavbarTypes } from "../Action/ActionTypes";
+import { Fulltypes, NavbarTypes } from "../Action/ActionTypes";
 let navbarData = {
   katalogOpen: false,
   zakazOpen: false,
-  oppenDoor: false
+  oppenDoor: false,
+  kupitDoor:false
 }
 
 export default function NavbarRedux(state = navbarData, { type, payload }) {
@@ -16,6 +17,9 @@ export default function NavbarRedux(state = navbarData, { type, payload }) {
     case NavbarTypes.opensdoor:
       state = { ...state, oppenDoor: !state.oppenDoor }
       return state;
+      case Fulltypes.kupit:
+        state = { ...state, kupitDoor: !state.kupitDoor }
+        return state;
     default:
       return state;
   }

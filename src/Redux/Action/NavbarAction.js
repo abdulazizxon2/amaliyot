@@ -1,4 +1,4 @@
-import { NavbarTypes } from "./ActionTypes";
+import { Fulltypes, NavbarTypes } from "./ActionTypes";
 
 function Open() {
   return {
@@ -10,9 +10,14 @@ function Zakazat() {
     type: NavbarTypes.zakaz
   }
 }
+function Kupit() {
+  return {
+    type: Fulltypes.kupit
+  }
+}
 function OpensDoor() {
   return {
     type: NavbarTypes.opensdoor
   }
 }
-export { Open, Zakazat, OpensDoor }
+export { Open, Zakazat, OpensDoor,Kupit }

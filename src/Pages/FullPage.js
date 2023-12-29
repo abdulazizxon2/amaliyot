@@ -11,6 +11,8 @@ import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { FaCheck } from "react-icons/fa";
 import { FaMinus, FaPlus } from "react-icons/fa6";
 import { setingLike } from "../Redux/Action/KatalogAction";
+import ModalOyna2 from "../components/Navbar/ModalOyan2";
+import { Kupit } from "../Redux/Action/NavbarAction";
 
 export default function FullPage() {
   let dispatch = useDispatch()
@@ -130,12 +132,13 @@ export default function FullPage() {
         </div>
         <button className="qosh-korzinka">Добавить в корзину</button>
         <div className="like-kozinka">
-          <button>Купить в 1 клик</button>
+          <button onClick={() => dispatch(Kupit())}>Купить в 1 клик</button>
           <button onClick={() => { dispatch(setLike(elem)) && dispatch(setingLike(elem)) }}>
             {elem.like ? <AiFillHeart /> : <AiOutlineHeart />}В избранное
           </button>
         </div>
       </div>
+      <ModalOyna2 />
     </div>
   );
 

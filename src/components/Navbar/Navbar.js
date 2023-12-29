@@ -18,7 +18,7 @@ function Navbars() {
   let states = useSelector((states) => states.GlavniyRed)
   let { carddata, CardData1, korzinka } = states;
   let statec = useSelector((state) => state.KatalogRed)
-  let { katalogdata} = statec
+  let { katalogdata } = statec
   let likeData = [...carddata, ...CardData1, ...katalogdata]
   let son = likeData.filter((p) => p.like === true)
   return (<div>
