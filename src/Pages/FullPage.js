@@ -8,6 +8,7 @@ import { BsCreditCard2Front, BsBox2Fill } from "react-icons/bs";
 import { FaRegAddressCard } from "react-icons/fa";
 import {
   handleMinus,
+  handleMinus2,
   handlePlus2,
   setLike,
 } from "../Redux/Action/GlavniyAction";
@@ -45,21 +46,6 @@ export default function FullPage() {
     elem?.img,
     elem?.img,
   ];
-  
-  function singlePlus(obj) {
-    data = data.map((elem) =>
-      elem.id === obj.id ? { ...elem, count: elem.count + 1 } : elem
-    );
-    console.log(obj.count);
-  }
-
-  function singleMinus(obj) {
-    data = data.map((elem) =>
-      elem.id === obj.id ? { ...elem, count: elem.count - 1 } : elem
-    );
-    console.log(obj.count);
-  }
-
 
   return (
     <div className="fullPage">
@@ -157,11 +143,17 @@ export default function FullPage() {
         <div className="kolichestva">
           <p>Количество:</p>
           <div className="plus-minus-kupits">
-            <button className="plus-kupits" onClick={() => singleMinus(elem)}>
+            <button
+              className="plus-kupits"
+              onClick={() => dispatch(handleMinus2(elem))}
+            >
               <FaMinus />
             </button>
             <h1 className="count">{elem.count}</h1>
-            <button className="minus-kupits" onClick={() => singlePlus(elem)}>
+            <button
+              className="minus-kupits"
+              onClick={() => dispatch(handlePlus2(elem))}
+            >
               <FaPlus />
             </button>
           </div>

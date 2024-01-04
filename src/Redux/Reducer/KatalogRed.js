@@ -1,5 +1,5 @@
 import { toast } from "react-toastify";
-import { KatalogTypes } from "../Action/ActionTypes";
+import { KatalogTypes, PlusMinusType2 } from "../Action/ActionTypes";
 let KatalogData = {
   katalogdata: [
     {
@@ -651,6 +651,26 @@ export default function KatalogRed(state = KatalogData, { type, payload }) {
       return state;
     case KatalogTypes.colorfiltr:
       state = { ...state, colorfiltr: payload };
+      return state;
+    case PlusMinusType2.plus2:
+      state = {
+        ...state,
+        [payload.catalogs]: state?.[payload.catalogs].map((elem) =>
+          elem.id === payload.id && elem.count < 10
+            ? { ...elem, count: elem.count + 1 }
+            : elem
+        ),
+      };
+      return state;
+    case PlusMinusType2.minus2:
+      state = {
+        ...state,
+        [payload.catalogs]: state?.[payload.catalogs].map((elem) =>
+          elem.id === payload.id && elem.count > 1
+            ? { ...elem, count: elem.count - 1 }
+            : elem
+        ),
+      };
       return state;
     default:
       return state;

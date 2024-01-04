@@ -1,5 +1,9 @@
 import { toast } from "react-toastify";
-import { GlavniyTypes, PlusMinusType, PlusMinusType2 } from "../Action/ActionTypes";
+import {
+  GlavniyTypes,
+  PlusMinusType,
+  PlusMinusType2,
+} from "../Action/ActionTypes";
 
 let GlavniyData = {
   carddata: [
@@ -16,7 +20,7 @@ let GlavniyData = {
       soni: 0,
       kategorya: "Инструмент",
       color: "синий",
-      brend: "STAYER"
+      brend: "STAYER",
     },
     {
       id: 2,
@@ -31,7 +35,7 @@ let GlavniyData = {
       soni: 0,
       kategorya: "Инструмент",
       color: "серый",
-      brend: "HOMEPROFEE"
+      brend: "HOMEPROFEE",
     },
     {
       id: 3,
@@ -82,89 +86,88 @@ let GlavniyData = {
   cardBir: [
     {
       img: "./glavniy IMG/image 12 (1).png",
-      nomi: "Сантехника"
+      nomi: "Сантехника",
     },
     {
       img: "./glavniy IMG/out (1) 1.png",
-      nomi: "Отделочные материалы"
+      nomi: "Отделочные материалы",
     },
     {
       img: "./glavniy IMG/image 2.png",
-      nomi: "Электротовары"
+      nomi: "Электротовары",
     },
     {
       img: "./glavniy IMG/image 3.png",
-      nomi: "Инструменты"
+      nomi: "Инструменты",
     },
     {
       img: "./glavniy IMG/klipartz 1.png",
-      nomi: "Столярные изделия"
+      nomi: "Столярные изделия",
     },
     {
       img: "./glavniy IMG/pngegg 1.png",
-      nomi: "Общестроительные материалы"
+      nomi: "Общестроительные материалы",
     },
     {
       img: "./glavniy IMG/image 13.png",
-      nomi: "Все для сауныи бани"
+      nomi: "Все для сауныи бани",
     },
   ],
   skidka: [
     {
       skidka: 15,
       nomi: "Метизные изделия",
-      img: "./glavniy IMG/Rectangle 31.png"
+      img: "./glavniy IMG/Rectangle 31.png",
     },
     {
       skidka: 30,
       nomi: "Лакокрасочные материалы",
-      img: "./glavniy IMG/Rectangle 31 (1).png"
+      img: "./glavniy IMG/Rectangle 31 (1).png",
     },
     {
       skidka: 25,
       nomi: "Напольные покрытия",
-      img: "./glavniy IMG/Rectangle 31 (2).png"
+      img: "./glavniy IMG/Rectangle 31 (2).png",
     },
     {
       skidka: 30,
       nomi: "Все для отоплления",
-      img: "./glavniy IMG/Rectangle 31 (3).png"
+      img: "./glavniy IMG/Rectangle 31 (3).png",
     },
   ],
   bosch: [
     {
-      img: "./glavniy IMG/image 22.png"
+      img: "./glavniy IMG/image 22.png",
     },
     {
-      img: "./glavniy IMG/image 19.png"
+      img: "./glavniy IMG/image 19.png",
     },
     {
-      img: "./glavniy IMG/image 18.png"
+      img: "./glavniy IMG/image 18.png",
     },
     {
-      img: "./glavniy IMG/image 17.png"
+      img: "./glavniy IMG/image 17.png",
     },
     {
-      img: "./glavniy IMG/image 20.png"
+      img: "./glavniy IMG/image 20.png",
     },
     {
-      img: "./glavniy IMG/image 21.png"
+      img: "./glavniy IMG/image 21.png",
     },
     {
-      img: "./glavniy IMG/image 19.png"
+      img: "./glavniy IMG/image 19.png",
     },
     {
-      img: "./glavniy IMG/image 22.png"
+      img: "./glavniy IMG/image 22.png",
     },
     {
-      img: "./glavniy IMG/image 23.png"
+      img: "./glavniy IMG/image 23.png",
     },
     {
-      img: "./glavniy IMG/image 20.png"
+      img: "./glavniy IMG/image 20.png",
     },
   ],
   CardData1: [
-
     {
       id: 6,
       catalog: "CardData1",
@@ -179,7 +182,7 @@ let GlavniyData = {
       rasp: false,
       kategorya: "Инструмент",
       color: "синий",
-      brend: "STAYER"
+      brend: "STAYER",
     },
     {
       id: 7,
@@ -194,7 +197,7 @@ let GlavniyData = {
       rasp: false,
       kategorya: "Инструмент",
       color: "серый",
-      brend: "HOMEPROFEE"
+      brend: "HOMEPROFEE",
     },
     {
       id: 8,
@@ -247,49 +250,53 @@ let GlavniyData = {
   son: [
     {
       raqam: "17 805,3 м²",
-      tavsif: "торговых и складских помещений"
+      tavsif: "торговых и складских помещений",
     },
     {
       raqam: "50 000+",
-      tavsif: "наименований товара"
+      tavsif: "наименований товара",
     },
     {
       raqam: "2 500+",
-      tavsif: "постоянных клиентов"
+      tavsif: "постоянных клиентов",
     },
     {
       raqam: "440",
-      tavsif: "опытных сотрудников"
-    }
+      tavsif: "опытных сотрудников",
+    },
   ],
   novosti: [
     {
       img: "./glavniy IMG/Rectangle 13 (4).png",
       tavsif: "Масштабное обновление каталога инструментов",
-      instrument: "С радостью сообщаем вам о крупном пополнении нашего каталога инструментов.",
-      sana: "5 Августа 2023"
+      instrument:
+        "С радостью сообщаем вам о крупном пополнении нашего каталога инструментов.",
+      sana: "5 Августа 2023",
     },
     {
       img: "./glavniy IMG/Rectangle 13.png",
       tavsif: "Масштабное обновление каталога инструментов",
-      instrument: "С радостью сообщаем вам о крупном пополнении нашего каталога инструментов.",
-      sana: "5 Августа 2023"
+      instrument:
+        "С радостью сообщаем вам о крупном пополнении нашего каталога инструментов.",
+      sana: "5 Августа 2023",
     },
     {
       img: "./glavniy IMG/Rectangle 13 (1).png",
       tavsif: "Масштабное обновление каталога инструментов",
-      instrument: "С радостью сообщаем вам о крупном пополнении нашего каталога инструментов.",
-      sana: "5 Августа 2023"
+      instrument:
+        "С радостью сообщаем вам о крупном пополнении нашего каталога инструментов.",
+      sana: "5 Августа 2023",
     },
     {
       img: "./glavniy IMG/Rectangle 13 (2).png",
       tavsif: "Масштабное обновление каталога инструментов",
-      instrument: "С радостью сообщаем вам о крупном пополнении нашего каталога инструментов.",
-      sana: "5 Августа 2023"
-    }
+      instrument:
+        "С радостью сообщаем вам о крупном пополнении нашего каталога инструментов.",
+      sana: "5 Августа 2023",
+    },
   ],
-  korzinka: []
-}
+  korzinka: [],
+};
 
 // let data = [...carddata, ...CardData1, ...korzinka]
 
@@ -302,42 +309,45 @@ export default function GlavniyRed(state = GlavniyData, { type, payload }) {
           elem.id === payload.id ? { ...elem, like: !elem.like } : elem
         ),
       };
-      if(payload.like===false){
-        toast.success("Yoqdi")
-      }else{
-        toast.warn("Yoqmadi")
+      if (payload.like === false) {
+        toast.success("Yoqdi");
+      } else {
+        toast.warn("Yoqmadi");
       }
       return state;
     case "card":
-      if (state.korzinka.filter(param => +param.id === +payload.id).length === 0) {
+      if (
+        state.korzinka.filter((param) => +param.id === +payload.id).length === 0
+      ) {
         if (state) {
           state = {
             ...state,
-            korzinka: [...state.korzinka, payload]
+            korzinka: [...state.korzinka, payload],
           };
-          toast.success("Qo'shildi")
-        }
-        else {
+          toast.success("Qo'shildi");
+        } else {
           state = {
-            korzinka: [...state.korzinka, payload]
-          }
+            korzinka: [...state.korzinka, payload],
+          };
         }
       } else {
-        toast.error("Bu oldin qo'shilgan")
+        toast.error("Bu oldin qo'shilgan");
       }
       return state;
     case GlavniyTypes.delete:
       state = {
         ...state,
-        korzinka: state.korzinka.filter(param => param.id !== payload)
-      }
-      toast.success("O'chirildi")
+        korzinka: state.korzinka.filter((param) => param.id !== payload),
+      };
+      toast.success("O'chirildi");
       return state;
     case PlusMinusType.plus:
       state = {
         ...state,
         korzinka: state.korzinka.map((elem) =>
-          elem.id === payload && elem.count < 10 ? { ...elem, count: elem.count + 1 } : elem
+          elem.id === payload && elem.count < 10
+            ? { ...elem, count: elem.count + 1 }
+            : elem
         ),
       };
       return state;
@@ -345,19 +355,28 @@ export default function GlavniyRed(state = GlavniyData, { type, payload }) {
       state = {
         ...state,
         korzinka: state.korzinka.map((elem) =>
-          elem.id === payload && elem.count > 1 ? { ...elem, count: elem.count - 1 } : elem
+          elem.id === payload && elem.count > 1
+            ? { ...elem, count: elem.count - 1 }
+            : elem
         ),
       };
       return state;
-  //   case PlusMinusType2.plus2:
-  // // console.log(payload);
-  //     state = {
-  //       ...state,
-  //       korzinka: state.korzinka.map((elem) =>
-  //         elem.id === payload && elem.count > 1 ? { ...elem, count: elem.count + 1 } : elem
-  //       ),
-  //     }
-  //     return state;
+    case PlusMinusType2.plus2:
+      state = {
+        ...state,
+        [payload.catalog]: state?.[payload.catalog].map((elem) =>
+          elem.id === payload.id  && elem.count < 10 ?{ ...elem, count: elem.count + 1 } : elem
+        ),
+      };
+      return state;
+      case PlusMinusType2.minus2:
+        state = {
+          ...state,
+          [payload.catalog]: state?.[payload.catalog].map((elem) =>
+            elem.id === payload.id && elem.count > 1 ?{ ...elem, count: elem.count - 1 } : elem
+          ),
+        };
+        return state;
     default:
       return state;
   }
