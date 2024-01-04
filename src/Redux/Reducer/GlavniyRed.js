@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 import { GlavniyTypes, PlusMinusType, PlusMinusType2 } from "../Action/ActionTypes";
 
 let GlavniyData = {
@@ -301,6 +302,11 @@ export default function GlavniyRed(state = GlavniyData, { type, payload }) {
           elem.id === payload.id ? { ...elem, like: !elem.like } : elem
         ),
       };
+      if(payload.like===false){
+        toast.success("Yoqdi")
+      }else{
+        toast.warn("Yoqmadi")
+      }
       return state;
     case "card":
       if (state.korzinka.filter(param => +param.id === +payload.id).length === 0) {
@@ -309,6 +315,7 @@ export default function GlavniyRed(state = GlavniyData, { type, payload }) {
             ...state,
             korzinka: [...state.korzinka, payload]
           };
+          toast.success("Qo'shildi")
         }
         else {
           state = {
@@ -316,6 +323,7 @@ export default function GlavniyRed(state = GlavniyData, { type, payload }) {
           }
         }
       } else {
+        toast.error("Bu oldin qo'shilgan")
       }
       return state;
     case GlavniyTypes.delete:
@@ -323,6 +331,7 @@ export default function GlavniyRed(state = GlavniyData, { type, payload }) {
         ...state,
         korzinka: state.korzinka.filter(param => param.id !== payload)
       }
+      toast.success("O'chirildi")
       return state;
     case PlusMinusType.plus:
       state = {
@@ -340,15 +349,15 @@ export default function GlavniyRed(state = GlavniyData, { type, payload }) {
         ),
       };
       return state;
-    case PlusMinusType2.plus2:
-  // console.log(payload);
-      state = {
-        ...state,
-        korzinka: state.korzinka.map((elem) =>
-          elem.id === payload && elem.count > 1 ? { ...elem, count: elem.count + 1 } : elem
-        ),
-      }
-      return state;
+  //   case PlusMinusType2.plus2:
+  // // console.log(payload);
+  //     state = {
+  //       ...state,
+  //       korzinka: state.korzinka.map((elem) =>
+  //         elem.id === payload && elem.count > 1 ? { ...elem, count: elem.count + 1 } : elem
+  //       ),
+  //     }
+  //     return state;
     default:
       return state;
   }

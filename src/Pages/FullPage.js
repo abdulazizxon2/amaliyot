@@ -6,7 +6,11 @@ import { IoIosArrowDown } from "react-icons/io";
 import { TbDiscount } from "react-icons/tb";
 import { BsCreditCard2Front, BsBox2Fill } from "react-icons/bs";
 import { FaRegAddressCard } from "react-icons/fa";
-import { handleMinus, handlePlus2, setLike } from "../Redux/Action/GlavniyAction";
+import {
+  handleMinus,
+  handlePlus2,
+  setLike,
+} from "../Redux/Action/GlavniyAction";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { FaCheck } from "react-icons/fa";
 import { FaMinus, FaPlus } from "react-icons/fa6";
@@ -15,7 +19,7 @@ import ModalOyna2 from "../components/Navbar/ModalOyan2";
 import { Kupit } from "../Redux/Action/NavbarAction";
 
 export default function FullPage() {
-  let dispatch = useDispatch()
+  let dispatch = useDispatch();
   const [nav1, setNav1] = useState(null);
   const [nav2, setNav2] = useState(null);
   const slider1 = useRef(null);
@@ -30,9 +34,33 @@ export default function FullPage() {
   // console.log(prod);
   let { carddata, CardData1 } = useSelector((state) => state.GlavniyRed);
   let { katalogdata } = useSelector((state) => state.KatalogRed);
-  let data = [...carddata, ...CardData1, ...katalogdata]
-  let elem = data.find((elem) => elem.id === +prod.id)
-  let card2 = [elem?.img, elem?.img, elem?.img, elem?.img, elem?.img, elem?.img, elem?.img];
+  let data = [...carddata, ...CardData1, ...katalogdata];
+  let elem = data.find((elem) => elem.id === +prod.id);
+  let card2 = [
+    elem?.img,
+    elem?.img,
+    elem?.img,
+    elem?.img,
+    elem?.img,
+    elem?.img,
+    elem?.img,
+  ];
+  
+  function singlePlus(obj) {
+    data = data.map((elem) =>
+      elem.id === obj.id ? { ...elem, count: elem.count + 1 } : elem
+    );
+    console.log(obj.count);
+  }
+
+  function singleMinus(obj) {
+    data = data.map((elem) =>
+      elem.id === obj.id ? { ...elem, count: elem.count - 1 } : elem
+    );
+    console.log(obj.count);
+  }
+
+
   return (
     <div className="fullPage">
       <div className="fulsPages">
@@ -51,25 +79,21 @@ export default function FullPage() {
                 <figure key={index}>
                   <img src={el} />
                 </figure>
-              )
+              );
             })}
-
           </Slider>
-          <button onClick={() => slider2.current.slickNext()}><IoIosArrowDown /></button>
+          <button onClick={() => slider2.current.slickNext()}>
+            <IoIosArrowDown />
+          </button>
         </div>
         <div className="pastFull">
-          <Slider
-            asNavFor={nav2}
-            ref={slider1}
-            arrows={false}
-            vertical={true}
-          >
+          <Slider asNavFor={nav2} ref={slider1} arrows={false} vertical={true}>
             {card2?.map((el, index) => {
               return (
-                <figure key={index} >
+                <figure key={index}>
                   <img src={el} />
                 </figure>
-              )
+              );
             })}
           </Slider>
         </div>
@@ -113,27 +137,43 @@ export default function FullPage() {
       </div>
       <div className="kupit-korzinka">
         <p>{elem.art}</p>
-        <p><i><FaCheck /></i> В наличии</p>
+        <p>
+          <i>
+            <FaCheck />
+          </i>{" "}
+          В наличии
+        </p>
         <div className="kupit-narx">
-          {elem.skidka ? (<b className='b1'>
-            <del>{elem.narxi}₽</del>
-            {(
-              elem.narxi - (elem.narxi / 100) * elem.skidka
-            ).toFixed(2)}₽<b className="foiz">-{elem.skidka}%</b>
-          </b>) : (<span>{elem.narxi}₽</span>)}
+          {elem.skidka ? (
+            <b className="b1">
+              <del>{elem.narxi}₽</del>
+              {(elem.narxi - (elem.narxi / 100) * elem.skidka).toFixed(2)}₽
+              <b className="foiz">-{elem.skidka}%</b>
+            </b>
+          ) : (
+            <span>{elem.narxi}₽</span>
+          )}
         </div>
         <div className="kolichestva">
           <p>Количество:</p>
           <div className="plus-minus-kupits">
-            <button className='plus-kupits' onClick={() => dispatch(handleMinus(elem.id))}><FaMinus /></button>
-            <h1 className='count'>{elem.count} </h1>
-            <button className='minus-kupits' onClick={() => dispatch(handlePlus2(elem))}><FaPlus /></button>
+            <button className="plus-kupits" onClick={() => singleMinus(elem)}>
+              <FaMinus />
+            </button>
+            <h1 className="count">{elem.count}</h1>
+            <button className="minus-kupits" onClick={() => singlePlus(elem)}>
+              <FaPlus />
+            </button>
           </div>
         </div>
         <button className="qosh-korzinka">Добавить в корзину</button>
         <div className="like-kozinka">
           <button onClick={() => dispatch(Kupit())}>Купить в 1 клик</button>
-          <button onClick={() => { dispatch(setLike(elem)) && dispatch(setingLike(elem)) }}>
+          <button
+            onClick={() => {
+              dispatch(setLike(elem)) && dispatch(setingLike(elem));
+            }}
+          >
             {elem.like ? <AiFillHeart /> : <AiOutlineHeart />}В избранное
           </button>
         </div>
@@ -141,5 +181,4 @@ export default function FullPage() {
       <ModalOyna2 />
     </div>
   );
-
 }

@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 import { KatalogTypes } from "../Action/ActionTypes";
 let KatalogData = {
   katalogdata: [
@@ -13,7 +14,7 @@ let KatalogData = {
       kategorya: "Инструмент",
       color: "синий",
       brend: "STAYER",
-      material: "Латунь"
+      material: "Латунь",
     },
     {
       id: 12,
@@ -27,7 +28,7 @@ let KatalogData = {
       kategorya: "Инструмент",
       color: "синий",
       brend: "STAYER",
-      material: "Латунь"
+      material: "Латунь",
     },
     {
       id: 13,
@@ -41,7 +42,7 @@ let KatalogData = {
       kategorya: "Инструмент",
       color: "синий",
       brend: "STAYER",
-      material: "Медь"
+      material: "Медь",
     },
     {
       id: 14,
@@ -55,7 +56,7 @@ let KatalogData = {
       kategorya: "Инструмент",
       color: "синий",
       brend: "STAYER",
-      material: "Медь"
+      material: "Медь",
     },
     {
       id: 15,
@@ -69,7 +70,7 @@ let KatalogData = {
       kategorya: "Инструмент ",
       color: "чёрный",
       brend: "STAYER",
-      material: "Медь"
+      material: "Медь",
     },
     {
       id: 16,
@@ -83,7 +84,7 @@ let KatalogData = {
       kategorya: "Набор",
       color: "чёрный",
       brend: "STAYER",
-      material: "Медь"
+      material: "Медь",
     },
     {
       id: 17,
@@ -97,7 +98,7 @@ let KatalogData = {
       kategorya: "Инструмент",
       color: "чёрный",
       brend: "HOMEPROFEE",
-      material: "Металл"
+      material: "Металл",
     },
     {
       id: 18,
@@ -111,7 +112,7 @@ let KatalogData = {
       kategorya: "Инструмент",
       color: "серый",
       brend: "HOMEPROFEE",
-      material: "Металл"
+      material: "Металл",
     },
     {
       id: 19,
@@ -125,7 +126,7 @@ let KatalogData = {
       kategorya: "Инструмент",
       color: "серый",
       brend: "HOMEPROFEE",
-      material: "Металл"
+      material: "Металл",
     },
     {
       id: 20,
@@ -139,7 +140,7 @@ let KatalogData = {
       kategorya: "Держатель",
       color: "серый",
       brend: "HOMEPROFEE",
-      material: "Металл, пластик"
+      material: "Металл, пластик",
     },
     {
       id: 21,
@@ -153,7 +154,7 @@ let KatalogData = {
       kategorya: "Адаптер",
       color: "серый",
       brend: "HOMEPROFEE",
-      material: "Металл, пластик"
+      material: "Металл, пластик",
     },
     {
       id: 22,
@@ -167,7 +168,7 @@ let KatalogData = {
       kategorya: "Фильтр",
       color: "оранжывый",
       brend: "HOMEPROFEE",
-      material: "Металл, пластик"
+      material: "Металл, пластик",
     },
     {
       id: 23,
@@ -181,7 +182,7 @@ let KatalogData = {
       kategorya: "Фильтр",
       color: "оранжывый",
       brend: "PECAHTA",
-      material: "Металл, пластик"
+      material: "Металл, пластик",
     },
     {
       id: 24,
@@ -195,7 +196,7 @@ let KatalogData = {
       kategorya: "Адаптер",
       color: "оранжывый",
       brend: "PECAHTA",
-      material: "Бумага"
+      material: "Бумага",
     },
     {
       id: 25,
@@ -209,7 +210,7 @@ let KatalogData = {
       kategorya: "Адаптер",
       color: "красный",
       brend: "PECAHTA",
-      material: "Бумага"
+      material: "Бумага",
     },
     {
       id: 26,
@@ -223,7 +224,7 @@ let KatalogData = {
       kategorya: "Стойка",
       color: "красный",
       brend: "PECAHTA",
-      material: "Бумага"
+      material: "Бумага",
     },
     {
       id: 27,
@@ -237,7 +238,7 @@ let KatalogData = {
       kategorya: "Стойка",
       color: "красный",
       brend: "PECAHTA",
-      material: "Бумага"
+      material: "Бумага",
     },
     {
       id: 28,
@@ -251,7 +252,7 @@ let KatalogData = {
       kategorya: "Фильтр",
       color: "красный",
       brend: "PECAHTA",
-      material: "Бумага"
+      material: "Бумага",
     },
     {
       id: 29,
@@ -265,7 +266,7 @@ let KatalogData = {
       kategorya: "Фильтр",
       color: "красный",
       brend: "MAKITA",
-      material: "Бумага"
+      material: "Бумага",
     },
     {
       id: 30,
@@ -279,7 +280,7 @@ let KatalogData = {
       kategorya: "Фильтр",
       color: "серый",
       brend: "MAKITA",
-      material: "Бумага"
+      material: "Бумага",
     },
     {
       id: 31,
@@ -293,7 +294,7 @@ let KatalogData = {
       kategorya: "Набор",
       color: "серый",
       brend: "MAKITA",
-      material: "Латунь"
+      material: "Латунь",
     },
     {
       id: 32,
@@ -307,7 +308,7 @@ let KatalogData = {
       kategorya: "Набор",
       color: "серый",
       brend: "MAKITA",
-      material: "Латунь"
+      material: "Латунь",
     },
     {
       id: 33,
@@ -321,7 +322,7 @@ let KatalogData = {
       kategorya: "Держатель",
       color: "чёрный",
       brend: "MAKITA",
-      material: "Латунь"
+      material: "Латунь",
     },
     {
       id: 34,
@@ -335,7 +336,7 @@ let KatalogData = {
       kategorya: "Держатель",
       color: "синий",
       brend: "MAKITA",
-      material: "Медь"
+      material: "Медь",
     },
     {
       id: 35,
@@ -349,7 +350,7 @@ let KatalogData = {
       kategorya: "Инструмент",
       color: "синий",
       brend: "HUNTER",
-      material: "Медь"
+      material: "Медь",
     },
     {
       id: 36,
@@ -363,7 +364,7 @@ let KatalogData = {
       kategorya: "Инструмент",
       color: "синий",
       brend: "HUNTER",
-      material: "Медь"
+      material: "Медь",
     },
     {
       id: 37,
@@ -377,7 +378,7 @@ let KatalogData = {
       kategorya: "Инструмент",
       color: "красный",
       brend: "HUNTER",
-      material: "Металл"
+      material: "Металл",
     },
     {
       id: 38,
@@ -391,7 +392,7 @@ let KatalogData = {
       kategorya: "Стойка",
       color: "красный",
       brend: "HUNTER",
-      material: "Металл"
+      material: "Металл",
     },
     {
       id: 39,
@@ -405,7 +406,7 @@ let KatalogData = {
       kategorya: "Стойка",
       color: "красный",
       brend: "HUNTER",
-      material: "Металл"
+      material: "Металл",
     },
     {
       id: 40,
@@ -419,7 +420,7 @@ let KatalogData = {
       kategorya: "Стойка",
       color: "красный",
       brend: "HUNTER",
-      material: "Металл"
+      material: "Металл",
     },
     {
       id: 41,
@@ -433,7 +434,7 @@ let KatalogData = {
       kategorya: "Стойка",
       color: "красный",
       brend: "HUNTER",
-      material: "Металл"
+      material: "Металл",
     },
     {
       id: 42,
@@ -447,7 +448,7 @@ let KatalogData = {
       kategorya: "Стойка",
       color: "красный",
       brend: "HUNTER",
-      material: "Металл"
+      material: "Металл",
     },
   ],
   tiptavarData: [
@@ -596,6 +597,11 @@ export default function KatalogRed(state = KatalogData, { type, payload }) {
           elem.id === payload.id ? { ...elem, like: !elem.like } : elem
         ),
       };
+      if (payload.like === false) {
+        toast.success("Yoqdi");
+      } else {
+        toast.warn("Yoqmadi");
+      }
       return state;
     case KatalogTypes.categorya:
       // console.log(payload);
@@ -614,7 +620,6 @@ export default function KatalogRed(state = KatalogData, { type, payload }) {
       }
       return state;
     case KatalogTypes.categorya1:
-
       if (
         state.categorya1.filter((elem) => elem === payload.title).length === 0
       ) {
