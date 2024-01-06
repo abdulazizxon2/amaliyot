@@ -12,7 +12,7 @@ export default function Korzinka() {
     (a, b) => parseInt(a + b.count * (b.narxi - (b.narxi / 100) * b.skidka)), 0
   )
   let totalSkidka = totalPrice > 3433 ? parseInt((totalPrice / 100) * 7) : 0;
-  console.log(totalPrice);
+  // console.log(totalPrice);
   return (
     <div className='kozinkaPage'>
       <div className="tavar-korz">

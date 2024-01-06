@@ -7,7 +7,7 @@ let NavbarTypes = {
 let GlavniyTypes = {
   like: "like",
   delete: "delete",
-  // payload:useParams
+  get:"get"
 }
 let KatalogTypes = {
   likes: "likes",
@@ -33,5 +33,6 @@ let PlusMinusType2 = {
 let Fulltypes = {
   kupit: "kupit"
 }
+
 
 export { NavbarTypes, GlavniyTypes, KatalogTypes, PlusMinusType, PlusMinusType2, Fulltypes };

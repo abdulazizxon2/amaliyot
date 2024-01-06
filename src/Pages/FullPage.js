@@ -7,9 +7,6 @@ import { TbDiscount } from "react-icons/tb";
 import { BsCreditCard2Front, BsBox2Fill } from "react-icons/bs";
 import { FaRegAddressCard } from "react-icons/fa";
 import {
-  handleMinus,
-  handleMinus2,
-  handlePlus2,
   setLike,
 } from "../Redux/Action/GlavniyAction";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
@@ -32,11 +29,15 @@ export default function FullPage() {
   }, []);
 
   const prod = useParams();
-  // console.log(prod);
   let { carddata, CardData1 } = useSelector((state) => state.GlavniyRed);
   let { katalogdata } = useSelector((state) => state.KatalogRed);
   let data = [...carddata, ...CardData1, ...katalogdata];
-  let elem = data.find((elem) => elem.id === +prod.id);
+  let [elem, setElem] = useState([]);
+
+  useEffect(() => {
+    setElem(data.find((elem) => elem.id === +prod.id));
+  }, []);
+
   let card2 = [
     elem?.img,
     elem?.img,
@@ -46,6 +47,15 @@ export default function FullPage() {
     elem?.img,
     elem?.img,
   ];
+
+  const handleMinus = () => {
+    if(elem.count > 0) {
+      setElem({ ...elem, count: elem.count - 1 });
+    }
+  };
+  const handlePlus = () => {
+    setElem({ ...elem, count: elem.count + 1 });
+  };
 
   return (
     <div className="fullPage">
@@ -143,17 +153,11 @@ export default function FullPage() {
         <div className="kolichestva">
           <p>Количество:</p>
           <div className="plus-minus-kupits">
-            <button
-              className="plus-kupits"
-              onClick={() => dispatch(handleMinus2(elem))}
-            >
+            <button className="plus-kupits" onClick={handleMinus}>
               <FaMinus />
             </button>
             <h1 className="count">{elem.count}</h1>
-            <button
-              className="minus-kupits"
-              onClick={() => dispatch(handlePlus2(elem))}
-            >
+            <button className="minus-kupits" onClick={handlePlus}>
               <FaPlus />
             </button>
           </div>

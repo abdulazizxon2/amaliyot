@@ -28,23 +28,23 @@ export default function Glavniy() {
   }
 
 
-  cardBir = cardBir.map(
-    (elem, index) => ({ ...elem, id: index + 1 })
-  )
-  skidka = skidka.map(
-    (elem, index) => ({ ...elem, id: index + 1 })
-  )
+  // cardBir = cardBir.map(
+  //   (elem, index) => ({ ...elem, id: index + 1 })
+  // )
+  // skidka = skidka.map(
+  //   (elem, index) => ({ ...elem, id: index + 1 })
+  // )
 
-  bosch = bosch.map(
-    (elem, index) => ({ ...elem, id: index + 1 })
-  )
+  // bosch = bosch.map(
+  //   (elem, index) => ({ ...elem, id: index + 1 })
+  // )
 
-  son = son.map(
-    (elem, index) => ({ ...elem, id: index + 1 })
-  )
-  novosti = novosti.map(
-    (elem, index) => ({ ...elem, id: index + 1 })
-  )
+  // son = son.map(
+  //   (elem, index) => ({ ...elem, id: index + 1 })
+  // )
+  // novosti = novosti.map(
+  //   (elem, index) => ({ ...elem, id: index + 1 })
+  // )
   return (
     <div>
       <div className="swiper-slide-page">
@@ -167,7 +167,7 @@ export default function Glavniy() {
                             <button onClick={() => dispatch(setLike(elem))}>
                               {elem.like ? <AiFillHeart /> : <AiOutlineHeart />}
                             </button>
-                            <button onClick={() => dispatch(korzinkaFunc(elem))}><FiBarChart2 /></button>
+                            <button ><FiBarChart2 /></button>
                           </div>
                         </div>
                       </div>

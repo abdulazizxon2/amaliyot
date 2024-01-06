@@ -1,7 +1,7 @@
 import React from 'react'
 import { AiOutlineClose } from "react-icons/ai"
 import { useDispatch, useSelector } from 'react-redux';
-import { Kupit, Zakazat } from '../../Redux/Action/NavbarAction';
+import { Kupit } from '../../Redux/Action/NavbarAction';
 export default function ModalOyna2() {
     let state = useSelector((state) => state.NavbarRedux);
     let dispatch=useDispatch();
