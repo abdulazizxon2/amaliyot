@@ -21,6 +21,7 @@ export default function GlavniyRed(state = GlavniyData, { type, payload }) {
     case GlavniyTypes.get:
       let { carddata, cardBir, skidka, bosch, CardData1, son, novosti } =
         payload;
+        console.log(payload);
       state = {
         ...state,
         carddata: carddata,

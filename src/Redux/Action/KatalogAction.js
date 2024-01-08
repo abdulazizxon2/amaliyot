@@ -73,6 +73,12 @@ function ColorFilter(param) {
     payload: param,
   };
 }
+function handleGet1(param) {
+  return {
+    type: KatalogTypes.get1,
+    payload: param,
+  };
+}
 export {
   setingLike,
   korzinkaFunc,
@@ -86,5 +92,6 @@ export {
   ColorFilter,
   Openkatalog5,
   Categorya1,
-  Categorya2
+  Categorya2,
+  handleGet1
 };
