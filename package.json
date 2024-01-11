@@ -28,7 +28,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "json-server --watch Json.json"
+    "dev": "json-server --watch Json.json",
+    "boshla": "set PORT=7777&& react-scripts start"
   },
   "eslintConfig": {
     "extends": [
