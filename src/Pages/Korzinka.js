@@ -19,9 +19,9 @@ export default function Korzinka() {
         <div className="titles">
           <b>Стройоптторг</b>/ <p>Корзина товаров</p>
         </div>
-        <h1>{totalPrice}</h1>
-        <h2>{totalSkidka}</h2>
         <h1>Корзина товаров</h1>
+        <h1>Общая стоимость:{totalPrice}₽</h1>
+        <h2>СКИДКА:{totalSkidka}₽</h2>
       </div>
       <div className="tovar-no">
         {
